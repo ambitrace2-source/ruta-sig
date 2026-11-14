@@ -2,110 +2,5488 @@
 "version": 1,
 "notas": "tipos: om (opción múltiple), vf (verdadero/falso), completar (hueco ___ con banco de palabras), ordenar (opciones ya en el orden correcto; la app las baraja), emparejar (opciones = pares [izquierda, derecha]; correcta = null). En om/vf/completar, correcta = índice de opciones. Redacción propia; sin texto literal de normas. 9001 8.2-8.7 con numeración 2015 (2026 sin comparar).",
 "unidades": [
- {"id": "U1", "titulo": "Estructura común", "audio": "01_estructura_comun.mp3", "lecciones": ["Las cláusulas y el PHVA", "Contexto, liderazgo y planificación", "Operación, evaluación, mejora y versiones"]},
- {"id": "U2", "titulo": "ISO 9001 · Calidad", "audio": "02_iso_9001.mp3", "lecciones": ["Principios y cláusulas 4 a 6", "Apoyo y operación (7 y 8)", "Evaluación, mejora y cambios 2026"]},
- {"id": "U3", "titulo": "ISO 14001 · Ambiente", "audio": "03_iso_14001.mp3", "lecciones": ["Conceptos clave", "Cláusulas 4 a 8", "Evaluación, mejora y cambios 2026"]}
+{
+"id": "U1",
+"titulo": "Estructura común",
+"audio": "01_estructura_comun.mp3",
+"lecciones": [
+"Las cláusulas y el PHVA",
+"Contexto, liderazgo y planificación",
+"Operación, evaluación, mejora y versiones"
+]
+},
+{
+"id": "U2",
+"titulo": "ISO 9001 · Calidad",
+"audio": "02_iso_9001.mp3",
+"lecciones": [
+"Principios y cláusulas 4 a 6",
+"Apoyo y operación (7 y 8)",
+"Evaluación, mejora y cambios 2026"
+]
+},
+{
+"id": "U3",
+"titulo": "ISO 14001 · Ambiente",
+"audio": "03_iso_14001.mp3",
+"lecciones": [
+"Conceptos clave",
+"Cláusulas 4 a 8",
+"Evaluación, mejora y cambios 2026"
+]
+},
+{
+"id": "U4",
+"titulo": "ISO 45001 · SST",
+"audio": "04_iso_45001.mp3",
+"lecciones": [
+"Conceptos y liderazgo",
+"Peligros, controles y operación",
+"Evaluación, incidentes y mejora"
+]
+},
+{
+"id": "U5",
+"titulo": "SG-SST Colombia",
+"audio": "05_sgsst_colombia.mp3",
+"lecciones": [
+"Marco y estándares mínimos",
+"Órganos, reportes y documentos",
+"GTC 45 e indicadores"
+]
+},
+{
+"id": "U6",
+"titulo": "Auditoría y certificación",
+"audio": "06_auditoria_certificacion.mp3",
+"lecciones": [
+"Principios y tipos de auditoría",
+"Ciclo de certificación",
+"Hallazgos y no conformidades"
+]
+},
+{
+"id": "U7",
+"titulo": "Rol del coordinador SIG",
+"audio": "07_rol_coordinador.mp3",
+"lecciones": [
+"Misión y responsabilidades",
+"Calendario e indicadores",
+"Herramientas e integración"
+]
+},
+{
+"id": "U8",
+"titulo": "Legal Colombia",
+"audio": "08_legal_colombia.mp3",
+"lecciones": [
+"Leyes de SST",
+"Ambiental y residuos",
+"Consumidor, datos y autoridades"
+]
+}
 ],
 "preguntas": [
-{"id":"U1L1-01","unidad":"U1","leccion":1,"tipo":"om","enunciado":"¿Qué cláusulas de una norma ISO de sistemas de gestión contienen los requisitos que se auditan?","opciones":["De la 1 a la 10","De la 4 a la 10","De la 1 a la 3","Solo la 8 y la 9"],"correcta":1,"explicacion":"Las cláusulas 1 a 3 son introductorias (objeto, referencias y términos). Los requisitos empiezan en la 4 y terminan en la 10.","referencia":"Estructura armonizada ISO (Anexo SL), cap. 4-10","dificultad":1,"etiquetas":["estructura"]},
-{"id":"U1L1-02","unidad":"U1","leccion":1,"tipo":"om","enunciado":"En la regla de memoria C-L-P-A-O-E-M, ¿qué cláusula representa la «A»?","opciones":["Auditoría (9.2)","Alcance (4.3)","Apoyo (7)","Acción correctiva (10.2)"],"correcta":2,"explicacion":"C-L-P-A-O-E-M recorre los capítulos 4 a 10: Contexto, Liderazgo, Planificación, Apoyo, Operación, Evaluación y Mejora. La A es el capítulo 7, Apoyo.","referencia":"Estructura armonizada ISO, cap. 7","dificultad":1,"etiquetas":["estructura"]},
-{"id":"U1L1-03","unidad":"U1","leccion":1,"tipo":"vf","enunciado":"Las cláusulas 1, 2 y 3 contienen requisitos contra los que el auditor puede levantar una no conformidad.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"Son introductorias: objeto y campo de aplicación, referencias normativas y términos. Una no conformidad se redacta contra un requisito de las cláusulas 4 a 10.","referencia":"Estructura armonizada ISO, cap. 1-3","dificultad":1,"etiquetas":["estructura"]},
-{"id":"U1L1-04","unidad":"U1","leccion":1,"tipo":"ordenar","enunciado":"Ordene los capítulos de requisitos, del 4 al 10.","opciones":["Contexto","Liderazgo","Planificación","Apoyo","Operación","Evaluación del desempeño","Mejora"],"correcta":[0,1,2,3,4,5,6],"explicacion":"El orden es C-L-P-A-O-E-M: 4 Contexto, 5 Liderazgo, 6 Planificación, 7 Apoyo, 8 Operación, 9 Evaluación del desempeño, 10 Mejora.","referencia":"Estructura armonizada ISO, cap. 4-10","dificultad":1,"etiquetas":["estructura"]},
-{"id":"U1L1-05","unidad":"U1","leccion":1,"tipo":"emparejar","enunciado":"Empareje cada número de capítulo con su nombre.","opciones":[["4","Contexto"],["6","Planificación"],["8","Operación"],["10","Mejora"]],"correcta":null,"explicacion":"4 Contexto, 5 Liderazgo, 6 Planificación, 7 Apoyo, 8 Operación, 9 Evaluación, 10 Mejora. Es igual en 9001, 14001 y 45001.","referencia":"Estructura armonizada ISO, cap. 4-10","dificultad":1,"etiquetas":["estructura"]},
-{"id":"U1L1-06","unidad":"U1","leccion":1,"tipo":"om","enunciado":"En el ciclo PHVA, ¿qué capítulo corresponde a Verificar?","opciones":["6 Planificación","8 Operación","9 Evaluación del desempeño","10 Mejora"],"correcta":2,"explicacion":"Verificar es medir y evaluar lo hecho: seguimiento y medición, auditoría interna y revisión por la dirección, todo en el capítulo 9.","referencia":"Estructura armonizada ISO, cap. 9; ciclo PHVA","dificultad":1,"etiquetas":["estructura","PHVA"]},
-{"id":"U1L1-07","unidad":"U1","leccion":1,"tipo":"om","enunciado":"En el ciclo PHVA, ¿qué capítulo corresponde a Actuar?","opciones":["10 Mejora","9 Evaluación del desempeño","5 Liderazgo","7 Apoyo"],"correcta":0,"explicacion":"Actuar es tomar acciones con lo aprendido: tratar no conformidades con acciones correctivas y mejorar de forma continua, que es el capítulo 10.","referencia":"Estructura armonizada ISO, cap. 10; ciclo PHVA","dificultad":1,"etiquetas":["estructura","PHVA"]},
-{"id":"U1L1-08","unidad":"U1","leccion":1,"tipo":"completar","enunciado":"En el ciclo PHVA, el capítulo 8 (Operación) pertenece a la etapa de ___.","opciones":["Planear","Hacer","Verificar","Actuar"],"correcta":1,"explicacion":"La operación es donde se ejecuta lo planificado: es el Hacer del ciclo.","referencia":"Estructura armonizada ISO, cap. 8; ciclo PHVA","dificultad":1,"etiquetas":["estructura","PHVA"]},
-{"id":"U1L1-09","unidad":"U1","leccion":1,"tipo":"vf","enunciado":"ISO 9001, ISO 14001 e ISO 45001 comparten los mismos diez capítulos, y eso facilita integrarlas en un solo sistema.","opciones":["Verdadero","Falso"],"correcta":0,"explicacion":"Las tres siguen la estructura común de ISO. Por eso un SIG puede tener una sola revisión por la dirección, un solo programa de auditoría y un solo control documental.","referencia":"Estructura armonizada ISO (Anexo SL)","dificultad":1,"etiquetas":["estructura","integración"]},
-{"id":"U1L1-10","unidad":"U1","leccion":1,"tipo":"completar","enunciado":"La estructura común de las normas ISO de sistemas de gestión se conoce como estructura de alto nivel o Anexo ___.","opciones":["A","B","SL","PHVA"],"correcta":2,"explicacion":"El Anexo SL de las directivas de ISO define los capítulos y el texto base que comparten todas las normas de sistemas de gestión.","referencia":"Directivas ISO, Anexo SL","dificultad":1,"etiquetas":["estructura"]},
-{"id":"U1L1-11","unidad":"U1","leccion":1,"tipo":"om","enunciado":"En el ciclo PHVA, ¿qué capítulos se agrupan en Planear?","opciones":["4, 5 y 6","4, 5, 6 y 7","6 y 7","Solo el 8"],"correcta":0,"explicacion":"Planear reúne Contexto (4), Liderazgo (5) y Planificación (6). El Apoyo (7) ya es Hacer. En la figura de la norma el recuadro de Planear lleva la Planificación (6) y el Liderazgo (5) va en el centro del ciclo.","referencia":"ISO 9001:2015, introducción, ciclo PHVA (figura de la estructura); edición 2026 sin comparar","dificultad":2,"etiquetas":["estructura","PHVA"]},
-{"id":"U1L1-12","unidad":"U1","leccion":1,"tipo":"vf","enunciado":"En el ciclo PHVA, el capítulo 7 (Apoyo) pertenece a la etapa de Planear.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"Apoyo (7) y Operación (8) forman juntos el Hacer: los recursos, la competencia y la documentación se ponen en marcha para ejecutar lo planificado.","referencia":"ISO 9001:2015, introducción, ciclo PHVA (figura de la estructura); edición 2026 sin comparar","dificultad":2,"etiquetas":["estructura","PHVA"]},
-
-{"id":"U1L2-01","unidad":"U1","leccion":2,"tipo":"om","enunciado":"¿Cuál es el foco de ISO 45001?","opciones":["El cliente y la conformidad del producto","Los aspectos e impactos ambientales","Las personas: prevenir lesiones y deterioro de la salud","La competencia de los laboratorios"],"correcta":2,"explicacion":"45001 gestiona la seguridad y salud en el trabajo. El cliente es el foco de 9001 y el ambiente el de 14001.","referencia":"ISO 45001:2018, objeto del sistema","dificultad":1,"etiquetas":["estructura","45001"]},
-{"id":"U1L2-02","unidad":"U1","leccion":2,"tipo":"emparejar","enunciado":"Empareje cada norma con su tema.","opciones":[["ISO 9001","Calidad y cliente"],["ISO 14001","Medio ambiente"],["ISO 45001","Seguridad y salud en el trabajo"],["ISO 19011","Auditoría de sistemas de gestión"]],"correcta":null,"explicacion":"9001 calidad, 14001 ambiente, 45001 SST. ISO 19011 no es certificable: es la guía para auditar los tres sistemas.","referencia":"ISO 9001, 14001, 45001 e ISO 19011:2018","dificultad":1,"etiquetas":["estructura"]},
-{"id":"U1L2-03","unidad":"U1","leccion":2,"tipo":"om","enunciado":"Dentro de la planificación (6.1), ¿qué identifica ISO 14001 en su apartado 6.1.2?","opciones":["Peligros para los trabajadores","Aspectos ambientales y sus impactos","Requisitos del cliente","Proveedores críticos"],"correcta":1,"explicacion":"El 6.1.2 de 14001 es la matriz de aspectos e impactos. En 45001 el 6.1.2 identifica peligros y evalúa riesgos de SST.","referencia":"ISO 14001:2026, 6.1.2","dificultad":2,"etiquetas":["estructura","14001"]},
-{"id":"U1L2-04","unidad":"U1","leccion":2,"tipo":"om","enunciado":"¿Qué apartado del capítulo de Liderazgo existe solo en ISO 45001?","opciones":["5.1 Liderazgo y compromiso","5.2 Política","5.3 Roles y responsabilidades","5.4 Consulta y participación de los trabajadores"],"correcta":3,"explicacion":"9001 y 14001 llegan hasta 5.3. Solo 45001 añade el 5.4, porque la participación de los trabajadores es el rasgo propio de la SST.","referencia":"ISO 45001:2018, 5.4","dificultad":2,"etiquetas":["estructura","45001"]},
-{"id":"U1L2-05","unidad":"U1","leccion":2,"tipo":"vf","enunciado":"La cláusula 4.2 pide determinar las partes interesadas pertinentes y cuáles de sus necesidades y expectativas se convierten en requisitos del sistema.","opciones":["Verdadero","Falso"],"correcta":0,"explicacion":"No basta con listar interesados: hay que decidir cuáles de sus expectativas se asumen como requisitos. La evidencia habitual es una matriz de partes interesadas.","referencia":"Estructura armonizada ISO, 4.2","dificultad":1,"etiquetas":["contexto"]},
-{"id":"U1L2-06","unidad":"U1","leccion":2,"tipo":"completar","enunciado":"La cláusula 4.3 determina el ___ del sistema de gestión, que debe estar como información documentada.","opciones":["alcance","presupuesto","organigrama","objetivo"],"correcta":0,"explicacion":"El alcance fija los límites y la aplicabilidad del sistema: qué sedes, procesos, productos y servicios cubre.","referencia":"Estructura armonizada ISO, 4.3","dificultad":1,"etiquetas":["contexto"]},
-{"id":"U1L2-07","unidad":"U1","leccion":2,"tipo":"om","enunciado":"¿Qué añadió la Enmienda 1:2024 a la cláusula 4.1 de las tres normas?","opciones":["Determinar si el cambio climático es una cuestión pertinente","Nombrar un representante de la dirección","Calcular la huella de carbono","Certificarse en ISO 14064"],"correcta":0,"explicacion":"La enmienda solo pide analizar si el cambio climático es pertinente para la organización, y en 4.2 recuerda que los interesados pueden tener requisitos sobre el clima. No obliga a medir huella.","referencia":"Enmienda 1:2024 a ISO 9001/14001/45001, 4.1 y 4.2","dificultad":2,"etiquetas":["contexto","clima"]},
-{"id":"U1L2-08","unidad":"U1","leccion":2,"tipo":"vf","enunciado":"En las tres normas, la cláusula 6.2 trata la auditoría interna.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"La 6.2 trata los objetivos (de calidad, ambientales o de SST) y cómo planificar su logro. La auditoría interna está en la 9.2.","referencia":"Estructura armonizada ISO, 6.2 y 9.2","dificultad":1,"etiquetas":["estructura"]},
-{"id":"U1L2-09","unidad":"U1","leccion":2,"tipo":"ordenar","enunciado":"Ordene la secuencia lógica con la que se planifica un sistema de gestión.","opciones":["Comprender el contexto (4.1)","Determinar partes interesadas (4.2)","Definir el alcance (4.3)","Abordar riesgos y oportunidades (6.1)","Fijar objetivos y planes (6.2)"],"correcta":[0,1,2,3,4],"explicacion":"Primero se entiende el entorno y a los interesados, con eso se delimita el alcance, luego se determinan riesgos y oportunidades, y al final se fijan objetivos.","referencia":"Estructura armonizada ISO, 4.1-4.3, 6.1 y 6.2","dificultad":2,"etiquetas":["estructura","planificación"]},
-{"id":"U1L2-10","unidad":"U1","leccion":2,"tipo":"completar","enunciado":"En ISO 45001, el apartado 6.1.2 identifica ___ y evalúa los riesgos para la SST.","opciones":["aspectos","peligros","clientes","impactos"],"correcta":1,"explicacion":"En SST se habla de peligros (fuentes de daño) y riesgos. Aspectos e impactos son el vocabulario de 14001.","referencia":"ISO 45001:2018, 6.1.2","dificultad":1,"etiquetas":["estructura","45001"]},
-
-{"id":"U1L3-01","unidad":"U1","leccion":3,"tipo":"om","enunciado":"¿Qué tema del capítulo 9 comparten ISO 14001 e ISO 45001 y no aparece así en ISO 9001?","opciones":["Satisfacción del cliente","Evaluación del cumplimiento legal y de otros requisitos","Auditoría interna","Revisión por la dirección"],"correcta":1,"explicacion":"14001 y 45001 exigen evaluar periódicamente el cumplimiento de sus obligaciones (9.1.2). En 9001 el 9.1.2 se dedica a la satisfacción del cliente.","referencia":"ISO 14001 9.1.2; ISO 45001 9.1.2; ISO 9001 9.1.2","dificultad":2,"etiquetas":["estructura","evaluación"]},
-{"id":"U1L3-02","unidad":"U1","leccion":3,"tipo":"om","enunciado":"¿En qué cláusula está la auditoría interna en las tres normas?","opciones":["8.2","9.1","9.2","10.2"],"correcta":2,"explicacion":"La 9.2 pide un programa de auditorías a intervalos planificados, con auditores objetivos e imparciales.","referencia":"Estructura armonizada ISO, 9.2","dificultad":1,"etiquetas":["estructura","auditoría"]},
-{"id":"U1L3-03","unidad":"U1","leccion":3,"tipo":"om","enunciado":"¿En qué cláusula está la revisión por la dirección en las tres normas?","opciones":["5.1","9.3","10.1","6.3"],"correcta":1,"explicacion":"La 9.3 fija las entradas que la alta dirección debe revisar y las salidas (decisiones) que debe dejar.","referencia":"Estructura armonizada ISO, 9.3","dificultad":1,"etiquetas":["estructura","revisión"]},
-{"id":"U1L3-04","unidad":"U1","leccion":3,"tipo":"vf","enunciado":"En ISO 45001, el capítulo 10 trata, además de no conformidades y acciones correctivas, los incidentes.","opciones":["Verdadero","Falso"],"correcta":0,"explicacion":"En SST un incidente (incluido el accidente) se investiga y se trata con la misma lógica que una no conformidad: causa y acción correctiva.","referencia":"ISO 45001:2018, 10.2","dificultad":2,"etiquetas":["estructura","45001"]},
-{"id":"U1L3-05","unidad":"U1","leccion":3,"tipo":"completar","enunciado":"La preparación y respuesta ante emergencias está en la cláusula ___ de ISO 14001 y de ISO 45001.","opciones":["6.1","7.4","8.2","9.1"],"correcta":2,"explicacion":"En ambas normas la 8.2 exige planes de emergencia, pruebas periódicas (simulacros) y revisión después de cada evento o prueba.","referencia":"ISO 14001 8.2; ISO 45001 8.2","dificultad":1,"etiquetas":["estructura","emergencias"]},
-{"id":"U1L3-06","unidad":"U1","leccion":3,"tipo":"om","enunciado":"A noviembre de 2026, ¿cuál es la edición vigente de ISO 45001?","opciones":["45001:2015","45001:2018 con la Enmienda 1:2024","45001:2026","OHSAS 18001:2007"],"correcta":1,"explicacion":"45001 sigue en su edición 2018 más la enmienda de clima de 2024. La revisión está en trámite y su publicación se espera para 2027.","referencia":"ISO 45001:2018 + Amd 1:2024","dificultad":2,"etiquetas":["versiones","45001"]},
-{"id":"U1L3-07","unidad":"U1","leccion":3,"tipo":"om","enunciado":"¿Hasta cuándo son válidos los certificados ISO 9001:2015 durante la transición a la edición 2026?","opciones":["31 de diciembre de 2026","30 de septiembre de 2027","30 de septiembre de 2029","No tienen fecha límite"],"correcta":2,"explicacion":"La edición 2026 se publicó el 16 de septiembre de 2026 y la transición dura tres años: los certificados 2015 valen hasta el 30 de septiembre de 2029.","referencia":"ISO 9001:2026, periodo de transición (IAF / organismos de certificación)","dificultad":2,"etiquetas":["versiones","9001"]},
-{"id":"U1L3-08","unidad":"U1","leccion":3,"tipo":"vf","enunciado":"ISO 14001:2026 se publicó antes que ISO 9001:2026.","opciones":["Verdadero","Falso"],"correcta":0,"explicacion":"14001:2026 salió el 15 de abril de 2026 y 9001:2026 el 16 de septiembre de 2026.","referencia":"ISO 14001:2026 (4.ª ed.); ISO 9001:2026 (6.ª ed.)","dificultad":2,"etiquetas":["versiones"]},
-{"id":"U1L3-09","unidad":"U1","leccion":3,"tipo":"emparejar","enunciado":"Empareje cada norma de apoyo con lo que trata.","opciones":[["ISO 19011","Directrices de auditoría"],["ISO/IEC 17021-1","Requisitos para certificadoras"],["ISO 31000","Gestión del riesgo"],["ISO 9000","Vocabulario de calidad"]],"correcta":null,"explicacion":"19011 guía al auditor, 17021-1 regula a los organismos de certificación, 31000 da directrices de riesgo y 9000 define fundamentos y vocabulario.","referencia":"ISO 19011:2018; ISO/IEC 17021-1:2015; ISO 31000:2018; ISO 9000:2015","dificultad":2,"etiquetas":["estructura","auditoría"]},
-{"id":"U1L3-10","unidad":"U1","leccion":3,"tipo":"ordenar","enunciado":"Ordene los pasos para cerrar una no conformidad.","opciones":["Corregir lo encontrado","Analizar la causa raíz","Implementar la acción correctiva","Verificar la eficacia","Cerrar con evidencia"],"correcta":[0,1,2,3,4],"explicacion":"Primero se contiene y corrige; luego se busca la causa, se actúa sobre ella y solo se cierra cuando hay evidencia de que la acción fue eficaz (no reincide).","referencia":"Estructura armonizada ISO, 10.2","dificultad":2,"etiquetas":["mejora","no conformidad"]},
-
-{"id":"U2L1-01","unidad":"U2","leccion":1,"tipo":"om","enunciado":"¿Cuál de estos NO es uno de los siete principios de gestión de la calidad?","opciones":["Enfoque al cliente","Gestión de las relaciones","Toma de decisiones basada en evidencia","Enfoque de sistema para la gestión"],"correcta":3,"explicacion":"«Enfoque de sistema para la gestión» era uno de los ocho principios antiguos; en 2015 se fusionó con el enfoque a procesos. Hoy son siete.","referencia":"ISO 9000:2015, principios de gestión de la calidad","dificultad":3,"etiquetas":["9001","principios"]},
-{"id":"U2L1-02","unidad":"U2","leccion":1,"tipo":"completar","enunciado":"Los principios de gestión de la calidad son ___.","opciones":["5","6","7","8"],"correcta":2,"explicacion":"Son siete: enfoque al cliente, liderazgo, compromiso de las personas, enfoque a procesos, mejora, decisiones basadas en evidencia y gestión de las relaciones.","referencia":"ISO 9000:2015, principios de gestión de la calidad","dificultad":1,"etiquetas":["9001","principios"]},
-{"id":"U2L1-03","unidad":"U2","leccion":1,"tipo":"om","enunciado":"¿Qué cláusula de ISO 9001 trata los riesgos y las oportunidades?","opciones":["4.1","6.1","8.1","10.2"],"correcta":1,"explicacion":"La 6.1 pide determinar riesgos y oportunidades y planificar acciones frente a ellos, dentro del capítulo de Planificación.","referencia":"ISO 9001:2026, 6.1","dificultad":1,"etiquetas":["9001","riesgos"]},
-{"id":"U2L1-04","unidad":"U2","leccion":1,"tipo":"om","enunciado":"En ISO 9001:2026 la cláusula 6.1 se divide en tres. ¿Qué trata el 6.1.3?","opciones":["Determinar riesgos y oportunidades","Acciones para abordar los riesgos","Acciones para abordar las oportunidades","Planificación de cambios"],"correcta":2,"explicacion":"6.1.1 determina riesgos y oportunidades, 6.1.2 actúa sobre los riesgos y 6.1.3 actúa sobre las oportunidades. La planificación de cambios es la 6.3.","referencia":"ISO 9001:2026, 6.1.1-6.1.3","dificultad":2,"etiquetas":["9001","2026","riesgos"]},
-{"id":"U2L1-05","unidad":"U2","leccion":1,"tipo":"vf","enunciado":"ISO 9001 exige aplicar una metodología formal y documentada de gestión de riesgos, como ISO 31000.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"La norma pide pensar en riesgos, actuar e ir evaluando si las acciones fueron eficaces, pero no impone un método formal. Una matriz de riesgos es práctica común, no requisito.","referencia":"ISO 9001:2026, 6.1 y Anexo A","dificultad":2,"etiquetas":["9001","riesgos"]},
-{"id":"U2L1-06","unidad":"U2","leccion":1,"tipo":"om","enunciado":"Una empresa que no diseña sus productos ni servicios quiere dejar un requisito fuera del sistema. ¿Cuál puede declarar no aplicable, con justificación?","opciones":["5.2 Política de la calidad","8.3 Diseño y desarrollo","9.2 Auditoría interna","10.2 Acción correctiva"],"correcta":1,"explicacion":"Solo se puede declarar no aplicable un requisito que no afecte la conformidad del producto ni la satisfacción del cliente; el caso típico es 8.3. La justificación va en el alcance.","referencia":"ISO 9001:2026, 4.3","dificultad":2,"etiquetas":["9001","alcance"]},
-{"id":"U2L1-07","unidad":"U2","leccion":1,"tipo":"completar","enunciado":"La política de la calidad se establece y se comunica según la cláusula ___.","opciones":["4.4","5.2","6.2","7.4"],"correcta":1,"explicacion":"La 5.2 pide una política adecuada al propósito de la organización, disponible, comunicada y entendida. El auditor suele comprobarlo entrevistando a un operario.","referencia":"ISO 9001:2026, 5.2","dificultad":1,"etiquetas":["9001","liderazgo"]},
-{"id":"U2L1-08","unidad":"U2","leccion":1,"tipo":"emparejar","enunciado":"Empareje cada cláusula de ISO 9001 con su tema.","opciones":[["4.4","Procesos del sistema"],["5.3","Roles y autoridades"],["6.2","Objetivos de calidad"],["6.3","Planificación de cambios"]],"correcta":null,"explicacion":"4.4 define los procesos y su interacción; 5.3 asigna responsabilidades; 6.2 fija objetivos medibles con plan; 6.3 exige planificar los cambios al sistema.","referencia":"ISO 9001:2026, 4.4, 5.3, 6.2 y 6.3","dificultad":2,"etiquetas":["9001","cláusulas"]},
-{"id":"U2L1-09","unidad":"U2","leccion":1,"tipo":"om","enunciado":"¿Qué dos conceptos nuevos debe promover la alta dirección según el 5.1.1 de ISO 9001:2026?","opciones":["Cultura de la calidad y comportamiento ético","Manual de calidad y representante de la dirección","Acciones preventivas y control estadístico","Huella de carbono y economía circular"],"correcta":0,"explicacion":"La edición 2026 incorpora la cultura de la calidad y el comportamiento ético en liderazgo (5.1.1), toma de conciencia (7.3) y ambiente de operación (7.1.4).","referencia":"ISO 9001:2026, 5.1.1","dificultad":2,"etiquetas":["9001","2026","liderazgo"]},
-{"id":"U2L1-10","unidad":"U2","leccion":1,"tipo":"vf","enunciado":"Un objetivo de calidad redactado como «mejorar el servicio», sin meta, responsable ni plazo, cumple la cláusula 6.2.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"Los objetivos deben ser medibles y coherentes con la política, y su planificación debe decir qué se hará, con qué recursos, quién responde, cuándo termina y cómo se evalúa.","referencia":"ISO 9001:2026, 6.2","dificultad":2,"etiquetas":["9001","objetivos"]},
-
-{"id":"U2L2-01","unidad":"U2","leccion":2,"tipo":"om","enunciado":"El auditor encuentra una báscula sin calibración vigente. ¿Contra qué cláusula de ISO 9001 redacta el hallazgo?","opciones":["7.1.5 Recursos de seguimiento y medición","7.2 Competencia","8.6 Liberación","9.1.2 Satisfacción del cliente"],"correcta":0,"explicacion":"La 7.1.5 exige que los equipos de medición sean aptos y, cuando se requiere trazabilidad metrológica, estén calibrados o verificados con evidencia.","referencia":"ISO 9001:2026, 7.1.5","dificultad":2,"etiquetas":["9001","metrología","caso"]},
-{"id":"U2L2-02","unidad":"U2","leccion":2,"tipo":"om","enunciado":"¿Qué cláusula de ISO 9001 trata los conocimientos de la organización?","opciones":["7.1.6","7.3","7.5","8.5.1"],"correcta":0,"explicacion":"La 7.1.6 pide determinar, mantener y poner a disposición el conocimiento necesario para operar, por ejemplo para que no se pierda cuando alguien se retira.","referencia":"ISO 9001:2026, 7.1.6","dificultad":2,"etiquetas":["9001","apoyo"]},
-{"id":"U2L2-03","unidad":"U2","leccion":2,"tipo":"vf","enunciado":"En ISO 9001, «mantener» información documentada se refiere a los registros y «conservar» a los documentos como procedimientos.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"Es al revés: se mantienen los documentos (política, procedimientos, que se actualizan) y se conservan los registros (evidencia de lo hecho).","referencia":"ISO 9001:2026, 7.5","dificultad":2,"etiquetas":["9001","documentación"]},
-{"id":"U2L2-04","unidad":"U2","leccion":2,"tipo":"completar","enunciado":"Para los proveedores externos la organización define criterios de evaluación, selección, seguimiento del desempeño y ___.","opciones":["reevaluación","certificación","sanción","exclusividad"],"correcta":0,"explicacion":"No basta evaluar al proveedor una vez al seleccionarlo: hay que reevaluarlo periódicamente y conservar evidencia. «Proveedores sin reevaluación» es un hallazgo frecuente.","referencia":"ISO 9001, 8.4.1 (numeración 2015)","dificultad":2,"etiquetas":["9001","proveedores"]},
-{"id":"U2L2-05","unidad":"U2","leccion":2,"tipo":"om","enunciado":"Antes de comprometerse a entregar un pedido, la organización debe confirmar que puede cumplir lo que el cliente pide. ¿Qué cláusula lo exige?","opciones":["8.2.3 Revisión de los requisitos","8.4.3 Información para proveedores","8.5.4 Preservación","9.1.3 Análisis y evaluación"],"correcta":0,"explicacion":"La revisión de requisitos se hace antes de aceptar el compromiso y deja información documentada de sus resultados.","referencia":"ISO 9001, 8.2.3 (numeración 2015)","dificultad":2,"etiquetas":["9001","operación"]},
-{"id":"U2L2-06","unidad":"U2","leccion":2,"tipo":"emparejar","enunciado":"Empareje cada cláusula del capítulo 8 con su tema.","opciones":[["8.3","Diseño y desarrollo"],["8.5.2","Identificación y trazabilidad"],["8.6","Liberación"],["8.7","Salidas no conformes"]],"correcta":null,"explicacion":"8.3 diseño; 8.5.2 saber qué es cada producto y de dónde viene; 8.6 autorizar la entrega con evidencia de conformidad; 8.7 controlar lo que no cumple.","referencia":"ISO 9001, 8.3, 8.5.2, 8.6 y 8.7 (numeración 2015)","dificultad":2,"etiquetas":["9001","operación"]},
-{"id":"U2L2-07","unidad":"U2","leccion":2,"tipo":"om","enunciado":"Se detecta un lote que no cumple la especificación antes de despacharlo. Según ISO 9001, ¿qué corresponde hacer primero?","opciones":["Despacharlo y avisar si el cliente reclama","Identificarlo y controlarlo para impedir su uso o entrega no prevista","Destruir los registros del lote","Esperar a la próxima auditoría interna"],"correcta":1,"explicacion":"La salida no conforme se identifica y se controla (corregir, separar, contener, informar al cliente o pedir concesión) y se conserva registro de lo decidido.","referencia":"ISO 9001, 8.7 (numeración 2015)","dificultad":2,"etiquetas":["9001","no conforme","caso"]},
-{"id":"U2L2-08","unidad":"U2","leccion":2,"tipo":"vf","enunciado":"Desde la edición 2015, ISO 9001 sigue exigiendo un manual de calidad y seis procedimientos documentados obligatorios.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"Eso era la versión 2008. Hoy la organización decide qué documentar según su tamaño y complejidad; sí hay registros puntuales que la norma obliga a conservar.","referencia":"ISO 9001:2026, 7.5.1","dificultad":2,"etiquetas":["9001","documentación"]},
-{"id":"U2L2-09","unidad":"U2","leccion":2,"tipo":"ordenar","enunciado":"Ordene el recorrido de un pedido por el capítulo 8 de ISO 9001.","opciones":["Determinar y revisar requisitos del cliente (8.2)","Diseño y desarrollo (8.3)","Producción o prestación del servicio (8.5)","Liberación (8.6)","Actividades posteriores a la entrega (8.5.5)"],"correcta":[0,1,2,3,4],"explicacion":"Primero se acuerda qué quiere el cliente, luego se diseña, se produce, se libera con evidencia de conformidad y por último se atiende la posventa (garantías, soporte).","referencia":"ISO 9001, cap. 8 (numeración 2015)","dificultad":3,"etiquetas":["9001","operación"]},
-{"id":"U2L2-10","unidad":"U2","leccion":2,"tipo":"completar","enunciado":"El ambiente para la operación de los procesos (7.1.4) combina factores sociales, psicológicos y ___.","opciones":["físicos","financieros","legales","comerciales"],"correcta":0,"explicacion":"Incluye lo físico (temperatura, ruido, iluminación), lo social (trato, no discriminación) y lo psicológico (estrés). En 2026 se aclara que la cultura de la calidad influye en ellos.","referencia":"ISO 9001:2026, 7.1.4","dificultad":2,"etiquetas":["9001","apoyo"]},
-
-{"id":"U2L3-01","unidad":"U2","leccion":3,"tipo":"om","enunciado":"¿Qué cláusula de ISO 9001 trata la satisfacción del cliente?","opciones":["5.1.2","8.2.1","9.1.2","10.1"],"correcta":2,"explicacion":"La 9.1.2 pide hacer seguimiento de cómo percibe el cliente que se cumplen sus necesidades. La 5.1.2 es el enfoque al cliente como compromiso del liderazgo.","referencia":"ISO 9001:2026, 9.1.2","dificultad":1,"etiquetas":["9001","evaluación"]},
-{"id":"U2L3-02","unidad":"U2","leccion":3,"tipo":"om","enunciado":"En ISO 9001:2026, ¿qué literales abarcan las entradas de la revisión por la dirección (9.3.2)?","opciones":["De la a) a la d)","De la a) a la f)","De la a) a la h)","De la a) a la l)"],"correcta":2,"explicacion":"En 2015 iban de a) a f). La edición 2026 las reorganiza en ocho, de a) a h), y pide ver tendencias del desempeño.","referencia":"ISO 9001:2026, 9.3.2","dificultad":3,"etiquetas":["9001","2026","revisión"]},
-{"id":"U2L3-03","unidad":"U2","leccion":3,"tipo":"om","enunciado":"¿Cuál de estas es una entrada NUEVA de la revisión por la dirección en ISO 9001:2026?","opciones":["Estado de las acciones de revisiones previas","Resultados de auditorías","Adecuación de los recursos","Eficacia de las acciones sobre oportunidades"],"correcta":3,"explicacion":"Las dos entradas nuevas son los cambios en necesidades y expectativas de las partes interesadas (c) y la eficacia de las acciones sobre oportunidades (h). Las otras ya existían.","referencia":"ISO 9001:2026, 9.3.2 c) y h)","dificultad":3,"etiquetas":["9001","2026","revisión"]},
-{"id":"U2L3-04","unidad":"U2","leccion":3,"tipo":"vf","enunciado":"En ISO 9001:2026 la mejora continua está en la cláusula 10.3.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"En 2026 el capítulo 10 solo tiene dos apartados: 10.1 Mejora continua y 10.2 No conformidad y acción correctiva. El 10.3 ya no existe.","referencia":"ISO 9001:2026, 10.1","dificultad":2,"etiquetas":["9001","2026","mejora"]},
-{"id":"U2L3-05","unidad":"U2","leccion":3,"tipo":"completar","enunciado":"En ISO 9001, la no conformidad y la acción correctiva se tratan en la cláusula ___.","opciones":["8.7","9.2","10.1","10.2"],"correcta":3,"explicacion":"La 10.2 cubre las no conformidades del sistema y sus acciones correctivas. La 8.7 es otra cosa: el control del producto o servicio que salió no conforme.","referencia":"ISO 9001:2026, 10.2","dificultad":1,"etiquetas":["9001","mejora"]},
-{"id":"U2L3-06","unidad":"U2","leccion":3,"tipo":"om","enunciado":"¿Qué anexo desaparece en ISO 9001:2026?","opciones":["El Anexo A","El Anexo B","El Anexo SL","Ninguno"],"correcta":1,"explicacion":"Se elimina el Anexo B (listado de otras normas del comité de calidad). El Anexo A, informativo, se mantiene y se refuerza.","referencia":"ISO 9001:2026, anexos","dificultad":3,"etiquetas":["9001","2026"]},
-{"id":"U2L3-07","unidad":"U2","leccion":3,"tipo":"vf","enunciado":"Un auditor interno con mucha experiencia puede auditar el proceso del que él mismo es responsable.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"La selección de auditores debe asegurar objetividad e imparcialidad: nadie audita su propio trabajo. «Auditoría interna sin independencia» es un hallazgo frecuente.","referencia":"ISO 9001:2026, 9.2.2","dificultad":2,"etiquetas":["9001","auditoría"]},
-{"id":"U2L3-08","unidad":"U2","leccion":3,"tipo":"emparejar","enunciado":"Empareje cada cláusula de ISO 9001 con su tema.","opciones":[["9.1.2","Satisfacción del cliente"],["9.2","Auditoría interna"],["9.3","Revisión por la dirección"],["10.2","No conformidad y acción correctiva"]],"correcta":null,"explicacion":"El capítulo 9 verifica (medir, auditar, revisar) y el 10 actúa sobre lo encontrado.","referencia":"ISO 9001:2026, 9.1.2, 9.2, 9.3 y 10.2","dificultad":1,"etiquetas":["9001","cláusulas"]},
-{"id":"U2L3-09","unidad":"U2","leccion":3,"tipo":"ordenar","enunciado":"Ordene lo que pide la cláusula 10.2 ante una no conformidad.","opciones":["Reaccionar y corregir","Determinar las causas","Implementar la acción necesaria","Revisar la eficacia de la acción","Actualizar riesgos y oportunidades si hace falta"],"correcta":[0,1,2,3,4],"explicacion":"Se controla el problema, se busca por qué ocurrió y si puede repetirse en otro lugar, se actúa, se comprueba que funcionó y se actualiza la planificación si es necesario.","referencia":"ISO 9001:2026, 10.2.1","dificultad":2,"etiquetas":["9001","mejora"]},
-{"id":"U2L3-10","unidad":"U2","leccion":3,"tipo":"om","enunciado":"En diez no conformidades seguidas la causa registrada es «falta de capacitación» y varias se repiten. ¿Qué concluye el auditor?","opciones":["El sistema es eficaz porque todas tienen causa","El análisis de causa es superficial y las acciones no son eficaces","Falta un manual de calidad","Debe excluirse la cláusula 10.2 del alcance"],"correcta":1,"explicacion":"Si la misma causa genérica se repite y los problemas reinciden, no se llegó a la causa raíz ni se verificó la eficacia. Es de los hallazgos más comunes contra 10.2.","referencia":"ISO 9001:2026, 10.2.1","dificultad":3,"etiquetas":["9001","mejora","caso"]},
-
-{"id":"U3L1-01","unidad":"U3","leccion":1,"tipo":"om","enunciado":"Un montacargas pierde aceite hidráulico y este llega al suelo del patio. ¿Cuál es el aspecto ambiental?","opciones":["La contaminación del suelo","El derrame de aceite","La multa de la autoridad ambiental","El montacargas"],"correcta":1,"explicacion":"El aspecto es lo que la actividad hace sobre el ambiente (el derrame: la causa). La contaminación del suelo es el impacto (el efecto).","referencia":"ISO 14001:2026, cap. 3 (aspecto e impacto) y 6.1.2","dificultad":2,"etiquetas":["14001","aspectos","caso"]},
-{"id":"U3L1-02","unidad":"U3","leccion":1,"tipo":"vf","enunciado":"Un impacto ambiental siempre es negativo.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"El impacto es cualquier cambio en el ambiente, adverso o beneficioso. Aprovechar residuos, por ejemplo, genera un impacto positivo al evitar disposición en relleno.","referencia":"ISO 14001:2026, cap. 3 (impacto ambiental)","dificultad":1,"etiquetas":["14001","aspectos"]},
-{"id":"U3L1-03","unidad":"U3","leccion":1,"tipo":"completar","enunciado":"En la matriz ambiental, el aspecto es la causa y el impacto es el ___.","opciones":["efecto","control","requisito","peligro"],"correcta":0,"explicacion":"Aspecto = lo que la actividad emite, consume o genera. Impacto = lo que eso le cambia al ambiente.","referencia":"ISO 14001:2026, 6.1.2","dificultad":1,"etiquetas":["14001","aspectos"]},
-{"id":"U3L1-04","unidad":"U3","leccion":1,"tipo":"om","enunciado":"¿Qué consecuencia tiene que un aspecto ambiental se clasifique como significativo?","opciones":["Debe eliminarse la actividad","Debe tener control operacional y tenerse en cuenta en objetivos y comunicación","Solo se registra en la matriz","Debe reportarse a la autoridad ambiental"],"correcta":1,"explicacion":"Los aspectos significativos son los que el sistema debe gestionar de verdad: se controlan en la operación, se consideran al fijar objetivos y se comunican al personal.","referencia":"ISO 14001:2026, 6.1.2, 6.1.5 y 8.1","dificultad":2,"etiquetas":["14001","aspectos"]},
-{"id":"U3L1-05","unidad":"U3","leccion":1,"tipo":"vf","enunciado":"La perspectiva de ciclo de vida de ISO 14001 obliga a realizar un análisis de ciclo de vida (ACV) completo de cada producto.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"Solo pide pensar en las etapas (materia prima, diseño, producción, transporte, uso y fin de vida) que la organización puede controlar o influir. No exige un ACV formal.","referencia":"ISO 14001:2026, 6.1.2 y 8.1","dificultad":2,"etiquetas":["14001","ciclo de vida"]},
-{"id":"U3L1-06","unidad":"U3","leccion":1,"tipo":"om","enunciado":"¿Qué abarcan las obligaciones de compliance (antes «obligaciones de cumplimiento») en ISO 14001?","opciones":["Solo las leyes ambientales","Los requisitos legales y los demás compromisos que la organización decide cumplir","Solo los contratos con clientes","Las recomendaciones del auditor"],"correcta":1,"explicacion":"Incluyen la ley y también lo voluntario que la organización asume: contratos, códigos, acuerdos con la comunidad. Una vez asumido, se audita igual que un requisito legal.","referencia":"ISO 14001:2026, 4.2 y 6.1.3","dificultad":2,"etiquetas":["14001","compliance"]},
-{"id":"U3L1-07","unidad":"U3","leccion":1,"tipo":"emparejar","enunciado":"Empareje cada aspecto ambiental con su impacto.","opciones":[["Consumo de energía","Agotamiento de recursos"],["Vertimiento de agua de lavado","Contaminación del agua"],["Emisión de material particulado","Deterioro de la calidad del aire"],["Ruido de compactadoras","Molestia a la comunidad"]],"correcta":null,"explicacion":"El aspecto (izquierda) es lo que hace la operación; el impacto (derecha) es el cambio que produce en el ambiente.","referencia":"ISO 14001:2026, 6.1.2","dificultad":2,"etiquetas":["14001","aspectos"]},
-{"id":"U3L1-08","unidad":"U3","leccion":1,"tipo":"om","enunciado":"Al identificar aspectos ambientales, ¿qué condiciones de operación deben considerarse?","opciones":["Solo las normales","Normales y anormales, y las posibles situaciones de emergencia","Solo las de emergencia","Las que defina el cliente"],"correcta":1,"explicacion":"Un arranque, un mantenimiento o un incendio generan aspectos distintos a los de un día normal. Olvidar las emergencias es un hallazgo frecuente.","referencia":"ISO 14001:2026, 6.1.2","dificultad":2,"etiquetas":["14001","aspectos"]},
-{"id":"U3L1-09","unidad":"U3","leccion":1,"tipo":"completar","enunciado":"Una forma habitual de valorar la significancia es multiplicar la severidad del impacto por su ___.","opciones":["probabilidad","costo","antigüedad","nombre"],"correcta":0,"explicacion":"Es práctica común (severidad × probabilidad o frecuencia, más criterios como requisito legal o quejas). La norma no impone un método, pero sí criterios definidos y documentados.","referencia":"ISO 14001:2026, 6.1.2 (el método es práctica común, no requisito)","dificultad":2,"etiquetas":["14001","significancia"]},
-{"id":"U3L1-10","unidad":"U3","leccion":1,"tipo":"ordenar","enunciado":"Ordene los pasos para construir la matriz de aspectos e impactos.","opciones":["Mapear actividades y servicios","Identificar aspecto e impacto de cada actividad","Valorar la significancia","Definir controles y objetivos","Reevaluar ante cambios"],"correcta":[0,1,2,3,4],"explicacion":"Se parte de las actividades (incluidos contratistas y transporte), se identifican aspectos e impactos, se valoran con criterios, se controlan los significativos y se revisa cuando algo cambia.","referencia":"ISO 14001:2026, 6.1.2 y 6.1.5","dificultad":2,"etiquetas":["14001","aspectos"]},
-
-{"id":"U3L2-01","unidad":"U3","leccion":2,"tipo":"om","enunciado":"¿Qué apartado de ISO 14001 exige determinar los aspectos ambientales?","opciones":["4.1","6.1.2","8.2","9.1.2"],"correcta":1,"explicacion":"El 6.1.2 pide identificar aspectos e impactos con perspectiva de ciclo de vida y determinar cuáles son significativos.","referencia":"ISO 14001:2026, 6.1.2","dificultad":1,"etiquetas":["14001","cláusulas"]},
-{"id":"U3L2-02","unidad":"U3","leccion":2,"tipo":"om","enunciado":"En ISO 14001:2026, ¿qué apartado propio tienen ahora los riesgos y oportunidades?","opciones":["6.1.1","6.1.3","6.1.4","6.3"],"correcta":2,"explicacion":"El 6.1 queda en cinco apartados: 6.1.1 generalidades, 6.1.2 aspectos, 6.1.3 obligaciones de compliance, 6.1.4 riesgos y oportunidades y 6.1.5 planificación de acciones.","referencia":"ISO 14001:2026, 6.1.4","dificultad":3,"etiquetas":["14001","2026"]},
-{"id":"U3L2-03","unidad":"U3","leccion":2,"tipo":"completar","enunciado":"En ISO 14001:2026, la planificación de acciones sobre aspectos significativos, compliance y riesgos está en el apartado ___.","opciones":["6.1.2","6.1.5","6.2","8.1"],"correcta":1,"explicacion":"En 2015 era el 6.1.4; al abrirse un apartado propio para riesgos y oportunidades, la planificación de acciones pasó al 6.1.5.","referencia":"ISO 14001:2026, 6.1.5","dificultad":3,"etiquetas":["14001","2026"]},
-{"id":"U3L2-04","unidad":"U3","leccion":2,"tipo":"vf","enunciado":"La política ambiental debe incluir un compromiso de protección del medio ambiente, que abarca la prevención de la contaminación.","opciones":["Verdadero","Falso"],"correcta":0,"explicacion":"La política lleva tres compromisos: proteger el ambiente (incluida la prevención de la contaminación), cumplir las obligaciones de compliance y mejorar continuamente.","referencia":"ISO 14001:2026, 5.2","dificultad":1,"etiquetas":["14001","política"]},
-{"id":"U3L2-05","unidad":"U3","leccion":2,"tipo":"om","enunciado":"Según ISO 14001:2026, ¿qué debe ocurrir con el alcance del sistema de gestión ambiental?","opciones":["Es confidencial y solo lo conoce la gerencia","Debe estar documentado y disponible para las partes interesadas","Solo se informa a la certificadora","Se define después de la auditoría"],"correcta":1,"explicacion":"El alcance se documenta considerando lo que la organización controla o influye a lo largo del ciclo de vida, y debe quedar disponible para los interesados.","referencia":"ISO 14001:2026, 4.3","dificultad":2,"etiquetas":["14001","alcance"]},
-{"id":"U3L2-06","unidad":"U3","leccion":2,"tipo":"emparejar","enunciado":"Empareje cada cláusula de ISO 14001 con su tema.","opciones":[["6.1.3","Obligaciones de compliance"],["6.2","Objetivos ambientales"],["8.1","Control operacional y ciclo de vida"],["8.2","Emergencias"]],"correcta":null,"explicacion":"6.1.3 es la matriz legal; 6.2 los objetivos; 8.1 controla la operación, las compras y los contratistas; 8.2 prepara la respuesta a emergencias.","referencia":"ISO 14001:2026, 6.1.3, 6.2, 8.1 y 8.2","dificultad":2,"etiquetas":["14001","cláusulas"]},
-{"id":"U3L2-07","unidad":"U3","leccion":2,"tipo":"om","enunciado":"Además de tener un plan de emergencias ambientales, ¿qué exige la cláusula 8.2?","opciones":["Probar periódicamente la respuesta planificada, por ejemplo con simulacros","Contratar una póliza de seguro","Publicar el plan en internet","Certificar a la brigada con un tercero"],"correcta":0,"explicacion":"El plan se pone a prueba periódicamente y se revisa después de cada prueba o emergencia real. «Sin evidencia de simulacros» es un hallazgo típico.","referencia":"ISO 14001:2026, 8.2","dificultad":2,"etiquetas":["14001","emergencias"]},
-{"id":"U3L2-08","unidad":"U3","leccion":2,"tipo":"vf","enunciado":"La comunicación ambiental externa es siempre voluntaria, aunque una obligación de compliance pida reportar información.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"La organización decide qué comunica hacia afuera, pero debe comunicar lo que sus obligaciones de compliance le exijan (por ejemplo, reportes a la autoridad).","referencia":"ISO 14001:2026, 7.4.3","dificultad":2,"etiquetas":["14001","comunicación"]},
-{"id":"U3L2-09","unidad":"U3","leccion":2,"tipo":"ordenar","enunciado":"Ordene la jerarquía de controles que menciona el control operacional, del más al menos eficaz.","opciones":["Eliminación","Sustitución","Controles administrativos"],"correcta":[0,1,2],"explicacion":"Lo más eficaz es quitar la fuente; si no se puede, cambiarla por algo menos dañino; lo último son procedimientos e instrucciones, que dependen de la conducta.","referencia":"ISO 14001:2026, 8.1 (nota)","dificultad":2,"etiquetas":["14001","control operacional"]},
-{"id":"U3L2-10","unidad":"U3","leccion":2,"tipo":"completar","enunciado":"Los procesos contratados externamente, como un gestor de residuos, deben quedar bajo control o ___ de la organización.","opciones":["influencia","propiedad","vigilancia policial","reserva"],"correcta":0,"explicacion":"Cuando no se puede controlar directamente al tercero, se influye: requisitos ambientales en el contrato, verificación de licencias y certificados.","referencia":"ISO 14001:2026, 8.1","dificultad":2,"etiquetas":["14001","contratistas"]},
-
-{"id":"U3L3-01","unidad":"U3","leccion":3,"tipo":"om","enunciado":"¿En qué apartado de ISO 14001 se evalúa si la organización cumple sus obligaciones legales y otros requisitos?","opciones":["6.1.3","8.1","9.1.2","10.2"],"correcta":2,"explicacion":"El 6.1.3 identifica las obligaciones; el 9.1.2 comprueba, con una frecuencia definida, si se están cumpliendo y qué se hace con los incumplimientos.","referencia":"ISO 14001:2026, 9.1.2","dificultad":2,"etiquetas":["14001","compliance"]},
-{"id":"U3L3-02","unidad":"U3","leccion":3,"tipo":"om","enunciado":"¿Qué término usa la traducción oficial de 14001:2026 en lugar de «obligaciones de cumplimiento»?","opciones":["Requisitos legales","Obligaciones de compliance","Deberes ambientales","Compromisos verdes"],"correcta":1,"explicacion":"La edición 2026 habla de «obligaciones de compliance» y el 9.1.2 se titula evaluación de compliance. El concepto es el mismo; cambia la palabra.","referencia":"ISO 14001:2026, 6.1.3 y 9.1.2","dificultad":2,"etiquetas":["14001","2026","compliance"]},
-{"id":"U3L3-03","unidad":"U3","leccion":3,"tipo":"vf","enunciado":"En ISO 14001:2026 existe una cláusula 10.3 dedicada a la mejora continua.","opciones":["Verdadero","Falso"],"correcta":1,"explicacion":"Igual que en 9001:2026, el capítulo 10 queda con dos apartados: 10.1 Mejora continua y 10.2 No conformidad y acción correctiva.","referencia":"ISO 14001:2026, 10.1","dificultad":2,"etiquetas":["14001","2026","mejora"]},
-{"id":"U3L3-04","unidad":"U3","leccion":3,"tipo":"om","enunciado":"¿Qué apartado propio aparece en el capítulo 6 de ISO 14001:2026?","opciones":["6.3 Planificación de cambios","6.4 Huella de carbono","6.5 Economía circular","6.6 Biodiversidad"],"correcta":0,"explicacion":"El 6.3 pide planificar los cambios que afecten al sistema: nueva tecnología, cambio de materiales, de personal o de contratistas, entre otros.","referencia":"ISO 14001:2026, 6.3","dificultad":2,"etiquetas":["14001","2026","cambios"]},
-{"id":"U3L3-05","unidad":"U3","leccion":3,"tipo":"completar","enunciado":"ISO 14001:2026 se publicó el 15 de ___ de 2026.","opciones":["enero","abril","septiembre","noviembre"],"correcta":1,"explicacion":"La cuarta edición salió el 15 de abril de 2026 y ese día se retiró la edición 2015. Septiembre es la fecha de ISO 9001:2026.","referencia":"ISO 14001:2026 (4.ª edición)","dificultad":2,"etiquetas":["14001","versiones"]},
-{"id":"U3L3-06","unidad":"U3","leccion":3,"tipo":"om","enunciado":"¿Qué entrada de la revisión por la dirección es propia de ISO 14001 y no figura así en ISO 9001?","opciones":["Estado de las acciones previas","Cambios en los aspectos ambientales significativos","Adecuación de los recursos","Oportunidades de mejora"],"correcta":1,"explicacion":"La dirección ambiental revisa además los cambios en aspectos significativos, el cumplimiento de compliance y las comunicaciones de partes interesadas, incluidas las quejas.","referencia":"ISO 14001:2026, 9.3.2","dificultad":3,"etiquetas":["14001","revisión"]},
-{"id":"U3L3-07","unidad":"U3","leccion":3,"tipo":"vf","enunciado":"Ante una no conformidad ambiental, además de corregirla, la organización debe mitigar los impactos ambientales adversos que haya causado.","opciones":["Verdadero","Falso"],"correcta":0,"explicacion":"Es el matiz ambiental del 10.2: no basta corregir el fallo, hay que atender sus consecuencias sobre el ambiente, y la acción debe ser proporcional a su significancia.","referencia":"ISO 14001:2026, 10.2","dificultad":2,"etiquetas":["14001","mejora"]},
-{"id":"U3L3-08","unidad":"U3","leccion":3,"tipo":"emparejar","enunciado":"Empareje cada cláusula de ISO 14001 con su tema.","opciones":[["9.1.1","Seguimiento y medición"],["9.1.2","Evaluación de compliance"],["9.2","Auditoría interna"],["9.3","Revisión por la dirección"]],"correcta":null,"explicacion":"El capítulo 9 verifica: se mide el desempeño ambiental con equipos calibrados o verificados, se evalúa el cumplimiento, se audita y la dirección revisa.","referencia":"ISO 14001:2026, cap. 9","dificultad":1,"etiquetas":["14001","cláusulas"]},
-{"id":"U3L3-09","unidad":"U3","leccion":3,"tipo":"ordenar","enunciado":"Ordene el ciclo de gestión de las obligaciones de compliance.","opciones":["Identificar las obligaciones aplicables (6.1.3)","Evaluar el cumplimiento con la frecuencia definida (9.1.2)","Tomar acciones ante los incumplimientos","Mantener actualizado el estado de cumplimiento"],"correcta":[0,1,2,3],"explicacion":"Primero la matriz legal, luego la evaluación periódica, después las acciones y, de forma permanente, saber en qué estado de cumplimiento se está.","referencia":"ISO 14001:2026, 6.1.3 y 9.1.2","dificultad":2,"etiquetas":["14001","compliance"]},
-{"id":"U3L3-10","unidad":"U3","leccion":3,"tipo":"om","enunciado":"El auditor pide el certificado de disposición de los residuos peligrosos entregados a un gestor y no existe. ¿Contra qué cláusula se relaciona principalmente el hallazgo?","opciones":["5.2 Política ambiental","7.3 Toma de conciencia","8.1 Control operacional (procesos contratados externamente)","9.3 Revisión por la dirección"],"correcta":2,"explicacion":"El gestor es un proceso contratado externamente: la organización debe controlarlo o influir en él y tener evidencia. Certificados faltantes o vencidos son un hallazgo clásico.","referencia":"ISO 14001:2026, 8.1","dificultad":3,"etiquetas":["14001","contratistas","caso"]}
+{
+"id": "U1L1-01",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué cláusulas de una norma ISO de sistemas de gestión contienen los requisitos que se auditan?",
+"opciones": [
+"De la 1 a la 10",
+"De la 4 a la 10",
+"De la 1 a la 3",
+"Solo la 8 y la 9"
+],
+"correcta": 1,
+"explicacion": "Las cláusulas 1 a 3 son introductorias (objeto, referencias y términos). Los requisitos empiezan en la 4 y terminan en la 10.",
+"referencia": "Estructura armonizada ISO (Anexo SL), cap. 4-10",
+"dificultad": 1,
+"etiquetas": [
+"estructura"
+]
+},
+{
+"id": "U1L1-02",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "En la regla de memoria C-L-P-A-O-E-M, ¿qué cláusula representa la «A»?",
+"opciones": [
+"Auditoría (9.2)",
+"Alcance (4.3)",
+"Apoyo (7)",
+"Acción correctiva (10.2)"
+],
+"correcta": 2,
+"explicacion": "C-L-P-A-O-E-M recorre los capítulos 4 a 10: Contexto, Liderazgo, Planificación, Apoyo, Operación, Evaluación y Mejora. La A es el capítulo 7, Apoyo.",
+"referencia": "Estructura armonizada ISO, cap. 7",
+"dificultad": 1,
+"etiquetas": [
+"estructura"
+]
+},
+{
+"id": "U1L1-03",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Las cláusulas 1, 2 y 3 contienen requisitos contra los que el auditor puede levantar una no conformidad.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Son introductorias: objeto y campo de aplicación, referencias normativas y términos. Una no conformidad se redacta contra un requisito de las cláusulas 4 a 10.",
+"referencia": "Estructura armonizada ISO, cap. 1-3",
+"dificultad": 1,
+"etiquetas": [
+"estructura"
+]
+},
+{
+"id": "U1L1-04",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "ordenar",
+"enunciado": "Ordene los capítulos de requisitos, del 4 al 10.",
+"opciones": [
+"Contexto",
+"Liderazgo",
+"Planificación",
+"Apoyo",
+"Operación",
+"Evaluación del desempeño",
+"Mejora"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4,
+5,
+6
+],
+"explicacion": "El orden es C-L-P-A-O-E-M: 4 Contexto, 5 Liderazgo, 6 Planificación, 7 Apoyo, 8 Operación, 9 Evaluación del desempeño, 10 Mejora.",
+"referencia": "Estructura armonizada ISO, cap. 4-10",
+"dificultad": 1,
+"etiquetas": [
+"estructura"
+]
+},
+{
+"id": "U1L1-05",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada número de capítulo con su nombre.",
+"opciones": [
+[
+"4",
+"Contexto"
+],
+[
+"6",
+"Planificación"
+],
+[
+"8",
+"Operación"
+],
+[
+"10",
+"Mejora"
+]
+],
+"correcta": null,
+"explicacion": "4 Contexto, 5 Liderazgo, 6 Planificación, 7 Apoyo, 8 Operación, 9 Evaluación, 10 Mejora. Es igual en 9001, 14001 y 45001.",
+"referencia": "Estructura armonizada ISO, cap. 4-10",
+"dificultad": 1,
+"etiquetas": [
+"estructura"
+]
+},
+{
+"id": "U1L1-06",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "En el ciclo PHVA, ¿qué capítulo corresponde a Verificar?",
+"opciones": [
+"6 Planificación",
+"8 Operación",
+"9 Evaluación del desempeño",
+"10 Mejora"
+],
+"correcta": 2,
+"explicacion": "Verificar es medir y evaluar lo hecho: seguimiento y medición, auditoría interna y revisión por la dirección, todo en el capítulo 9.",
+"referencia": "Estructura armonizada ISO, cap. 9; ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"estructura",
+"PHVA"
+]
+},
+{
+"id": "U1L1-07",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "En el ciclo PHVA, ¿qué capítulo corresponde a Actuar?",
+"opciones": [
+"10 Mejora",
+"9 Evaluación del desempeño",
+"5 Liderazgo",
+"7 Apoyo"
+],
+"correcta": 0,
+"explicacion": "Actuar es tomar acciones con lo aprendido: tratar no conformidades con acciones correctivas y mejorar de forma continua, que es el capítulo 10.",
+"referencia": "Estructura armonizada ISO, cap. 10; ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"estructura",
+"PHVA"
+]
+},
+{
+"id": "U1L1-08",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "En el ciclo PHVA, el capítulo 8 (Operación) pertenece a la etapa de ___.",
+"opciones": [
+"Planear",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": 1,
+"explicacion": "La operación es donde se ejecuta lo planificado: es el Hacer del ciclo.",
+"referencia": "Estructura armonizada ISO, cap. 8; ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"estructura",
+"PHVA"
+]
+},
+{
+"id": "U1L1-09",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "ISO 9001, ISO 14001 e ISO 45001 comparten los mismos diez capítulos, y eso facilita integrarlas en un solo sistema.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Las tres siguen la estructura común de ISO. Por eso un SIG puede tener una sola revisión por la dirección, un solo programa de auditoría y un solo control documental.",
+"referencia": "Estructura armonizada ISO (Anexo SL)",
+"dificultad": 1,
+"etiquetas": [
+"estructura",
+"integración"
+]
+},
+{
+"id": "U1L1-10",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "La estructura común de las normas ISO de sistemas de gestión se conoce como estructura de alto nivel o Anexo ___.",
+"opciones": [
+"A",
+"B",
+"SL",
+"PHVA"
+],
+"correcta": 2,
+"explicacion": "El Anexo SL de las directivas de ISO define los capítulos y el texto base que comparten todas las normas de sistemas de gestión.",
+"referencia": "Directivas ISO, Anexo SL",
+"dificultad": 1,
+"etiquetas": [
+"estructura"
+]
+},
+{
+"id": "U1L1-11",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "En el ciclo PHVA, ¿qué capítulos se agrupan en Planear?",
+"opciones": [
+"4, 5 y 6",
+"4, 5, 6 y 7",
+"6 y 7",
+"Solo el 8"
+],
+"correcta": 0,
+"explicacion": "Planear reúne Contexto (4), Liderazgo (5) y Planificación (6). El Apoyo (7) ya es Hacer. En la figura de la norma el recuadro de Planear lleva la Planificación (6) y el Liderazgo (5) va en el centro del ciclo.",
+"referencia": "ISO 9001:2015, introducción, ciclo PHVA (figura de la estructura); edición 2026 sin comparar",
+"dificultad": 2,
+"etiquetas": [
+"estructura",
+"PHVA"
+]
+},
+{
+"id": "U1L1-12",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "En el ciclo PHVA, el capítulo 7 (Apoyo) pertenece a la etapa de Planear.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Apoyo (7) y Operación (8) forman juntos el Hacer: los recursos, la competencia y la documentación se ponen en marcha para ejecutar lo planificado.",
+"referencia": "ISO 9001:2015, introducción, ciclo PHVA (figura de la estructura); edición 2026 sin comparar",
+"dificultad": 2,
+"etiquetas": [
+"estructura",
+"PHVA"
+]
+},
+{
+"id": "U1L2-01",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cuál es el foco de ISO 45001?",
+"opciones": [
+"El cliente y la conformidad del producto",
+"Los aspectos e impactos ambientales",
+"Las personas: prevenir lesiones y deterioro de la salud",
+"La competencia de los laboratorios"
+],
+"correcta": 2,
+"explicacion": "45001 gestiona la seguridad y salud en el trabajo. El cliente es el foco de 9001 y el ambiente el de 14001.",
+"referencia": "ISO 45001:2018, objeto del sistema",
+"dificultad": 1,
+"etiquetas": [
+"estructura",
+"45001"
+]
+},
+{
+"id": "U1L2-02",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada norma con su tema.",
+"opciones": [
+[
+"ISO 9001",
+"Calidad y cliente"
+],
+[
+"ISO 14001",
+"Medio ambiente"
+],
+[
+"ISO 45001",
+"Seguridad y salud en el trabajo"
+],
+[
+"ISO 19011",
+"Auditoría de sistemas de gestión"
+]
+],
+"correcta": null,
+"explicacion": "9001 calidad, 14001 ambiente, 45001 SST. ISO 19011 no es certificable: es la guía para auditar los tres sistemas.",
+"referencia": "ISO 9001, 14001, 45001 e ISO 19011:2018",
+"dificultad": 1,
+"etiquetas": [
+"estructura"
+]
+},
+{
+"id": "U1L2-03",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Dentro de la planificación (6.1), ¿qué identifica ISO 14001 en su apartado 6.1.2?",
+"opciones": [
+"Peligros para los trabajadores",
+"Aspectos ambientales y sus impactos",
+"Requisitos del cliente",
+"Proveedores críticos"
+],
+"correcta": 1,
+"explicacion": "El 6.1.2 de 14001 es la matriz de aspectos e impactos. En 45001 el 6.1.2 identifica peligros y evalúa riesgos de SST.",
+"referencia": "ISO 14001:2026, 6.1.2",
+"dificultad": 2,
+"etiquetas": [
+"estructura",
+"14001"
+]
+},
+{
+"id": "U1L2-04",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué apartado del capítulo de Liderazgo existe solo en ISO 45001?",
+"opciones": [
+"5.1 Liderazgo y compromiso",
+"5.2 Política",
+"5.3 Roles y responsabilidades",
+"5.4 Consulta y participación de los trabajadores"
+],
+"correcta": 3,
+"explicacion": "9001 y 14001 llegan hasta 5.3. Solo 45001 añade el 5.4, porque la participación de los trabajadores es el rasgo propio de la SST.",
+"referencia": "ISO 45001:2018, 5.4",
+"dificultad": 2,
+"etiquetas": [
+"estructura",
+"45001"
+]
+},
+{
+"id": "U1L2-05",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "La cláusula 4.2 pide determinar las partes interesadas pertinentes y cuáles de sus necesidades y expectativas se convierten en requisitos del sistema.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "No basta con listar interesados: hay que decidir cuáles de sus expectativas se asumen como requisitos. La evidencia habitual es una matriz de partes interesadas.",
+"referencia": "Estructura armonizada ISO, 4.2",
+"dificultad": 1,
+"etiquetas": [
+"contexto"
+]
+},
+{
+"id": "U1L2-06",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "La cláusula 4.3 determina el ___ del sistema de gestión, que debe estar como información documentada.",
+"opciones": [
+"alcance",
+"presupuesto",
+"organigrama",
+"objetivo"
+],
+"correcta": 0,
+"explicacion": "El alcance fija los límites y la aplicabilidad del sistema: qué sedes, procesos, productos y servicios cubre.",
+"referencia": "Estructura armonizada ISO, 4.3",
+"dificultad": 1,
+"etiquetas": [
+"contexto"
+]
+},
+{
+"id": "U1L2-07",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué añadió la Enmienda 1:2024 a la cláusula 4.1 de las tres normas?",
+"opciones": [
+"Determinar si el cambio climático es una cuestión pertinente",
+"Nombrar un representante de la dirección",
+"Calcular la huella de carbono",
+"Certificarse en ISO 14064"
+],
+"correcta": 0,
+"explicacion": "La enmienda solo pide analizar si el cambio climático es pertinente para la organización, y en 4.2 recuerda que los interesados pueden tener requisitos sobre el clima. No obliga a medir huella.",
+"referencia": "Enmienda 1:2024 a ISO 9001/14001/45001, 4.1 y 4.2",
+"dificultad": 2,
+"etiquetas": [
+"contexto",
+"clima"
+]
+},
+{
+"id": "U1L2-08",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "En las tres normas, la cláusula 6.2 trata la auditoría interna.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "La 6.2 trata los objetivos (de calidad, ambientales o de SST) y cómo planificar su logro. La auditoría interna está en la 9.2.",
+"referencia": "Estructura armonizada ISO, 6.2 y 9.2",
+"dificultad": 1,
+"etiquetas": [
+"estructura"
+]
+},
+{
+"id": "U1L2-09",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "ordenar",
+"enunciado": "Ordene la secuencia lógica con la que se planifica un sistema de gestión.",
+"opciones": [
+"Comprender el contexto (4.1)",
+"Determinar partes interesadas (4.2)",
+"Definir el alcance (4.3)",
+"Abordar riesgos y oportunidades (6.1)",
+"Fijar objetivos y planes (6.2)"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4
+],
+"explicacion": "Primero se entiende el entorno y a los interesados, con eso se delimita el alcance, luego se determinan riesgos y oportunidades, y al final se fijan objetivos.",
+"referencia": "Estructura armonizada ISO, 4.1-4.3, 6.1 y 6.2",
+"dificultad": 2,
+"etiquetas": [
+"estructura",
+"planificación"
+]
+},
+{
+"id": "U1L2-10",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "En ISO 45001, el apartado 6.1.2 identifica ___ y evalúa los riesgos para la SST.",
+"opciones": [
+"aspectos",
+"peligros",
+"clientes",
+"impactos"
+],
+"correcta": 1,
+"explicacion": "En SST se habla de peligros (fuentes de daño) y riesgos. Aspectos e impactos son el vocabulario de 14001.",
+"referencia": "ISO 45001:2018, 6.1.2",
+"dificultad": 1,
+"etiquetas": [
+"estructura",
+"45001"
+]
+},
+{
+"id": "U1L3-01",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué tema del capítulo 9 comparten ISO 14001 e ISO 45001 y no aparece así en ISO 9001?",
+"opciones": [
+"Satisfacción del cliente",
+"Evaluación del cumplimiento legal y de otros requisitos",
+"Auditoría interna",
+"Revisión por la dirección"
+],
+"correcta": 1,
+"explicacion": "14001 y 45001 exigen evaluar periódicamente el cumplimiento de sus obligaciones (9.1.2). En 9001 el 9.1.2 se dedica a la satisfacción del cliente.",
+"referencia": "ISO 14001 9.1.2; ISO 45001 9.1.2; ISO 9001 9.1.2",
+"dificultad": 2,
+"etiquetas": [
+"estructura",
+"evaluación"
+]
+},
+{
+"id": "U1L3-02",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿En qué cláusula está la auditoría interna en las tres normas?",
+"opciones": [
+"8.2",
+"9.1",
+"9.2",
+"10.2"
+],
+"correcta": 2,
+"explicacion": "La 9.2 pide un programa de auditorías a intervalos planificados, con auditores objetivos e imparciales.",
+"referencia": "Estructura armonizada ISO, 9.2",
+"dificultad": 1,
+"etiquetas": [
+"estructura",
+"auditoría"
+]
+},
+{
+"id": "U1L3-03",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿En qué cláusula está la revisión por la dirección en las tres normas?",
+"opciones": [
+"5.1",
+"9.3",
+"10.1",
+"6.3"
+],
+"correcta": 1,
+"explicacion": "La 9.3 fija las entradas que la alta dirección debe revisar y las salidas (decisiones) que debe dejar.",
+"referencia": "Estructura armonizada ISO, 9.3",
+"dificultad": 1,
+"etiquetas": [
+"estructura",
+"revisión"
+]
+},
+{
+"id": "U1L3-04",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "En ISO 45001, el capítulo 10 trata, además de no conformidades y acciones correctivas, los incidentes.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "En SST un incidente (incluido el accidente) se investiga y se trata con la misma lógica que una no conformidad: causa y acción correctiva.",
+"referencia": "ISO 45001:2018, 10.2",
+"dificultad": 2,
+"etiquetas": [
+"estructura",
+"45001"
+]
+},
+{
+"id": "U1L3-05",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "completar",
+"enunciado": "La preparación y respuesta ante emergencias está en la cláusula ___ de ISO 14001 y de ISO 45001.",
+"opciones": [
+"6.1",
+"7.4",
+"8.2",
+"9.1"
+],
+"correcta": 2,
+"explicacion": "En ambas normas la 8.2 exige planes de emergencia, pruebas periódicas (simulacros) y revisión después de cada evento o prueba.",
+"referencia": "ISO 14001 8.2; ISO 45001 8.2",
+"dificultad": 1,
+"etiquetas": [
+"estructura",
+"emergencias"
+]
+},
+{
+"id": "U1L3-06",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "A noviembre de 2026, ¿cuál es la edición vigente de ISO 45001?",
+"opciones": [
+"45001:2015",
+"45001:2018 con la Enmienda 1:2024",
+"45001:2026",
+"OHSAS 18001:2007"
+],
+"correcta": 1,
+"explicacion": "45001 sigue en su edición 2018 más la enmienda de clima de 2024. La revisión está en trámite y su publicación se espera para 2027.",
+"referencia": "ISO 45001:2018 + Amd 1:2024",
+"dificultad": 2,
+"etiquetas": [
+"versiones",
+"45001"
+]
+},
+{
+"id": "U1L3-07",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Hasta cuándo son válidos los certificados ISO 9001:2015 durante la transición a la edición 2026?",
+"opciones": [
+"31 de diciembre de 2026",
+"30 de septiembre de 2027",
+"30 de septiembre de 2029",
+"No tienen fecha límite"
+],
+"correcta": 2,
+"explicacion": "La edición 2026 se publicó el 16 de septiembre de 2026 y la transición dura tres años: los certificados 2015 valen hasta el 30 de septiembre de 2029.",
+"referencia": "ISO 9001:2026, periodo de transición (IAF / organismos de certificación)",
+"dificultad": 2,
+"etiquetas": [
+"versiones",
+"9001"
+]
+},
+{
+"id": "U1L3-08",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "ISO 14001:2026 se publicó antes que ISO 9001:2026.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "14001:2026 salió el 15 de abril de 2026 y 9001:2026 el 16 de septiembre de 2026.",
+"referencia": "ISO 14001:2026 (4.ª ed.); ISO 9001:2026 (6.ª ed.)",
+"dificultad": 2,
+"etiquetas": [
+"versiones"
+]
+},
+{
+"id": "U1L3-09",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada norma de apoyo con lo que trata.",
+"opciones": [
+[
+"ISO 19011",
+"Directrices de auditoría"
+],
+[
+"ISO/IEC 17021-1",
+"Requisitos para certificadoras"
+],
+[
+"ISO 31000",
+"Gestión del riesgo"
+],
+[
+"ISO 9000",
+"Vocabulario de calidad"
+]
+],
+"correcta": null,
+"explicacion": "19011 guía al auditor, 17021-1 regula a los organismos de certificación, 31000 da directrices de riesgo y 9000 define fundamentos y vocabulario.",
+"referencia": "ISO 19011:2018; ISO/IEC 17021-1:2015; ISO 31000:2018; ISO 9000:2015",
+"dificultad": 2,
+"etiquetas": [
+"estructura",
+"auditoría"
+]
+},
+{
+"id": "U1L3-10",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "ordenar",
+"enunciado": "Ordene los pasos para cerrar una no conformidad.",
+"opciones": [
+"Corregir lo encontrado",
+"Analizar la causa raíz",
+"Implementar la acción correctiva",
+"Verificar la eficacia",
+"Cerrar con evidencia"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4
+],
+"explicacion": "Primero se contiene y corrige; luego se busca la causa, se actúa sobre ella y solo se cierra cuando hay evidencia de que la acción fue eficaz (no reincide).",
+"referencia": "Estructura armonizada ISO, 10.2",
+"dificultad": 2,
+"etiquetas": [
+"mejora",
+"no conformidad"
+]
+},
+{
+"id": "U2L1-01",
+"unidad": "U2",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Cuál de estos NO es uno de los siete principios de gestión de la calidad?",
+"opciones": [
+"Enfoque al cliente",
+"Gestión de las relaciones",
+"Toma de decisiones basada en evidencia",
+"Enfoque de sistema para la gestión"
+],
+"correcta": 3,
+"explicacion": "«Enfoque de sistema para la gestión» era uno de los ocho principios antiguos; en 2015 se fusionó con el enfoque a procesos. Hoy son siete.",
+"referencia": "ISO 9000:2015, principios de gestión de la calidad",
+"dificultad": 3,
+"etiquetas": [
+"9001",
+"principios"
+]
+},
+{
+"id": "U2L1-02",
+"unidad": "U2",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "Los principios de gestión de la calidad son ___.",
+"opciones": [
+"5",
+"6",
+"7",
+"8"
+],
+"correcta": 2,
+"explicacion": "Son siete: enfoque al cliente, liderazgo, compromiso de las personas, enfoque a procesos, mejora, decisiones basadas en evidencia y gestión de las relaciones.",
+"referencia": "ISO 9000:2015, principios de gestión de la calidad",
+"dificultad": 1,
+"etiquetas": [
+"9001",
+"principios"
+]
+},
+{
+"id": "U2L1-03",
+"unidad": "U2",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué cláusula de ISO 9001 trata los riesgos y las oportunidades?",
+"opciones": [
+"4.1",
+"6.1",
+"8.1",
+"10.2"
+],
+"correcta": 1,
+"explicacion": "La 6.1 pide determinar riesgos y oportunidades y planificar acciones frente a ellos, dentro del capítulo de Planificación.",
+"referencia": "ISO 9001:2026, 6.1",
+"dificultad": 1,
+"etiquetas": [
+"9001",
+"riesgos"
+]
+},
+{
+"id": "U2L1-04",
+"unidad": "U2",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "En ISO 9001:2026 la cláusula 6.1 se divide en tres. ¿Qué trata el 6.1.3?",
+"opciones": [
+"Determinar riesgos y oportunidades",
+"Acciones para abordar los riesgos",
+"Acciones para abordar las oportunidades",
+"Planificación de cambios"
+],
+"correcta": 2,
+"explicacion": "6.1.1 determina riesgos y oportunidades, 6.1.2 actúa sobre los riesgos y 6.1.3 actúa sobre las oportunidades. La planificación de cambios es la 6.3.",
+"referencia": "ISO 9001:2026, 6.1.1-6.1.3",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"2026",
+"riesgos"
+]
+},
+{
+"id": "U2L1-05",
+"unidad": "U2",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "ISO 9001 exige aplicar una metodología formal y documentada de gestión de riesgos, como ISO 31000.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "La norma pide pensar en riesgos, actuar e ir evaluando si las acciones fueron eficaces, pero no impone un método formal. Una matriz de riesgos es práctica común, no requisito.",
+"referencia": "ISO 9001:2026, 6.1 y Anexo A",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"riesgos"
+]
+},
+{
+"id": "U2L1-06",
+"unidad": "U2",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Una empresa que no diseña sus productos ni servicios quiere dejar un requisito fuera del sistema. ¿Cuál puede declarar no aplicable, con justificación?",
+"opciones": [
+"5.2 Política de la calidad",
+"8.3 Diseño y desarrollo",
+"9.2 Auditoría interna",
+"10.2 Acción correctiva"
+],
+"correcta": 1,
+"explicacion": "Solo se puede declarar no aplicable un requisito que no afecte la conformidad del producto ni la satisfacción del cliente; el caso típico es 8.3. La justificación va en el alcance.",
+"referencia": "ISO 9001:2026, 4.3",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"alcance"
+]
+},
+{
+"id": "U2L1-07",
+"unidad": "U2",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "La política de la calidad se establece y se comunica según la cláusula ___.",
+"opciones": [
+"4.4",
+"5.2",
+"6.2",
+"7.4"
+],
+"correcta": 1,
+"explicacion": "La 5.2 pide una política adecuada al propósito de la organización, disponible, comunicada y entendida. El auditor suele comprobarlo entrevistando a un operario.",
+"referencia": "ISO 9001:2026, 5.2",
+"dificultad": 1,
+"etiquetas": [
+"9001",
+"liderazgo"
+]
+},
+{
+"id": "U2L1-08",
+"unidad": "U2",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada cláusula de ISO 9001 con su tema.",
+"opciones": [
+[
+"4.4",
+"Procesos del sistema"
+],
+[
+"5.3",
+"Roles y autoridades"
+],
+[
+"6.2",
+"Objetivos de calidad"
+],
+[
+"6.3",
+"Planificación de cambios"
+]
+],
+"correcta": null,
+"explicacion": "4.4 define los procesos y su interacción; 5.3 asigna responsabilidades; 6.2 fija objetivos medibles con plan; 6.3 exige planificar los cambios al sistema.",
+"referencia": "ISO 9001:2026, 4.4, 5.3, 6.2 y 6.3",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"cláusulas"
+]
+},
+{
+"id": "U2L1-09",
+"unidad": "U2",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué dos conceptos nuevos debe promover la alta dirección según el 5.1.1 de ISO 9001:2026?",
+"opciones": [
+"Cultura de la calidad y comportamiento ético",
+"Manual de calidad y representante de la dirección",
+"Acciones preventivas y control estadístico",
+"Huella de carbono y economía circular"
+],
+"correcta": 0,
+"explicacion": "La edición 2026 incorpora la cultura de la calidad y el comportamiento ético en liderazgo (5.1.1), toma de conciencia (7.3) y ambiente de operación (7.1.4).",
+"referencia": "ISO 9001:2026, 5.1.1",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"2026",
+"liderazgo"
+]
+},
+{
+"id": "U2L1-10",
+"unidad": "U2",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Un objetivo de calidad redactado como «mejorar el servicio», sin meta, responsable ni plazo, cumple la cláusula 6.2.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Los objetivos deben ser medibles y coherentes con la política, y su planificación debe decir qué se hará, con qué recursos, quién responde, cuándo termina y cómo se evalúa.",
+"referencia": "ISO 9001:2026, 6.2",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"objetivos"
+]
+},
+{
+"id": "U2L2-01",
+"unidad": "U2",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "El auditor encuentra una báscula sin calibración vigente. ¿Contra qué cláusula de ISO 9001 redacta el hallazgo?",
+"opciones": [
+"7.1.5 Recursos de seguimiento y medición",
+"7.2 Competencia",
+"8.6 Liberación",
+"9.1.2 Satisfacción del cliente"
+],
+"correcta": 0,
+"explicacion": "La 7.1.5 exige que los equipos de medición sean aptos y, cuando se requiere trazabilidad metrológica, estén calibrados o verificados con evidencia.",
+"referencia": "ISO 9001:2026, 7.1.5",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"metrología",
+"caso"
+]
+},
+{
+"id": "U2L2-02",
+"unidad": "U2",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué cláusula de ISO 9001 trata los conocimientos de la organización?",
+"opciones": [
+"7.1.6",
+"7.3",
+"7.5",
+"8.5.1"
+],
+"correcta": 0,
+"explicacion": "La 7.1.6 pide determinar, mantener y poner a disposición el conocimiento necesario para operar, por ejemplo para que no se pierda cuando alguien se retira.",
+"referencia": "ISO 9001:2026, 7.1.6",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"apoyo"
+]
+},
+{
+"id": "U2L2-03",
+"unidad": "U2",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "En ISO 9001, «mantener» información documentada se refiere a los registros y «conservar» a los documentos como procedimientos.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Es al revés: se mantienen los documentos (política, procedimientos, que se actualizan) y se conservan los registros (evidencia de lo hecho).",
+"referencia": "ISO 9001:2026, 7.5",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"documentación"
+]
+},
+{
+"id": "U2L2-04",
+"unidad": "U2",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "Para los proveedores externos la organización define criterios de evaluación, selección, seguimiento del desempeño y ___.",
+"opciones": [
+"reevaluación",
+"certificación",
+"sanción",
+"exclusividad"
+],
+"correcta": 0,
+"explicacion": "No basta evaluar al proveedor una vez al seleccionarlo: hay que reevaluarlo periódicamente y conservar evidencia. «Proveedores sin reevaluación» es un hallazgo frecuente.",
+"referencia": "ISO 9001, 8.4.1 (numeración 2015)",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"proveedores"
+]
+},
+{
+"id": "U2L2-05",
+"unidad": "U2",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Antes de comprometerse a entregar un pedido, la organización debe confirmar que puede cumplir lo que el cliente pide. ¿Qué cláusula lo exige?",
+"opciones": [
+"8.2.3 Revisión de los requisitos",
+"8.4.3 Información para proveedores",
+"8.5.4 Preservación",
+"9.1.3 Análisis y evaluación"
+],
+"correcta": 0,
+"explicacion": "La revisión de requisitos se hace antes de aceptar el compromiso y deja información documentada de sus resultados.",
+"referencia": "ISO 9001, 8.2.3 (numeración 2015)",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"operación"
+]
+},
+{
+"id": "U2L2-06",
+"unidad": "U2",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada cláusula del capítulo 8 con su tema.",
+"opciones": [
+[
+"8.3",
+"Diseño y desarrollo"
+],
+[
+"8.5.2",
+"Identificación y trazabilidad"
+],
+[
+"8.6",
+"Liberación"
+],
+[
+"8.7",
+"Salidas no conformes"
+]
+],
+"correcta": null,
+"explicacion": "8.3 diseño; 8.5.2 saber qué es cada producto y de dónde viene; 8.6 autorizar la entrega con evidencia de conformidad; 8.7 controlar lo que no cumple.",
+"referencia": "ISO 9001, 8.3, 8.5.2, 8.6 y 8.7 (numeración 2015)",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"operación"
+]
+},
+{
+"id": "U2L2-07",
+"unidad": "U2",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Se detecta un lote que no cumple la especificación antes de despacharlo. Según ISO 9001, ¿qué corresponde hacer primero?",
+"opciones": [
+"Despacharlo y avisar si el cliente reclama",
+"Identificarlo y controlarlo para impedir su uso o entrega no prevista",
+"Destruir los registros del lote",
+"Esperar a la próxima auditoría interna"
+],
+"correcta": 1,
+"explicacion": "La salida no conforme se identifica y se controla (corregir, separar, contener, informar al cliente o pedir concesión) y se conserva registro de lo decidido.",
+"referencia": "ISO 9001, 8.7 (numeración 2015)",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"no conforme",
+"caso"
+]
+},
+{
+"id": "U2L2-08",
+"unidad": "U2",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "Desde la edición 2015, ISO 9001 sigue exigiendo un manual de calidad y seis procedimientos documentados obligatorios.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Eso era la versión 2008. Hoy la organización decide qué documentar según su tamaño y complejidad; sí hay registros puntuales que la norma obliga a conservar.",
+"referencia": "ISO 9001:2026, 7.5.1",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"documentación"
+]
+},
+{
+"id": "U2L2-09",
+"unidad": "U2",
+"leccion": 2,
+"tipo": "ordenar",
+"enunciado": "Ordene el recorrido de un pedido por el capítulo 8 de ISO 9001.",
+"opciones": [
+"Determinar y revisar requisitos del cliente (8.2)",
+"Diseño y desarrollo (8.3)",
+"Producción o prestación del servicio (8.5)",
+"Liberación (8.6)",
+"Actividades posteriores a la entrega (8.5.5)"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4
+],
+"explicacion": "Primero se acuerda qué quiere el cliente, luego se diseña, se produce, se libera con evidencia de conformidad y por último se atiende la posventa (garantías, soporte).",
+"referencia": "ISO 9001, cap. 8 (numeración 2015)",
+"dificultad": 3,
+"etiquetas": [
+"9001",
+"operación"
+]
+},
+{
+"id": "U2L2-10",
+"unidad": "U2",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "El ambiente para la operación de los procesos (7.1.4) combina factores sociales, psicológicos y ___.",
+"opciones": [
+"físicos",
+"financieros",
+"legales",
+"comerciales"
+],
+"correcta": 0,
+"explicacion": "Incluye lo físico (temperatura, ruido, iluminación), lo social (trato, no discriminación) y lo psicológico (estrés). En 2026 se aclara que la cultura de la calidad influye en ellos.",
+"referencia": "ISO 9001:2026, 7.1.4",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"apoyo"
+]
+},
+{
+"id": "U2L3-01",
+"unidad": "U2",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué cláusula de ISO 9001 trata la satisfacción del cliente?",
+"opciones": [
+"5.1.2",
+"8.2.1",
+"9.1.2",
+"10.1"
+],
+"correcta": 2,
+"explicacion": "La 9.1.2 pide hacer seguimiento de cómo percibe el cliente que se cumplen sus necesidades. La 5.1.2 es el enfoque al cliente como compromiso del liderazgo.",
+"referencia": "ISO 9001:2026, 9.1.2",
+"dificultad": 1,
+"etiquetas": [
+"9001",
+"evaluación"
+]
+},
+{
+"id": "U2L3-02",
+"unidad": "U2",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "En ISO 9001:2026, ¿qué literales abarcan las entradas de la revisión por la dirección (9.3.2)?",
+"opciones": [
+"De la a) a la d)",
+"De la a) a la f)",
+"De la a) a la h)",
+"De la a) a la l)"
+],
+"correcta": 2,
+"explicacion": "En 2015 iban de a) a f). La edición 2026 las reorganiza en ocho, de a) a h), y pide ver tendencias del desempeño.",
+"referencia": "ISO 9001:2026, 9.3.2",
+"dificultad": 3,
+"etiquetas": [
+"9001",
+"2026",
+"revisión"
+]
+},
+{
+"id": "U2L3-03",
+"unidad": "U2",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Cuál de estas es una entrada NUEVA de la revisión por la dirección en ISO 9001:2026?",
+"opciones": [
+"Estado de las acciones de revisiones previas",
+"Resultados de auditorías",
+"Adecuación de los recursos",
+"Eficacia de las acciones sobre oportunidades"
+],
+"correcta": 3,
+"explicacion": "Las dos entradas nuevas son los cambios en necesidades y expectativas de las partes interesadas (c) y la eficacia de las acciones sobre oportunidades (h). Las otras ya existían.",
+"referencia": "ISO 9001:2026, 9.3.2 c) y h)",
+"dificultad": 3,
+"etiquetas": [
+"9001",
+"2026",
+"revisión"
+]
+},
+{
+"id": "U2L3-04",
+"unidad": "U2",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "En ISO 9001:2026 la mejora continua está en la cláusula 10.3.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "En 2026 el capítulo 10 solo tiene dos apartados: 10.1 Mejora continua y 10.2 No conformidad y acción correctiva. El 10.3 ya no existe.",
+"referencia": "ISO 9001:2026, 10.1",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"2026",
+"mejora"
+]
+},
+{
+"id": "U2L3-05",
+"unidad": "U2",
+"leccion": 3,
+"tipo": "completar",
+"enunciado": "En ISO 9001, la no conformidad y la acción correctiva se tratan en la cláusula ___.",
+"opciones": [
+"8.7",
+"9.2",
+"10.1",
+"10.2"
+],
+"correcta": 3,
+"explicacion": "La 10.2 cubre las no conformidades del sistema y sus acciones correctivas. La 8.7 es otra cosa: el control del producto o servicio que salió no conforme.",
+"referencia": "ISO 9001:2026, 10.2",
+"dificultad": 1,
+"etiquetas": [
+"9001",
+"mejora"
+]
+},
+{
+"id": "U2L3-06",
+"unidad": "U2",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué anexo desaparece en ISO 9001:2026?",
+"opciones": [
+"El Anexo A",
+"El Anexo B",
+"El Anexo SL",
+"Ninguno"
+],
+"correcta": 1,
+"explicacion": "Se elimina el Anexo B (listado de otras normas del comité de calidad). El Anexo A, informativo, se mantiene y se refuerza.",
+"referencia": "ISO 9001:2026, anexos",
+"dificultad": 3,
+"etiquetas": [
+"9001",
+"2026"
+]
+},
+{
+"id": "U2L3-07",
+"unidad": "U2",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Un auditor interno con mucha experiencia puede auditar el proceso del que él mismo es responsable.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "La selección de auditores debe asegurar objetividad e imparcialidad: nadie audita su propio trabajo. «Auditoría interna sin independencia» es un hallazgo frecuente.",
+"referencia": "ISO 9001:2026, 9.2.2",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"auditoría"
+]
+},
+{
+"id": "U2L3-08",
+"unidad": "U2",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada cláusula de ISO 9001 con su tema.",
+"opciones": [
+[
+"9.1.2",
+"Satisfacción del cliente"
+],
+[
+"9.2",
+"Auditoría interna"
+],
+[
+"9.3",
+"Revisión por la dirección"
+],
+[
+"10.2",
+"No conformidad y acción correctiva"
+]
+],
+"correcta": null,
+"explicacion": "El capítulo 9 verifica (medir, auditar, revisar) y el 10 actúa sobre lo encontrado.",
+"referencia": "ISO 9001:2026, 9.1.2, 9.2, 9.3 y 10.2",
+"dificultad": 1,
+"etiquetas": [
+"9001",
+"cláusulas"
+]
+},
+{
+"id": "U2L3-09",
+"unidad": "U2",
+"leccion": 3,
+"tipo": "ordenar",
+"enunciado": "Ordene lo que pide la cláusula 10.2 ante una no conformidad.",
+"opciones": [
+"Reaccionar y corregir",
+"Determinar las causas",
+"Implementar la acción necesaria",
+"Revisar la eficacia de la acción",
+"Actualizar riesgos y oportunidades si hace falta"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4
+],
+"explicacion": "Se controla el problema, se busca por qué ocurrió y si puede repetirse en otro lugar, se actúa, se comprueba que funcionó y se actualiza la planificación si es necesario.",
+"referencia": "ISO 9001:2026, 10.2.1",
+"dificultad": 2,
+"etiquetas": [
+"9001",
+"mejora"
+]
+},
+{
+"id": "U2L3-10",
+"unidad": "U2",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "En diez no conformidades seguidas la causa registrada es «falta de capacitación» y varias se repiten. ¿Qué concluye el auditor?",
+"opciones": [
+"El sistema es eficaz porque todas tienen causa",
+"El análisis de causa es superficial y las acciones no son eficaces",
+"Falta un manual de calidad",
+"Debe excluirse la cláusula 10.2 del alcance"
+],
+"correcta": 1,
+"explicacion": "Si la misma causa genérica se repite y los problemas reinciden, no se llegó a la causa raíz ni se verificó la eficacia. Es de los hallazgos más comunes contra 10.2.",
+"referencia": "ISO 9001:2026, 10.2.1",
+"dificultad": 3,
+"etiquetas": [
+"9001",
+"mejora",
+"caso"
+]
+},
+{
+"id": "U3L1-01",
+"unidad": "U3",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Un montacargas pierde aceite hidráulico y este llega al suelo del patio. ¿Cuál es el aspecto ambiental?",
+"opciones": [
+"La contaminación del suelo",
+"El derrame de aceite",
+"La multa de la autoridad ambiental",
+"El montacargas"
+],
+"correcta": 1,
+"explicacion": "El aspecto es lo que la actividad hace sobre el ambiente (el derrame: la causa). La contaminación del suelo es el impacto (el efecto).",
+"referencia": "ISO 14001:2026, cap. 3 (aspecto e impacto) y 6.1.2",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"aspectos",
+"caso"
+]
+},
+{
+"id": "U3L1-02",
+"unidad": "U3",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Un impacto ambiental siempre es negativo.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "El impacto es cualquier cambio en el ambiente, adverso o beneficioso. Aprovechar residuos, por ejemplo, genera un impacto positivo al evitar disposición en relleno.",
+"referencia": "ISO 14001:2026, cap. 3 (impacto ambiental)",
+"dificultad": 1,
+"etiquetas": [
+"14001",
+"aspectos"
+]
+},
+{
+"id": "U3L1-03",
+"unidad": "U3",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "En la matriz ambiental, el aspecto es la causa y el impacto es el ___.",
+"opciones": [
+"efecto",
+"control",
+"requisito",
+"peligro"
+],
+"correcta": 0,
+"explicacion": "Aspecto = lo que la actividad emite, consume o genera. Impacto = lo que eso le cambia al ambiente.",
+"referencia": "ISO 14001:2026, 6.1.2",
+"dificultad": 1,
+"etiquetas": [
+"14001",
+"aspectos"
+]
+},
+{
+"id": "U3L1-04",
+"unidad": "U3",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué consecuencia tiene que un aspecto ambiental se clasifique como significativo?",
+"opciones": [
+"Debe eliminarse la actividad",
+"Debe tener control operacional y tenerse en cuenta en objetivos y comunicación",
+"Solo se registra en la matriz",
+"Debe reportarse a la autoridad ambiental"
+],
+"correcta": 1,
+"explicacion": "Los aspectos significativos son los que el sistema debe gestionar de verdad: se controlan en la operación, se consideran al fijar objetivos y se comunican al personal.",
+"referencia": "ISO 14001:2026, 6.1.2, 6.1.5 y 8.1",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"aspectos"
+]
+},
+{
+"id": "U3L1-05",
+"unidad": "U3",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "La perspectiva de ciclo de vida de ISO 14001 obliga a realizar un análisis de ciclo de vida (ACV) completo de cada producto.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Solo pide pensar en las etapas (materia prima, diseño, producción, transporte, uso y fin de vida) que la organización puede controlar o influir. No exige un ACV formal.",
+"referencia": "ISO 14001:2026, 6.1.2 y 8.1",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"ciclo de vida"
+]
+},
+{
+"id": "U3L1-06",
+"unidad": "U3",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué abarcan las obligaciones de compliance (antes «obligaciones de cumplimiento») en ISO 14001?",
+"opciones": [
+"Solo las leyes ambientales",
+"Los requisitos legales y los demás compromisos que la organización decide cumplir",
+"Solo los contratos con clientes",
+"Las recomendaciones del auditor"
+],
+"correcta": 1,
+"explicacion": "Incluyen la ley y también lo voluntario que la organización asume: contratos, códigos, acuerdos con la comunidad. Una vez asumido, se audita igual que un requisito legal.",
+"referencia": "ISO 14001:2026, 4.2 y 6.1.3",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"compliance"
+]
+},
+{
+"id": "U3L1-07",
+"unidad": "U3",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada aspecto ambiental con su impacto.",
+"opciones": [
+[
+"Consumo de energía",
+"Agotamiento de recursos"
+],
+[
+"Vertimiento de agua de lavado",
+"Contaminación del agua"
+],
+[
+"Emisión de material particulado",
+"Deterioro de la calidad del aire"
+],
+[
+"Ruido de compactadoras",
+"Molestia a la comunidad"
+]
+],
+"correcta": null,
+"explicacion": "El aspecto (izquierda) es lo que hace la operación; el impacto (derecha) es el cambio que produce en el ambiente.",
+"referencia": "ISO 14001:2026, 6.1.2",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"aspectos"
+]
+},
+{
+"id": "U3L1-08",
+"unidad": "U3",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Al identificar aspectos ambientales, ¿qué condiciones de operación deben considerarse?",
+"opciones": [
+"Solo las normales",
+"Normales y anormales, y las posibles situaciones de emergencia",
+"Solo las de emergencia",
+"Las que defina el cliente"
+],
+"correcta": 1,
+"explicacion": "Un arranque, un mantenimiento o un incendio generan aspectos distintos a los de un día normal. Olvidar las emergencias es un hallazgo frecuente.",
+"referencia": "ISO 14001:2026, 6.1.2",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"aspectos"
+]
+},
+{
+"id": "U3L1-09",
+"unidad": "U3",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "Una forma habitual de valorar la significancia es multiplicar la severidad del impacto por su ___.",
+"opciones": [
+"probabilidad",
+"costo",
+"antigüedad",
+"nombre"
+],
+"correcta": 0,
+"explicacion": "Es práctica común (severidad × probabilidad o frecuencia, más criterios como requisito legal o quejas). La norma no impone un método, pero sí criterios definidos y documentados.",
+"referencia": "ISO 14001:2026, 6.1.2 (el método es práctica común, no requisito)",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"significancia"
+]
+},
+{
+"id": "U3L1-10",
+"unidad": "U3",
+"leccion": 1,
+"tipo": "ordenar",
+"enunciado": "Ordene los pasos para construir la matriz de aspectos e impactos.",
+"opciones": [
+"Mapear actividades y servicios",
+"Identificar aspecto e impacto de cada actividad",
+"Valorar la significancia",
+"Definir controles y objetivos",
+"Reevaluar ante cambios"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4
+],
+"explicacion": "Se parte de las actividades (incluidos contratistas y transporte), se identifican aspectos e impactos, se valoran con criterios, se controlan los significativos y se revisa cuando algo cambia.",
+"referencia": "ISO 14001:2026, 6.1.2 y 6.1.5",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"aspectos"
+]
+},
+{
+"id": "U3L2-01",
+"unidad": "U3",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué apartado de ISO 14001 exige determinar los aspectos ambientales?",
+"opciones": [
+"4.1",
+"6.1.2",
+"8.2",
+"9.1.2"
+],
+"correcta": 1,
+"explicacion": "El 6.1.2 pide identificar aspectos e impactos con perspectiva de ciclo de vida y determinar cuáles son significativos.",
+"referencia": "ISO 14001:2026, 6.1.2",
+"dificultad": 1,
+"etiquetas": [
+"14001",
+"cláusulas"
+]
+},
+{
+"id": "U3L2-02",
+"unidad": "U3",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "En ISO 14001:2026, ¿qué apartado propio tienen ahora los riesgos y oportunidades?",
+"opciones": [
+"6.1.1",
+"6.1.3",
+"6.1.4",
+"6.3"
+],
+"correcta": 2,
+"explicacion": "El 6.1 queda en cinco apartados: 6.1.1 generalidades, 6.1.2 aspectos, 6.1.3 obligaciones de compliance, 6.1.4 riesgos y oportunidades y 6.1.5 planificación de acciones.",
+"referencia": "ISO 14001:2026, 6.1.4",
+"dificultad": 3,
+"etiquetas": [
+"14001",
+"2026"
+]
+},
+{
+"id": "U3L2-03",
+"unidad": "U3",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "En ISO 14001:2026, la planificación de acciones sobre aspectos significativos, compliance y riesgos está en el apartado ___.",
+"opciones": [
+"6.1.2",
+"6.1.5",
+"6.2",
+"8.1"
+],
+"correcta": 1,
+"explicacion": "En 2015 era el 6.1.4; al abrirse un apartado propio para riesgos y oportunidades, la planificación de acciones pasó al 6.1.5.",
+"referencia": "ISO 14001:2026, 6.1.5",
+"dificultad": 3,
+"etiquetas": [
+"14001",
+"2026"
+]
+},
+{
+"id": "U3L2-04",
+"unidad": "U3",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "La política ambiental debe incluir un compromiso de protección del medio ambiente, que abarca la prevención de la contaminación.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La política lleva tres compromisos: proteger el ambiente (incluida la prevención de la contaminación), cumplir las obligaciones de compliance y mejorar continuamente.",
+"referencia": "ISO 14001:2026, 5.2",
+"dificultad": 1,
+"etiquetas": [
+"14001",
+"política"
+]
+},
+{
+"id": "U3L2-05",
+"unidad": "U3",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Según ISO 14001:2026, ¿qué debe ocurrir con el alcance del sistema de gestión ambiental?",
+"opciones": [
+"Es confidencial y solo lo conoce la gerencia",
+"Debe estar documentado y disponible para las partes interesadas",
+"Solo se informa a la certificadora",
+"Se define después de la auditoría"
+],
+"correcta": 1,
+"explicacion": "El alcance se documenta considerando lo que la organización controla o influye a lo largo del ciclo de vida, y debe quedar disponible para los interesados.",
+"referencia": "ISO 14001:2026, 4.3",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"alcance"
+]
+},
+{
+"id": "U3L2-06",
+"unidad": "U3",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada cláusula de ISO 14001 con su tema.",
+"opciones": [
+[
+"6.1.3",
+"Obligaciones de compliance"
+],
+[
+"6.2",
+"Objetivos ambientales"
+],
+[
+"8.1",
+"Control operacional y ciclo de vida"
+],
+[
+"8.2",
+"Emergencias"
+]
+],
+"correcta": null,
+"explicacion": "6.1.3 es la matriz legal; 6.2 los objetivos; 8.1 controla la operación, las compras y los contratistas; 8.2 prepara la respuesta a emergencias.",
+"referencia": "ISO 14001:2026, 6.1.3, 6.2, 8.1 y 8.2",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"cláusulas"
+]
+},
+{
+"id": "U3L2-07",
+"unidad": "U3",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Además de tener un plan de emergencias ambientales, ¿qué exige la cláusula 8.2?",
+"opciones": [
+"Probar periódicamente la respuesta planificada, por ejemplo con simulacros",
+"Contratar una póliza de seguro",
+"Publicar el plan en internet",
+"Certificar a la brigada con un tercero"
+],
+"correcta": 0,
+"explicacion": "El plan se pone a prueba periódicamente y se revisa después de cada prueba o emergencia real. «Sin evidencia de simulacros» es un hallazgo típico.",
+"referencia": "ISO 14001:2026, 8.2",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"emergencias"
+]
+},
+{
+"id": "U3L2-08",
+"unidad": "U3",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "La comunicación ambiental externa es siempre voluntaria, aunque una obligación de compliance pida reportar información.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "La organización decide qué comunica hacia afuera, pero debe comunicar lo que sus obligaciones de compliance le exijan (por ejemplo, reportes a la autoridad).",
+"referencia": "ISO 14001:2026, 7.4.3",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"comunicación"
+]
+},
+{
+"id": "U3L2-09",
+"unidad": "U3",
+"leccion": 2,
+"tipo": "ordenar",
+"enunciado": "Ordene la jerarquía de controles que menciona el control operacional, del más al menos eficaz.",
+"opciones": [
+"Eliminación",
+"Sustitución",
+"Controles administrativos"
+],
+"correcta": [
+0,
+1,
+2
+],
+"explicacion": "Lo más eficaz es quitar la fuente; si no se puede, cambiarla por algo menos dañino; lo último son procedimientos e instrucciones, que dependen de la conducta.",
+"referencia": "ISO 14001:2026, 8.1 (nota)",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"control operacional"
+]
+},
+{
+"id": "U3L2-10",
+"unidad": "U3",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "Los procesos contratados externamente, como un gestor de residuos, deben quedar bajo control o ___ de la organización.",
+"opciones": [
+"influencia",
+"propiedad",
+"vigilancia policial",
+"reserva"
+],
+"correcta": 0,
+"explicacion": "Cuando no se puede controlar directamente al tercero, se influye: requisitos ambientales en el contrato, verificación de licencias y certificados.",
+"referencia": "ISO 14001:2026, 8.1",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"contratistas"
+]
+},
+{
+"id": "U3L3-01",
+"unidad": "U3",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿En qué apartado de ISO 14001 se evalúa si la organización cumple sus obligaciones legales y otros requisitos?",
+"opciones": [
+"6.1.3",
+"8.1",
+"9.1.2",
+"10.2"
+],
+"correcta": 2,
+"explicacion": "El 6.1.3 identifica las obligaciones; el 9.1.2 comprueba, con una frecuencia definida, si se están cumpliendo y qué se hace con los incumplimientos.",
+"referencia": "ISO 14001:2026, 9.1.2",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"compliance"
+]
+},
+{
+"id": "U3L3-02",
+"unidad": "U3",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué término usa la traducción oficial de 14001:2026 en lugar de «obligaciones de cumplimiento»?",
+"opciones": [
+"Requisitos legales",
+"Obligaciones de compliance",
+"Deberes ambientales",
+"Compromisos verdes"
+],
+"correcta": 1,
+"explicacion": "La edición 2026 habla de «obligaciones de compliance» y el 9.1.2 se titula evaluación de compliance. El concepto es el mismo; cambia la palabra.",
+"referencia": "ISO 14001:2026, 6.1.3 y 9.1.2",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"2026",
+"compliance"
+]
+},
+{
+"id": "U3L3-03",
+"unidad": "U3",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "En ISO 14001:2026 existe una cláusula 10.3 dedicada a la mejora continua.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Igual que en 9001:2026, el capítulo 10 queda con dos apartados: 10.1 Mejora continua y 10.2 No conformidad y acción correctiva.",
+"referencia": "ISO 14001:2026, 10.1",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"2026",
+"mejora"
+]
+},
+{
+"id": "U3L3-04",
+"unidad": "U3",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué apartado propio aparece en el capítulo 6 de ISO 14001:2026?",
+"opciones": [
+"6.3 Planificación de cambios",
+"6.4 Huella de carbono",
+"6.5 Economía circular",
+"6.6 Biodiversidad"
+],
+"correcta": 0,
+"explicacion": "El 6.3 pide planificar los cambios que afecten al sistema: nueva tecnología, cambio de materiales, de personal o de contratistas, entre otros.",
+"referencia": "ISO 14001:2026, 6.3",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"2026",
+"cambios"
+]
+},
+{
+"id": "U3L3-05",
+"unidad": "U3",
+"leccion": 3,
+"tipo": "completar",
+"enunciado": "ISO 14001:2026 se publicó el 15 de ___ de 2026.",
+"opciones": [
+"enero",
+"abril",
+"septiembre",
+"noviembre"
+],
+"correcta": 1,
+"explicacion": "La cuarta edición salió el 15 de abril de 2026 y ese día se retiró la edición 2015. Septiembre es la fecha de ISO 9001:2026.",
+"referencia": "ISO 14001:2026 (4.ª edición)",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"versiones"
+]
+},
+{
+"id": "U3L3-06",
+"unidad": "U3",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué entrada de la revisión por la dirección es propia de ISO 14001 y no figura así en ISO 9001?",
+"opciones": [
+"Estado de las acciones previas",
+"Cambios en los aspectos ambientales significativos",
+"Adecuación de los recursos",
+"Oportunidades de mejora"
+],
+"correcta": 1,
+"explicacion": "La dirección ambiental revisa además los cambios en aspectos significativos, el cumplimiento de compliance y las comunicaciones de partes interesadas, incluidas las quejas.",
+"referencia": "ISO 14001:2026, 9.3.2",
+"dificultad": 3,
+"etiquetas": [
+"14001",
+"revisión"
+]
+},
+{
+"id": "U3L3-07",
+"unidad": "U3",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Ante una no conformidad ambiental, además de corregirla, la organización debe mitigar los impactos ambientales adversos que haya causado.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Es el matiz ambiental del 10.2: no basta corregir el fallo, hay que atender sus consecuencias sobre el ambiente, y la acción debe ser proporcional a su significancia.",
+"referencia": "ISO 14001:2026, 10.2",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"mejora"
+]
+},
+{
+"id": "U3L3-08",
+"unidad": "U3",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada cláusula de ISO 14001 con su tema.",
+"opciones": [
+[
+"9.1.1",
+"Seguimiento y medición"
+],
+[
+"9.1.2",
+"Evaluación de compliance"
+],
+[
+"9.2",
+"Auditoría interna"
+],
+[
+"9.3",
+"Revisión por la dirección"
+]
+],
+"correcta": null,
+"explicacion": "El capítulo 9 verifica: se mide el desempeño ambiental con equipos calibrados o verificados, se evalúa el cumplimiento, se audita y la dirección revisa.",
+"referencia": "ISO 14001:2026, cap. 9",
+"dificultad": 1,
+"etiquetas": [
+"14001",
+"cláusulas"
+]
+},
+{
+"id": "U3L3-09",
+"unidad": "U3",
+"leccion": 3,
+"tipo": "ordenar",
+"enunciado": "Ordene el ciclo de gestión de las obligaciones de compliance.",
+"opciones": [
+"Identificar las obligaciones aplicables (6.1.3)",
+"Evaluar el cumplimiento con la frecuencia definida (9.1.2)",
+"Tomar acciones ante los incumplimientos",
+"Mantener actualizado el estado de cumplimiento"
+],
+"correcta": [
+0,
+1,
+2,
+3
+],
+"explicacion": "Primero la matriz legal, luego la evaluación periódica, después las acciones y, de forma permanente, saber en qué estado de cumplimiento se está.",
+"referencia": "ISO 14001:2026, 6.1.3 y 9.1.2",
+"dificultad": 2,
+"etiquetas": [
+"14001",
+"compliance"
+]
+},
+{
+"id": "U3L3-10",
+"unidad": "U3",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "El auditor pide el certificado de disposición de los residuos peligrosos entregados a un gestor y no existe. ¿Contra qué cláusula se relaciona principalmente el hallazgo?",
+"opciones": [
+"5.2 Política ambiental",
+"7.3 Toma de conciencia",
+"8.1 Control operacional (procesos contratados externamente)",
+"9.3 Revisión por la dirección"
+],
+"correcta": 2,
+"explicacion": "El gestor es un proceso contratado externamente: la organización debe controlarlo o influir en él y tener evidencia. Certificados faltantes o vencidos son un hallazgo clásico.",
+"referencia": "ISO 14001:2026, 8.1",
+"dificultad": 3,
+"etiquetas": [
+"14001",
+"contratistas",
+"caso"
+]
+},
+{
+"id": "U4L1-01",
+"unidad": "U4",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué norma reemplazó a OHSAS 18001?",
+"opciones": [
+"ISO 45001",
+"ISO 14001",
+"ISO 45003",
+"ISO 31000"
+],
+"correcta": 0,
+"explicacion": "ISO 45001:2018 sustituyó a OHSAS 18001, que fue retirada; la migración terminó en marzo de 2021.",
+"referencia": "ISO 45001:2018, prólogo",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"versiones"
+]
+},
+{
+"id": "U4L1-02",
+"unidad": "U4",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "Un ___ es una fuente con potencial de causar lesión o deterioro de la salud.",
+"opciones": [
+"peligro",
+"riesgo",
+"incidente",
+"aspecto"
+],
+"correcta": 0,
+"explicacion": "El peligro es la fuente (una máquina, una altura, un químico). El riesgo combina la probabilidad de que ocurra el evento y su severidad.",
+"referencia": "ISO 45001:2018, cap. 3 (peligro)",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"conceptos"
+]
+},
+{
+"id": "U4L1-03",
+"unidad": "U4",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "En ISO 45001, un casi-accidente cuenta como incidente.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Incidente incluye los eventos que causaron lesión y los que pudieron causarla. Investigar los casi-accidentes es prevención barata.",
+"referencia": "ISO 45001:2018, cap. 3 (incidente) y 10.2",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"conceptos"
+]
+},
+{
+"id": "U4L1-04",
+"unidad": "U4",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Cuál es la diferencia entre participación y consulta en ISO 45001?",
+"opciones": [
+"Son sinónimos",
+"Participar es involucrarse en las decisiones; consultar es pedir opinión antes de decidir",
+"Consultar es decidir; participar es opinar",
+"La consulta solo aplica a directivos"
+],
+"correcta": 1,
+"explicacion": "En la participación el trabajador toma parte en la decisión; en la consulta se le pide opinión antes de que otro decida. La norma exige ambas para los trabajadores no directivos.",
+"referencia": "ISO 45001:2018, cap. 3 y 5.4",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"participación"
+]
+},
+{
+"id": "U4L1-05",
+"unidad": "U4",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué apartado de ISO 45001 trata la consulta y participación de los trabajadores?",
+"opciones": [
+"4.2",
+"5.4",
+"7.4",
+"9.3"
+],
+"correcta": 1,
+"explicacion": "El 5.4 es exclusivo de 45001: pide mecanismos para que los trabajadores no directivos participen y sean consultados, y eliminar las barreras que lo impidan.",
+"referencia": "ISO 45001:2018, 5.4",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"participación"
+]
+},
+{
+"id": "U4L1-06",
+"unidad": "U4",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "ISO 45001 fija un nivel de «riesgo aceptable» que la organización debe alcanzar.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "La norma no fija un umbral: exige eliminar peligros y reducir riesgos aplicando la jerarquía de controles.",
+"referencia": "ISO 45001:2018, 6.1.2 y 8.1.2",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"riesgos"
+]
+},
+{
+"id": "U4L1-07",
+"unidad": "U4",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Quiénes son «trabajadores» para ISO 45001?",
+"opciones": [
+"Solo los empleados con contrato directo",
+"Los empleados y quienes trabajan bajo control de la organización, incluidos contratistas",
+"Solo los directivos",
+"Solo el personal operativo"
+],
+"correcta": 1,
+"explicacion": "El concepto incluye a contratistas y a todos los que realizan trabajo bajo control de la organización; por eso el alcance y los controles los cubren.",
+"referencia": "ISO 45001:2018, cap. 3 (trabajador) y 4.3",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"conceptos"
+]
+},
+{
+"id": "U4L1-08",
+"unidad": "U4",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "La política de SST incluye el compromiso de eliminar peligros y ___ los riesgos.",
+"opciones": [
+"reducir",
+"aceptar",
+"transferir",
+"ignorar"
+],
+"correcta": 0,
+"explicacion": "La política de 45001 lleva compromisos de lugar de trabajo seguro y saludable, eliminar peligros y reducir riesgos, cumplir requisitos legales, mejora continua y consulta y participación.",
+"referencia": "ISO 45001:2018, 5.2",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"política"
+]
+},
+{
+"id": "U4L1-09",
+"unidad": "U4",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué derecho del trabajador debe conocer el personal según la toma de conciencia de ISO 45001?",
+"opciones": [
+"Elegir a su jefe",
+"Retirarse de situaciones de peligro grave sin represalias",
+"Negarse a toda capacitación",
+"Fijar su propio horario"
+],
+"correcta": 1,
+"explicacion": "La toma de conciencia (7.3) incluye que el trabajador sepa que puede alejarse de una situación que considere de peligro inminente y grave sin ser castigado.",
+"referencia": "ISO 45001:2018, 7.3",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"apoyo"
+]
+},
+{
+"id": "U4L1-10",
+"unidad": "U4",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada norma complementaria con su tema.",
+"opciones": [
+[
+"ISO 45003",
+"Riesgos psicosociales"
+],
+[
+"ISO 45002",
+"Guía de implementación de 45001"
+],
+[
+"ISO 39001",
+"Seguridad vial"
+],
+[
+"ISO 22301",
+"Continuidad del negocio"
+]
+],
+"correcta": null,
+"explicacion": "45003 orienta la salud psicológica en el trabajo, 45002 ayuda a implementar 45001, 39001 gestiona la seguridad vial y 22301 la continuidad del negocio.",
+"referencia": "ISO 45003:2021; ISO 45002; ISO 39001; ISO 22301",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"normas"
+]
+},
+{
+"id": "U4L2-01",
+"unidad": "U4",
+"leccion": 2,
+"tipo": "ordenar",
+"enunciado": "Ordene la jerarquía de controles de ISO 45001, del más al menos eficaz.",
+"opciones": [
+"Eliminar el peligro",
+"Sustituir por algo menos peligroso",
+"Controles de ingeniería y reorganización del trabajo",
+"Controles administrativos, incluida la formación",
+"Equipos de protección personal"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4
+],
+"explicacion": "Primero se quita el peligro; el EPP es la última barrera porque depende de que la persona lo use bien y no actúa sobre la fuente.",
+"referencia": "ISO 45001:2018, 8.1.2",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"jerarquía"
+]
+},
+{
+"id": "U4L2-02",
+"unidad": "U4",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Para un trabajo en altura, la empresa entrega arnés pero podría instalar una plataforma fija. ¿Qué observa el auditor?",
+"opciones": [
+"Nada: el arnés es suficiente",
+"Se saltó la jerarquía de controles: había una opción de ingeniería antes del EPP",
+"Debe cambiar el arnés por uno más caro",
+"Debe excluir la actividad del alcance"
+],
+"correcta": 1,
+"explicacion": "Controlar con EPP cuando era viable un control de ingeniería es un hallazgo típico contra 8.1.2.",
+"referencia": "ISO 45001:2018, 8.1.2",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"jerarquía",
+"caso"
+]
+},
+{
+"id": "U4L2-03",
+"unidad": "U4",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué apartado de ISO 45001 identifica peligros y evalúa riesgos y oportunidades?",
+"opciones": [
+"6.1.2",
+"6.1.3",
+"8.1.3",
+"9.1.2"
+],
+"correcta": 0,
+"explicacion": "El 6.1.2 se divide en 6.1.2.1 identificar peligros, 6.1.2.2 evaluar riesgos y 6.1.2.3 evaluar oportunidades de SST.",
+"referencia": "ISO 45001:2018, 6.1.2",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"peligros"
+]
+},
+{
+"id": "U4L2-04",
+"unidad": "U4",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "Al identificar peligros, ISO 45001 pide considerar las actividades no rutinarias, los incidentes pasados y las situaciones de emergencia.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La identificación es amplia: actividades rutinarias y no rutinarias, factores humanos, incidentes previos, emergencias, cambios, ergonomía e instalaciones de terceros, entre otros.",
+"referencia": "ISO 45001:2018, 6.1.2.1",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"peligros"
+]
+},
+{
+"id": "U4L2-05",
+"unidad": "U4",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "La gestión del cambio en ISO 45001 está en el apartado ___.",
+"opciones": [
+"8.1.3",
+"6.3",
+"8.2",
+"10.3"
+],
+"correcta": 0,
+"explicacion": "En 45001:2018 la gestión del cambio está dentro de la operación (8.1.3): nuevos procesos, cambios legales, de conocimiento o de tecnología. En 9001 y 14001:2026 hay además un 6.3.",
+"referencia": "ISO 45001:2018, 8.1.3",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"cambio"
+]
+},
+{
+"id": "U4L2-06",
+"unidad": "U4",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada apartado de ISO 45001 con su tema.",
+"opciones": [
+[
+"8.1.2",
+"Jerarquía de controles"
+],
+[
+"8.1.3",
+"Gestión del cambio"
+],
+[
+"8.1.4",
+"Compras y contratistas"
+],
+[
+"8.2",
+"Emergencias"
+]
+],
+"correcta": null,
+"explicacion": "El capítulo 8 de 45001 controla la operación: reduce riesgos, gestiona cambios, controla compras y contratistas y prepara la respuesta a emergencias.",
+"referencia": "ISO 45001:2018, cap. 8",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"cláusulas"
+]
+},
+{
+"id": "U4L2-07",
+"unidad": "U4",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Respecto a los contratistas, ¿qué pide ISO 45001?",
+"opciones": [
+"Nada, son responsabilidad de su propio empleador",
+"Coordinar con ellos, identificar los peligros que generan y que reciben, y asegurar que cumplen los requisitos del sistema",
+"Solo pedirles el RUT",
+"Prohibir su ingreso"
+],
+"correcta": 1,
+"explicacion": "El 8.1.4.2 pide coordinar con los contratistas, gestionar los riesgos en ambos sentidos y verificar que cumplan los requisitos de SST.",
+"referencia": "ISO 45001:2018, 8.1.4.2",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"contratistas"
+]
+},
+{
+"id": "U4L2-08",
+"unidad": "U4",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "La competencia del personal, según ISO 45001, incluye la capacidad para identificar peligros.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La norma destaca que las personas deben ser competentes también para reconocer los peligros de su trabajo.",
+"referencia": "ISO 45001:2018, 7.2",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"apoyo"
+]
+},
+{
+"id": "U4L2-09",
+"unidad": "U4",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "En una bodega con carga combustible alta, ¿qué exige la cláusula 8.2 de ISO 45001 además del plan de emergencias?",
+"opciones": [
+"Formación, pruebas y simulacros periódicos",
+"Un seguro contra incendio",
+"Cámaras de vigilancia",
+"Cambiar de bodega"
+],
+"correcta": 0,
+"explicacion": "La preparación incluye planificar la respuesta, formar al personal, probarla con simulacros, comunicar y revisar el plan.",
+"referencia": "ISO 45001:2018, 8.2",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"emergencias"
+]
+},
+{
+"id": "U4L2-10",
+"unidad": "U4",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "El último nivel de la jerarquía de controles es el ___.",
+"opciones": [
+"EPP",
+"rediseño",
+"reemplazo",
+"aislamiento"
+],
+"correcta": 0,
+"explicacion": "El equipo de protección personal protege al individuo pero no actúa sobre la fuente; por eso va al final.",
+"referencia": "ISO 45001:2018, 8.1.2",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"jerarquía"
+]
+},
+{
+"id": "U4L3-01",
+"unidad": "U4",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué apartado de ISO 45001 trata incidentes, no conformidades y acciones correctivas?",
+"opciones": [
+"9.1",
+"10.1",
+"10.2",
+"8.2"
+],
+"correcta": 2,
+"explicacion": "El 10.2 une incidentes y no conformidades: reaccionar, investigar con participación de trabajadores, buscar la causa raíz, actuar, revisar la eficacia y comunicar.",
+"referencia": "ISO 45001:2018, 10.2",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"incidentes"
+]
+},
+{
+"id": "U4L3-02",
+"unidad": "U4",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "ISO 45001 pide que la investigación de incidentes cuente con la participación de los trabajadores.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La investigación se hace con participación de trabajadores no directivos, que conocen cómo se hace realmente el trabajo.",
+"referencia": "ISO 45001:2018, 5.4 y 10.2",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"incidentes"
+]
+},
+{
+"id": "U4L3-03",
+"unidad": "U4",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué entrada propia de SST tiene la revisión por la dirección en ISO 45001?",
+"opciones": [
+"Satisfacción del cliente",
+"Resultados de la consulta y participación de los trabajadores",
+"Aspectos ambientales significativos",
+"Desempeño de laboratorios"
+],
+"correcta": 1,
+"explicacion": "La dirección revisa, entre otras cosas, la consulta y participación, los incidentes, el cumplimiento legal y los riesgos y oportunidades.",
+"referencia": "ISO 45001:2018, 9.3",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"revisión"
+]
+},
+{
+"id": "U4L3-04",
+"unidad": "U4",
+"leccion": 3,
+"tipo": "completar",
+"enunciado": "En ISO 45001 la evaluación del cumplimiento de requisitos legales está en el apartado ___.",
+"opciones": [
+"9.1.2",
+"6.1.3",
+"9.2",
+"10.1"
+],
+"correcta": 0,
+"explicacion": "Igual que en 14001: el 6.1.3 identifica los requisitos legales y el 9.1.2 evalúa periódicamente si se cumplen.",
+"referencia": "ISO 45001:2018, 9.1.2",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"legal"
+]
+},
+{
+"id": "U4L3-05",
+"unidad": "U4",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "A noviembre de 2026, ISO 45001 sigue teniendo el apartado 10.3 de mejora continua.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La edición vigente es la de 2018 (más la enmienda de 2024), que sí tiene 10.3. El 10.3 desapareció en 9001:2026 y 14001:2026, no en 45001.",
+"referencia": "ISO 45001:2018, 10.3",
+"dificultad": 3,
+"etiquetas": [
+"45001",
+"versiones"
+]
+},
+{
+"id": "U4L3-06",
+"unidad": "U4",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Tras un accidente, la matriz de peligros no se actualizó. ¿Qué concluye el auditor?",
+"opciones": [
+"Es correcto: la matriz es anual",
+"Es un hallazgo: los incidentes y cambios obligan a revisar peligros y riesgos",
+"Solo se actualiza si hay muertos",
+"Es tarea de la ARL"
+],
+"correcta": 1,
+"explicacion": "Los incidentes pasados son una entrada de la identificación de peligros y la acción correctiva debe revisar los riesgos. Matriz sin revisar tras accidente es un hallazgo frecuente.",
+"referencia": "ISO 45001:2018, 6.1.2.1 y 10.2",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"caso"
+]
+},
+{
+"id": "U4L3-07",
+"unidad": "U4",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada tema con su apartado en ISO 45001.",
+"opciones": [
+[
+"Requisitos legales",
+"6.1.3"
+],
+[
+"Objetivos de SST",
+"6.2"
+],
+[
+"Auditoría interna",
+"9.2"
+],
+[
+"Mejora continua",
+"10.3"
+]
+],
+"correcta": null,
+"explicacion": "La estructura es la común: planificación en 6, evaluación en 9 y mejora en 10, con el 10.3 aún vigente en 45001:2018.",
+"referencia": "ISO 45001:2018, 6.1.3, 6.2, 9.2 y 10.3",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"cláusulas"
+]
+},
+{
+"id": "U4L3-08",
+"unidad": "U4",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Cuándo se espera publicar la nueva edición de ISO 45001?",
+"opciones": [
+"2025",
+"2026",
+"2027",
+"2030"
+],
+"correcta": 2,
+"explicacion": "El borrador (DIS) estuvo en votación entre junio y septiembre de 2026 y la publicación se espera en 2027. Hoy se audita con 45001:2018 más la enmienda de 2024.",
+"referencia": "ISO/TC 283, revisión de ISO 45001",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"versiones"
+]
+},
+{
+"id": "U4L3-09",
+"unidad": "U4",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "En ISO 45001, la mejora continua incluye promover una cultura que apoye el sistema de SST.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "El 10.3 pide mejorar el desempeño, promover una cultura de apoyo y fomentar la participación de los trabajadores en las acciones de mejora.",
+"referencia": "ISO 45001:2018, 10.3",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"mejora"
+]
+},
+{
+"id": "U4L3-10",
+"unidad": "U4",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Una investigación de accidente concluye solo «el trabajador se descuidó». ¿Qué falta?",
+"opciones": [
+"Nada",
+"El análisis de causa raíz más allá de la causa inmediata",
+"La firma del gerente",
+"Una multa al trabajador"
+],
+"correcta": 1,
+"explicacion": "Quedarse en la causa inmediata o culpar al trabajador no previene la repetición. La norma pide determinar las causas y revisar la eficacia de las acciones.",
+"referencia": "ISO 45001:2018, 10.2",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"incidentes",
+"caso"
+]
+},
+{
+"id": "U5L1-01",
+"unidad": "U5",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué norma colombiana contiene el capítulo del SG-SST?",
+"opciones": [
+"Decreto 1072 de 2015",
+"Ley 100 de 1993",
+"Decreto 1076 de 2015",
+"Ley 1480 de 2011"
+],
+"correcta": 0,
+"explicacion": "El Decreto Único Reglamentario del Sector Trabajo (1072/2015) recoge el SG-SST en el Libro 2, Parte 2, Título 4, Capítulo 6.",
+"referencia": "Decreto 1072 de 2015, Libro 2, Parte 2, Título 4, Cap. 6",
+"dificultad": 1,
+"etiquetas": [
+"SG-SST",
+"legal"
+]
+},
+{
+"id": "U5L1-02",
+"unidad": "U5",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué resolución fija los Estándares Mínimos del SG-SST?",
+"opciones": [
+"Res. 0312 de 2019",
+"Res. 2346 de 2007",
+"Res. 1401 de 2007",
+"Res. 4272 de 2021"
+],
+"correcta": 0,
+"explicacion": "La 0312 de 2019 define los estándares según tamaño y nivel de riesgo, y la autoevaluación anual.",
+"referencia": "Resolución 0312 de 2019",
+"dificultad": 1,
+"etiquetas": [
+"SG-SST",
+"0312"
+]
+},
+{
+"id": "U5L1-03",
+"unidad": "U5",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada empresa con el número de estándares mínimos que le aplican.",
+"opciones": [
+[
+"Hasta 10 trabajadores, riesgo I a III",
+"7"
+],
+[
+"11 a 50 trabajadores, riesgo I a III",
+"21"
+],
+[
+"Más de 50 trabajadores o riesgo IV-V",
+"60"
+]
+],
+"correcta": null,
+"explicacion": "El número crece con el tamaño y el riesgo. Una empresa de riesgo IV o V aplica los 60 aunque sea pequeña.",
+"referencia": "Resolución 0312 de 2019",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"0312"
+]
+},
+{
+"id": "U5L1-04",
+"unidad": "U5",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Una empresa de 8 trabajadores con riesgo V, ¿cuántos estándares mínimos aplica?",
+"opciones": [
+"7",
+"21",
+"60",
+"Ninguno"
+],
+"correcta": 2,
+"explicacion": "El riesgo IV o V obliga a los 60 estándares, sin importar el número de trabajadores.",
+"referencia": "Resolución 0312 de 2019",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"0312",
+"caso"
+]
+},
+{
+"id": "U5L1-05",
+"unidad": "U5",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "En la ponderación PHVA de los 60 estándares, ¿qué etapa pesa más?",
+"opciones": [
+"Planear (25 %)",
+"Hacer (60 %)",
+"Verificar (5 %)",
+"Actuar (10 %)"
+],
+"correcta": 1,
+"explicacion": "Hacer vale 60 %: gestión de la salud, de peligros y riesgos y de amenazas. Planear 25 %, Verificar 5 % y Actuar 10 %.",
+"referencia": "Resolución 0312 de 2019",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"0312"
+]
+},
+{
+"id": "U5L1-06",
+"unidad": "U5",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Una empresa obtiene 72 % en la autoevaluación de estándares mínimos. ¿Cómo se califica?",
+"opciones": [
+"Crítico",
+"Moderadamente aceptable",
+"Aceptable",
+"Excelente"
+],
+"correcta": 1,
+"explicacion": "Menos de 60 % es crítico, de 60 a 85 % moderadamente aceptable y más de 85 % aceptable.",
+"referencia": "Resolución 0312 de 2019",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"0312",
+"cálculo"
+]
+},
+{
+"id": "U5L1-07",
+"unidad": "U5",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "El SG-SST colombiano es certificable por un organismo como lo es ISO 45001.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "El SG-SST es una obligación legal que verifican Mintrabajo y la ARL. ISO 45001 es voluntaria y certificable; ambos se pueden alinear.",
+"referencia": "Decreto 1072 de 2015; ISO 45001:2018",
+"dificultad": 1,
+"etiquetas": [
+"SG-SST",
+"45001"
+]
+},
+{
+"id": "U5L1-08",
+"unidad": "U5",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "El responsable del SG-SST debe tener licencia en SST vigente y el curso virtual de ___ horas.",
+"opciones": [
+"50",
+"20",
+"40",
+"120"
+],
+"correcta": 0,
+"explicacion": "Es el curso de 50 horas (Res. 4927 de 2016), además de la licencia vigente en SST.",
+"referencia": "Resolución 4927 de 2016; Resolución 0312 de 2019",
+"dificultad": 1,
+"etiquetas": [
+"SG-SST",
+"responsable"
+]
+},
+{
+"id": "U5L1-09",
+"unidad": "U5",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué ley define el Sistema General de Riesgos Laborales y permite multas de hasta 1.000 SMMLV por incumplir SST?",
+"opciones": [
+"Ley 1562 de 2012",
+"Ley 1010 de 2006",
+"Ley 99 de 1993",
+"Ley 1581 de 2012"
+],
+"correcta": 0,
+"explicacion": "La Ley 1562 de 2012 modificó el sistema de riesgos laborales; la graduación de multas está en el Decreto 472 de 2015.",
+"referencia": "Ley 1562 de 2012, art. 13; Decreto 472 de 2015",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"sanciones"
+]
+},
+{
+"id": "U5L1-10",
+"unidad": "U5",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Un SG-SST bien implementado cubre una buena parte de ISO 45001, pero suelen faltar contexto, partes interesadas y participación estructurada.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Las brechas típicas al pasar a 45001 son contexto y partes interesadas, oportunidades de SST, participación estructurada, liderazgo demostrable y evaluación sistemática del cumplimiento.",
+"referencia": "Decreto 1072 de 2015 frente a ISO 45001:2018",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"45001"
+]
+},
+{
+"id": "U5L2-01",
+"unidad": "U5",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Una empresa tiene 7 trabajadores. ¿Qué figura de SST le corresponde?",
+"opciones": [
+"COPASST",
+"Vigía de SST",
+"Brigada nacional",
+"Comité paritario de 4+4"
+],
+"correcta": 1,
+"explicacion": "Con menos de 10 trabajadores se nombra un vigía de SST; desde 10 trabajadores se conforma el COPASST.",
+"referencia": "Decreto 1072 de 2015; Resolución 2013 de 1986",
+"dificultad": 1,
+"etiquetas": [
+"SG-SST",
+"COPASST"
+]
+},
+{
+"id": "U5L2-02",
+"unidad": "U5",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cuántos representantes tiene el COPASST en una empresa de 50 a 499 trabajadores?",
+"opciones": [
+"1 del empleador y 1 de los trabajadores",
+"2 y 2",
+"3 y 3",
+"4 y 4"
+],
+"correcta": 1,
+"explicacion": "10-49: 1+1; 50-499: 2+2; 500-999: 3+3; 1.000 o más: 4+4. El periodo es de 2 años.",
+"referencia": "Resolución 2013 de 1986",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"COPASST"
+]
+},
+{
+"id": "U5L2-03",
+"unidad": "U5",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "El COPASST se reúne con frecuencia ___.",
+"opciones": [
+"mensual",
+"trimestral",
+"semestral",
+"anual"
+],
+"correcta": 0,
+"explicacion": "El COPASST sesiona mensualmente y deja actas. El comité de convivencia laboral se reúne trimestralmente.",
+"referencia": "Resolución 2013 de 1986",
+"dificultad": 1,
+"etiquetas": [
+"SG-SST",
+"COPASST"
+]
+},
+{
+"id": "U5L2-04",
+"unidad": "U5",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿En qué plazo se reporta un accidente de trabajo a la ARL y a la EPS?",
+"opciones": [
+"24 horas",
+"2 días hábiles",
+"15 días",
+"1 mes"
+],
+"correcta": 1,
+"explicacion": "El reporte (FURAT) va dentro de los 2 días hábiles siguientes al accidente.",
+"referencia": "Decreto-Ley 1295 de 1994, art. 62",
+"dificultad": 1,
+"etiquetas": [
+"SG-SST",
+"reportes"
+]
+},
+{
+"id": "U5L2-05",
+"unidad": "U5",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Tras un accidente grave, ¿en qué plazo se remite la investigación a la ARL?",
+"opciones": [
+"2 días hábiles",
+"15 días",
+"30 días",
+"90 días"
+],
+"correcta": 1,
+"explicacion": "La investigación de accidentes graves y mortales se envía a la ARL dentro de los 15 días, con un equipo que incluye a un profesional con licencia en SST.",
+"referencia": "Resolución 1401 de 2007",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"reportes"
+]
+},
+{
+"id": "U5L2-06",
+"unidad": "U5",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Durante cuánto tiempo se conservan los documentos del SG-SST?",
+"opciones": [
+"5 años",
+"10 años",
+"20 años desde que termina la relación laboral",
+"Indefinidamente"
+],
+"correcta": 2,
+"explicacion": "Los registros del SG-SST se conservan 20 años contados desde la terminación de la relación laboral del trabajador.",
+"referencia": "Decreto 1072 de 2015",
+"dificultad": 1,
+"etiquetas": [
+"SG-SST",
+"documentos"
+]
+},
+{
+"id": "U5L2-07",
+"unidad": "U5",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada resolución con su tema.",
+"opciones": [
+[
+"Res. 2346 de 2007",
+"Evaluaciones médicas ocupacionales"
+],
+[
+"Res. 4272 de 2021",
+"Trabajo en alturas"
+],
+[
+"Res. 0491 de 2020",
+"Espacios confinados"
+],
+[
+"Res. 2404 de 2019",
+"Batería de riesgo psicosocial"
+]
+],
+"correcta": null,
+"explicacion": "Son las normas de riesgos específicos que más se preguntan. La 4272 de 2021 derogó la 1409 de 2012.",
+"referencia": "Res. 2346/2007, 4272/2021, 0491/2020 y 2404/2019",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"legal"
+]
+},
+{
+"id": "U5L2-08",
+"unidad": "U5",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "El comité de convivencia laboral se regula por las resoluciones 652 y 1356 de 2012, en el marco de la Ley 1010 de 2006 sobre acoso laboral.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "El comité atiende quejas de acoso laboral, se reúne trimestralmente y tiene 2 representantes por cada parte.",
+"referencia": "Res. 652 y 1356 de 2012; Ley 1010 de 2006",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"convivencia"
+]
+},
+{
+"id": "U5L2-09",
+"unidad": "U5",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué tipos de evaluación médica ocupacional define la Res. 2346 de 2007?",
+"opciones": [
+"Solo de ingreso",
+"Ingreso, periódicas y egreso",
+"Solo cuando hay accidente",
+"Solo para trabajo en alturas"
+],
+"correcta": 1,
+"explicacion": "Las evaluaciones son de ingreso, periódicas y de egreso (también post-incapacidad), y las historias clínicas las custodia la IPS, no la empresa.",
+"referencia": "Resolución 2346 de 2007",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"salud"
+]
+},
+{
+"id": "U5L2-10",
+"unidad": "U5",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué figura alinea el SG-SST con la cláusula 5.4 de ISO 45001?",
+"opciones": [
+"El COPASST (o el vigía)",
+"La brigada de emergencias",
+"La ARL",
+"El revisor fiscal"
+],
+"correcta": 0,
+"explicacion": "El COPASST es el canal formal de participación de los trabajadores; por eso equivale a la consulta y participación de 45001.",
+"referencia": "Decreto 1072 de 2015; ISO 45001:2018, 5.4",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"45001"
+]
+},
+{
+"id": "U5L3-01",
+"unidad": "U5",
+"leccion": 3,
+"tipo": "completar",
+"enunciado": "En la GTC 45, el nivel de riesgo se calcula como NR = NP × ___.",
+"opciones": [
+"NC",
+"ND",
+"NE",
+"NR"
+],
+"correcta": 0,
+"explicacion": "NR = NP × NC, y el nivel de probabilidad es NP = ND × NE (deficiencia por exposición).",
+"referencia": "GTC 45",
+"dificultad": 1,
+"etiquetas": [
+"GTC45",
+"fórmulas"
+]
+},
+{
+"id": "U5L3-02",
+"unidad": "U5",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Un peligro tiene ND = 6 (alto) y NE = 3 (frecuente). ¿Cuál es el nivel de probabilidad (NP)?",
+"opciones": [
+"9",
+"18",
+"24",
+"36"
+],
+"correcta": 1,
+"explicacion": "NP = ND × NE = 6 × 3 = 18.",
+"referencia": "GTC 45",
+"dificultad": 2,
+"etiquetas": [
+"GTC45",
+"cálculo"
+]
+},
+{
+"id": "U5L3-03",
+"unidad": "U5",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Con NP = 18 y NC = 25 (grave), ¿cuál es el NR y su nivel?",
+"opciones": [
+"450, nivel II",
+"450, nivel I",
+"43, nivel III",
+"180, nivel IV"
+],
+"correcta": 0,
+"explicacion": "NR = 18 × 25 = 450, que cae en el rango 500-150: nivel II, corregir y adoptar medidas de control inmediato.",
+"referencia": "GTC 45",
+"dificultad": 3,
+"etiquetas": [
+"GTC45",
+"cálculo"
+]
+},
+{
+"id": "U5L3-04",
+"unidad": "U5",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "ND = 10, NE = 4 y NC = 60. ¿En qué nivel de riesgo queda?",
+"opciones": [
+"Nivel I, no aceptable",
+"Nivel II",
+"Nivel III",
+"Nivel IV, aceptable"
+],
+"correcta": 0,
+"explicacion": "NP = 10 × 4 = 40; NR = 40 × 60 = 2.400, dentro del rango 4.000-600: nivel I, situación crítica con corrección urgente.",
+"referencia": "GTC 45",
+"dificultad": 3,
+"etiquetas": [
+"GTC45",
+"cálculo"
+]
+},
+{
+"id": "U5L3-05",
+"unidad": "U5",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada nivel de riesgo de la GTC 45 con su rango de NR.",
+"opciones": [
+[
+"Nivel I",
+"4.000 a 600"
+],
+[
+"Nivel II",
+"500 a 150"
+],
+[
+"Nivel III",
+"120 a 40"
+],
+[
+"Nivel IV",
+"20 o menos"
+]
+],
+"correcta": null,
+"explicacion": "El nivel I es no aceptable; el IV es aceptable. Los niveles II y III exigen controles con distinta urgencia.",
+"referencia": "GTC 45",
+"dificultad": 2,
+"etiquetas": [
+"GTC45"
+]
+},
+{
+"id": "U5L3-06",
+"unidad": "U5",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Cuál de estas NO es una clase de peligro de la GTC 45?",
+"opciones": [
+"Biomecánico",
+"Psicosocial",
+"Financiero",
+"Fenómenos naturales"
+],
+"correcta": 2,
+"explicacion": "Las clases son biológico, físico, químico, psicosocial, biomecánico, condiciones de seguridad y fenómenos naturales.",
+"referencia": "GTC 45",
+"dificultad": 1,
+"etiquetas": [
+"GTC45"
+]
+},
+{
+"id": "U5L3-07",
+"unidad": "U5",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "En un mes hubo 3 accidentes de trabajo y 48.000 horas hombre trabajadas. ¿Cuál es el índice de frecuencia (K = 240.000)?",
+"opciones": [
+"6",
+"15",
+"30",
+"150"
+],
+"correcta": 1,
+"explicacion": "IF = (AT / HHT) × 240.000 = (3 / 48.000) × 240.000 = 15.",
+"referencia": "Resolución 0312 de 2019, indicadores; Decreto 1072 de 2015",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"indicadores",
+"cálculo"
+]
+},
+{
+"id": "U5L3-08",
+"unidad": "U5",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Hubo 20 días perdidos por accidentes y 48.000 HHT en el mes. ¿Cuál es el índice de severidad (K = 240.000)?",
+"opciones": [
+"10",
+"20",
+"100",
+"240"
+],
+"correcta": 2,
+"explicacion": "IS = (días perdidos + días cargados) / HHT × 240.000 = 20 / 48.000 × 240.000 = 100.",
+"referencia": "Resolución 0312 de 2019, indicadores",
+"dificultad": 3,
+"etiquetas": [
+"SG-SST",
+"indicadores",
+"cálculo"
+]
+},
+{
+"id": "U5L3-09",
+"unidad": "U5",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "La incidencia de enfermedad laboral cuenta solo los casos nuevos; la prevalencia cuenta los nuevos y los antiguos.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Ambas se expresan por 100.000 trabajadores. La incidencia mide aparición de casos; la prevalencia, el total de casos presentes.",
+"referencia": "Resolución 0312 de 2019, indicadores",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"indicadores"
+]
+},
+{
+"id": "U5L3-10",
+"unidad": "U5",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "En el periodo hubo 30 días de ausencia por incapacidad y 1.500 días de trabajo programados. ¿Cuál es el ausentismo?",
+"opciones": [
+"0,5 %",
+"2 %",
+"5 %",
+"20 %"
+],
+"correcta": 1,
+"explicacion": "Ausentismo = días de ausencia por incapacidad / días programados × 100 = 30 / 1.500 × 100 = 2 %.",
+"referencia": "Resolución 0312 de 2019, indicadores",
+"dificultad": 2,
+"etiquetas": [
+"SG-SST",
+"indicadores",
+"cálculo"
+]
+},
+{
+"id": "U6L1-01",
+"unidad": "U6",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué norma da las directrices para auditar sistemas de gestión?",
+"opciones": [
+"ISO 19011",
+"ISO/IEC 17021-1",
+"ISO 9000",
+"ISO 31000"
+],
+"correcta": 0,
+"explicacion": "ISO 19011:2018 guía las auditorías internas y a proveedores. La 17021-1 regula a los organismos que certifican.",
+"referencia": "ISO 19011:2018",
+"dificultad": 1,
+"etiquetas": [
+"auditoría"
+]
+},
+{
+"id": "U6L1-02",
+"unidad": "U6",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Cuál de estos NO es un principio de auditoría de ISO 19011?",
+"opciones": [
+"Integridad",
+"Enfoque basado en la evidencia",
+"Enfoque basado en riesgo",
+"Rentabilidad"
+],
+"correcta": 3,
+"explicacion": "Los principios son integridad, presentación imparcial, debido cuidado profesional, confidencialidad, independencia, enfoque basado en la evidencia y enfoque basado en riesgo.",
+"referencia": "ISO 19011:2018, cap. 4",
+"dificultad": 1,
+"etiquetas": [
+"auditoría",
+"principios"
+]
+},
+{
+"id": "U6L1-03",
+"unidad": "U6",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada tipo de auditoría con quién la hace.",
+"opciones": [
+[
+"Primera parte",
+"La propia organización (interna)"
+],
+[
+"Segunda parte",
+"Un cliente a su proveedor"
+],
+[
+"Tercera parte",
+"Un organismo de certificación independiente"
+]
+],
+"correcta": null,
+"explicacion": "La tercera parte es la única que otorga un certificado; las otras dos sirven al control interno o a la relación comercial.",
+"referencia": "ISO 19011:2018",
+"dificultad": 1,
+"etiquetas": [
+"auditoría",
+"tipos"
+]
+},
+{
+"id": "U6L1-04",
+"unidad": "U6",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué organismo acredita a las certificadoras en Colombia?",
+"opciones": [
+"ICONTEC",
+"ONAC",
+"SIC",
+"Mintrabajo"
+],
+"correcta": 1,
+"explicacion": "ONAC acredita; ICONTEC, SGS o Bureau Veritas certifican. Un certificado útil debe estar bajo acreditación ONAC o IAF.",
+"referencia": "Decreto 1595 de 2015; ISO/IEC 17021-1",
+"dificultad": 1,
+"etiquetas": [
+"auditoría",
+"certificación"
+]
+},
+{
+"id": "U6L1-05",
+"unidad": "U6",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "ISO/IEC 17021-1 establece los requisitos para los organismos que certifican sistemas de gestión.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La 17021-1 regula a la certificadora (imparcialidad, competencia, proceso). La organización certificada se rige por 9001, 14001 o 45001.",
+"referencia": "ISO/IEC 17021-1:2015",
+"dificultad": 1,
+"etiquetas": [
+"auditoría",
+"certificación"
+]
+},
+{
+"id": "U6L1-06",
+"unidad": "U6",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "Una auditoría contra varias normas a la vez, con un equipo y evidencias compartidas, se llama auditoría ___.",
+"opciones": [
+"integrada",
+"combinada parcial",
+"de segunda parte",
+"documental"
+],
+"correcta": 0,
+"explicacion": "La auditoría integrada (IAF MD 11) puede reducir tiempo si el SIG está realmente integrado: política, objetivos, riesgos, revisión y auditoría únicos.",
+"referencia": "IAF MD 11",
+"dificultad": 2,
+"etiquetas": [
+"auditoría",
+"integración"
+]
+},
+{
+"id": "U6L1-07",
+"unidad": "U6",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué principio de auditoría se viola si un auditor interno revisa su propio proceso?",
+"opciones": [
+"Confidencialidad",
+"Independencia",
+"Debido cuidado profesional",
+"Enfoque basado en riesgo"
+],
+"correcta": 1,
+"explicacion": "La independencia exige que el auditor no audite su propio trabajo, para que sus conclusiones sean objetivas.",
+"referencia": "ISO 19011:2018, cap. 4",
+"dificultad": 2,
+"etiquetas": [
+"auditoría",
+"principios"
+]
+},
+{
+"id": "U6L1-08",
+"unidad": "U6",
+"leccion": 1,
+"tipo": "ordenar",
+"enunciado": "Ordene las etapas de una auditoría según ISO 19011.",
+"opciones": [
+"Iniciar la auditoría",
+"Preparar las actividades",
+"Realizar la auditoría",
+"Preparar y distribuir el informe",
+"Hacer seguimiento"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4
+],
+"explicacion": "Se define líder, alcance y criterios; se prepara el plan y las listas; se ejecuta con apertura, evidencias y cierre; se informa y se hace seguimiento de las acciones.",
+"referencia": "ISO 19011:2018, cap. 6",
+"dificultad": 2,
+"etiquetas": [
+"auditoría",
+"etapas"
+]
+},
+{
+"id": "U6L1-09",
+"unidad": "U6",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Una lista de verificación debe limitar al auditor a preguntar solo lo que aparece en ella.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Las listas guían, pero el auditor sigue la evidencia que encuentra; si una pista lleva a otro requisito, debe seguirla.",
+"referencia": "ISO 19011:2018, 6.3",
+"dificultad": 2,
+"etiquetas": [
+"auditoría"
+]
+},
+{
+"id": "U6L1-10",
+"unidad": "U6",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué se presenta en la reunión de cierre de una auditoría?",
+"opciones": [
+"El plan de la auditoría",
+"Los hallazgos, su clasificación y los plazos",
+"El presupuesto del próximo año",
+"La hoja de vida del auditor"
+],
+"correcta": 1,
+"explicacion": "En el cierre se comunican los hallazgos y conclusiones, cómo se clasificaron y los plazos para el plan de acción.",
+"referencia": "ISO 19011:2018, 6.4",
+"dificultad": 1,
+"etiquetas": [
+"auditoría",
+"etapas"
+]
+},
+{
+"id": "U6L2-01",
+"unidad": "U6",
+"leccion": 2,
+"tipo": "ordenar",
+"enunciado": "Ordene el ciclo de certificación de tres años.",
+"opciones": [
+"Etapa 1",
+"Etapa 2",
+"Decisión de certificación",
+"Vigilancia 1",
+"Vigilancia 2",
+"Recertificación"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4,
+5
+],
+"explicacion": "Tras certificar hay dos vigilancias anuales y, antes del vencimiento, la recertificación.",
+"referencia": "ISO/IEC 17021-1:2015",
+"dificultad": 1,
+"etiquetas": [
+"certificación"
+]
+},
+{
+"id": "U6L2-02",
+"unidad": "U6",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué verifica principalmente la Etapa 1?",
+"opciones": [
+"La eficacia en campo con muestreo",
+"Que la organización está preparada: alcance, política, objetivos, auditoría interna y revisión por la dirección ya hechas",
+"El pago de la factura",
+"Los estados financieros"
+],
+"correcta": 1,
+"explicacion": "La Etapa 1 revisa la preparación y emite preocupaciones; la Etapa 2 comprueba la implementación y eficacia en campo.",
+"referencia": "ISO/IEC 17021-1:2015",
+"dificultad": 1,
+"etiquetas": [
+"certificación"
+]
+},
+{
+"id": "U6L2-03",
+"unidad": "U6",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "Para pasar la Etapa 1, la organización ya debe haber hecho al menos una auditoría interna y una revisión por la dirección.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Sin esas dos evidencias no se demuestra que el sistema funciona completo. Es causa frecuente de aplazar la Etapa 2.",
+"referencia": "ISO/IEC 17021-1:2015",
+"dificultad": 2,
+"etiquetas": [
+"certificación"
+]
+},
+{
+"id": "U6L2-04",
+"unidad": "U6",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Quién toma la decisión de certificar?",
+"opciones": [
+"El auditor líder en la reunión de cierre",
+"Un comité de la certificadora independiente del equipo auditor",
+"El gerente de la organización",
+"ONAC"
+],
+"correcta": 1,
+"explicacion": "La decisión la toma alguien que no auditó, para garantizar imparcialidad. El auditor recomienda; no decide.",
+"referencia": "ISO/IEC 17021-1:2015",
+"dificultad": 2,
+"etiquetas": [
+"certificación"
+]
+},
+{
+"id": "U6L2-05",
+"unidad": "U6",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "Un certificado de sistema de gestión tiene una vigencia de ___ años.",
+"opciones": [
+"3",
+"1",
+"5",
+"10"
+],
+"correcta": 0,
+"explicacion": "El ciclo dura tres años, con vigilancias anuales en el medio.",
+"referencia": "ISO/IEC 17021-1:2015",
+"dificultad": 1,
+"etiquetas": [
+"certificación"
+]
+},
+{
+"id": "U6L2-06",
+"unidad": "U6",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué documento de IAF orienta el cálculo del tiempo de auditoría?",
+"opciones": [
+"IAF MD 5",
+"IAF MD 11",
+"IAF MD 22",
+"IAF MD 4"
+],
+"correcta": 0,
+"explicacion": "MD 5 fija tiempos según empleados efectivos, complejidad y riesgo. MD 11 trata sistemas integrados, MD 22 la 45001 y MD 4 la auditoría remota.",
+"referencia": "IAF MD 5",
+"dificultad": 3,
+"etiquetas": [
+"certificación"
+]
+},
+{
+"id": "U6L2-07",
+"unidad": "U6",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada documento de IAF con su tema.",
+"opciones": [
+[
+"IAF MD 5",
+"Tiempo de auditoría"
+],
+[
+"IAF MD 11",
+"Sistemas integrados"
+],
+[
+"IAF MD 22",
+"ISO 45001"
+],
+[
+"IAF MD 4",
+"Auditoría remota con TIC"
+]
+],
+"correcta": null,
+"explicacion": "Son los documentos obligatorios que las certificadoras aplican al planificar auditorías.",
+"referencia": "IAF MD 4, 5, 11 y 22",
+"dificultad": 3,
+"etiquetas": [
+"certificación"
+]
+},
+{
+"id": "U6L2-08",
+"unidad": "U6",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "Las auditorías de vigilancia se hacen cada año y revisan todo el sistema completo, igual que la recertificación.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Las vigilancias son anuales pero por muestreo; la revisión global del sistema se hace en la recertificación.",
+"referencia": "ISO/IEC 17021-1:2015",
+"dificultad": 2,
+"etiquetas": [
+"certificación"
+]
+},
+{
+"id": "U6L2-09",
+"unidad": "U6",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cuándo se hace una auditoría especial?",
+"opciones": [
+"Cada mes",
+"Ante ampliación de alcance, quejas, cambios importantes o suspensión",
+"Solo al primer año",
+"Nunca"
+],
+"correcta": 1,
+"explicacion": "Son auditorías fuera del ciclo regular, motivadas por un evento concreto.",
+"referencia": "ISO/IEC 17021-1:2015",
+"dificultad": 2,
+"etiquetas": [
+"certificación"
+]
+},
+{
+"id": "U6L2-10",
+"unidad": "U6",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "El día de la auditoría, el auditor pregunta algo que usted no sabe. ¿Qué es lo correcto?",
+"opciones": [
+"Inventar una respuesta",
+"Decir «no lo sé, lo verificamos» y buscar la evidencia",
+"Cambiar de tema",
+"Negarse a responder"
+],
+"correcta": 1,
+"explicacion": "Responder solo lo que se pregunta y mostrar evidencia; adivinar puede convertir una duda en no conformidad.",
+"referencia": "Buenas prácticas de preparación de auditoría (ISO 19011:2018)",
+"dificultad": 1,
+"etiquetas": [
+"certificación",
+"conducta"
+]
+},
+{
+"id": "U6L3-01",
+"unidad": "U6",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "No existe ningún registro de revisión por la dirección en los últimos dos años. ¿Cómo se clasifica?",
+"opciones": [
+"Observación",
+"No conformidad menor",
+"No conformidad mayor",
+"Oportunidad de mejora"
+],
+"correcta": 2,
+"explicacion": "Es la ausencia total de un requisito y una falla sistémica: el sistema no se está revisando. Eso es NC mayor.",
+"referencia": "ISO/IEC 17021-1:2015; ISO 9001:2026, 9.3",
+"dificultad": 2,
+"etiquetas": [
+"hallazgos",
+"caso"
+]
+},
+{
+"id": "U6L3-02",
+"unidad": "U6",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "De 20 registros de formación revisados, a uno le falta la firma del asistente. ¿Cómo se clasifica?",
+"opciones": [
+"No conformidad mayor",
+"No conformidad menor",
+"Fortaleza",
+"No es hallazgo"
+],
+"correcta": 1,
+"explicacion": "Es un incumplimiento puntual y aislado que no afecta la capacidad del sistema: NC menor.",
+"referencia": "ISO/IEC 17021-1:2015; ISO 9001:2026, 7.2",
+"dificultad": 2,
+"etiquetas": [
+"hallazgos",
+"caso"
+]
+},
+{
+"id": "U6L3-03",
+"unidad": "U6",
+"leccion": 3,
+"tipo": "ordenar",
+"enunciado": "Ordene los componentes de una no conformidad redactada con el formato PRE.",
+"opciones": [
+"Problema: qué se encontró",
+"Requisito: norma y cláusula incumplida",
+"Evidencia objetiva: dónde, quién, qué registro y fecha"
+],
+"correcta": [
+0,
+1,
+2
+],
+"explicacion": "Una NC bien redactada dice qué pasa, contra qué requisito y con qué evidencia verificable, sin opiniones.",
+"referencia": "ISO 19011:2018, 6.4.8",
+"dificultad": 1,
+"etiquetas": [
+"hallazgos",
+"PRE"
+]
+},
+{
+"id": "U6L3-04",
+"unidad": "U6",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Cuál de estas redacciones es una no conformidad bien escrita?",
+"opciones": [
+"«El área de compras está desorganizada.»",
+"«No se evidenció la reevaluación anual de 3 de 5 proveedores críticos (registro de proveedores, consultado el 12-nov), incumpliendo ISO 9001 §8.4.1.»",
+"«Parece que no evalúan proveedores.»",
+"«Recomendamos evaluar mejor a los proveedores.»"
+],
+"correcta": 1,
+"explicacion": "Tiene problema concreto, requisito con cláusula y evidencia verificable. Las demás son opiniones o recomendaciones.",
+"referencia": "ISO 19011:2018, 6.4.8",
+"dificultad": 2,
+"etiquetas": [
+"hallazgos",
+"PRE"
+]
+},
+{
+"id": "U6L3-05",
+"unidad": "U6",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Ante una NC mayor, la certificadora exige plan de acción y evidencia antes de otorgar el certificado.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La NC mayor suele dar un plazo de unos 90 días; si no se cierra, no se certifica o se pierde el certificado. La menor admite plan y verificación en la siguiente auditoría.",
+"referencia": "ISO/IEC 17021-1:2015",
+"dificultad": 2,
+"etiquetas": [
+"hallazgos"
+]
+},
+{
+"id": "U6L3-06",
+"unidad": "U6",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada tipo de hallazgo con su significado.",
+"opciones": [
+[
+"NC mayor",
+"Falla sistémica o ausencia de un requisito"
+],
+[
+"NC menor",
+"Incumplimiento puntual y aislado"
+],
+[
+"Observación",
+"Situación que podría convertirse en NC"
+],
+[
+"Oportunidad de mejora",
+"Sugerencia sin incumplimiento"
+]
+],
+"correcta": null,
+"explicacion": "Solo las NC exigen acción correctiva formal; observaciones y oportunidades son alertas y sugerencias.",
+"referencia": "ISO 19011:2018; ISO/IEC 17021-1:2015",
+"dificultad": 1,
+"etiquetas": [
+"hallazgos"
+]
+},
+{
+"id": "U6L3-07",
+"unidad": "U6",
+"leccion": 3,
+"tipo": "ordenar",
+"enunciado": "Ordene la respuesta correcta a un hallazgo de auditoría.",
+"opciones": [
+"Corrección inmediata (contener)",
+"Análisis de causa raíz",
+"Acción correctiva sobre la causa",
+"Verificar la eficacia",
+"Cerrar con evidencia"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4
+],
+"explicacion": "Corregir apaga el síntoma; la acción correctiva elimina la causa; solo se cierra cuando se demuestra que no reincide.",
+"referencia": "ISO 9001:2026, 10.2; ISO 19011:2018",
+"dificultad": 1,
+"etiquetas": [
+"hallazgos",
+"acción correctiva"
+]
+},
+{
+"id": "U6L3-08",
+"unidad": "U6",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué diferencia hay entre corrección y acción correctiva?",
+"opciones": [
+"Son lo mismo",
+"La corrección elimina el problema detectado; la acción correctiva elimina su causa para que no se repita",
+"La acción correctiva es más barata",
+"La corrección la hace el auditor"
+],
+"correcta": 1,
+"explicacion": "Reponer un documento obsoleto es corrección; cambiar el proceso que permitió que circulara es acción correctiva.",
+"referencia": "ISO 9000:2015, términos; ISO 9001:2026, 10.2",
+"dificultad": 2,
+"etiquetas": [
+"hallazgos",
+"acción correctiva"
+]
+},
+{
+"id": "U6L3-09",
+"unidad": "U6",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "El objetivo de la auditoría es encontrar culpables de los incumplimientos.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "La auditoría busca evidencia y mejora del sistema. El auditado no es culpable; el foco está en el proceso.",
+"referencia": "ISO 19011:2018, principios",
+"dificultad": 1,
+"etiquetas": [
+"hallazgos",
+"conducta"
+]
+},
+{
+"id": "U6L3-10",
+"unidad": "U6",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Durante la auditoría un operario no conoce la política ni qué hacer ante un derrame. ¿Con qué cláusula se relaciona?",
+"opciones": [
+"7.3 Toma de conciencia",
+"8.4 Proveedores",
+"9.3 Revisión por la dirección",
+"4.3 Alcance"
+],
+"correcta": 0,
+"explicacion": "La toma de conciencia exige que el personal conozca la política, los aspectos o peligros de su trabajo y su papel en la respuesta. Preparar al personal para estas preguntas es clave.",
+"referencia": "ISO 14001:2026 y 45001:2018, 7.3",
+"dificultad": 2,
+"etiquetas": [
+"hallazgos",
+"caso"
+]
+},
+{
+"id": "U7L1-01",
+"unidad": "U7",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Quién responde por el desempeño de cada proceso en un SIG?",
+"opciones": [
+"El coordinador SIG",
+"El dueño de cada proceso",
+"El auditor",
+"La certificadora"
+],
+"correcta": 1,
+"explicacion": "El coordinador es dueño del sistema, no del cumplimiento de cada proceso; cada líder de proceso responde por sus resultados.",
+"referencia": "ISO 9001:2026, 5.3 (roles y responsabilidades)",
+"dificultad": 2,
+"etiquetas": [
+"coordinador"
+]
+},
+{
+"id": "U7L1-02",
+"unidad": "U7",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "El coordinador SIG debe exigir causa raíz y verificación de eficacia en las acciones correctivas, vengan de donde vengan.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Los hallazgos llegan de auditorías, PQRS, indicadores, inspecciones e incidentes; todos se tratan con la misma disciplina.",
+"referencia": "ISO 9001:2026, 10.2",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"acción correctiva"
+]
+},
+{
+"id": "U7L1-03",
+"unidad": "U7",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada responsabilidad del coordinador con su evidencia.",
+"opciones": [
+[
+"Gestión documental",
+"Lista maestra de documentos"
+],
+[
+"Revisión por la dirección",
+"Acta con entradas y decisiones"
+],
+[
+"Cumplimiento legal",
+"Matriz legal con evaluación"
+],
+[
+"Indicadores",
+"Ficha técnica y tablero"
+]
+],
+"correcta": null,
+"explicacion": "Cada responsabilidad deja un artefacto que el auditor pedirá; el coordinador debe poder mostrarlo de inmediato.",
+"referencia": "ISO 9001:2026, 7.5, 9.1 y 9.3; ISO 14001:2026, 9.1.2",
+"dificultad": 2,
+"etiquetas": [
+"coordinador"
+]
+},
+{
+"id": "U7L1-04",
+"unidad": "U7",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué campos lleva la ficha técnica de un indicador?",
+"opciones": [
+"Solo el nombre",
+"Nombre, fórmula, meta, frecuencia, fuente y responsable",
+"Nombre y color",
+"Fórmula y logo"
+],
+"correcta": 1,
+"explicacion": "Sin fórmula, meta y responsable el indicador no se puede reproducir ni analizar. El auditor revisa además la tendencia y el análisis.",
+"referencia": "ISO 9001:2026, 9.1.1",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"indicadores"
+]
+},
+{
+"id": "U7L1-05",
+"unidad": "U7",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Un buen coordinador documenta todo lo posible, porque más documentos significan más conformidad.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Documentar de más es un error de novato. Las normas piden documentar lo necesario para la eficacia, según la complejidad de la organización.",
+"referencia": "ISO 9001:2026, 7.5.1",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"errores"
+]
+},
+{
+"id": "U7L1-06",
+"unidad": "U7",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué es la «cultura de la carpeta»?",
+"opciones": [
+"Archivar en carpetas físicas",
+"Coordinar el sistema solo para pasar la auditoría",
+"Usar carpetas compartidas en la nube",
+"Ordenar la documentación por colores"
+],
+"correcta": 1,
+"explicacion": "Es mantener papeles para el auditor sin que el sistema funcione en el día a día. Es uno de los errores típicos del coordinador novato.",
+"referencia": "Práctica de gestión SIG",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"errores"
+]
+},
+{
+"id": "U7L1-07",
+"unidad": "U7",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué debe saber responder un operario en la auditoría?",
+"opciones": [
+"La historia de ISO",
+"La política, su principal peligro o aspecto, qué hacer en una emergencia y cómo reportar",
+"El presupuesto del área",
+"El número de la norma"
+],
+"correcta": 1,
+"explicacion": "El auditor entrevista a operarios para comprobar toma de conciencia; el coordinador debe prepararlos en esas preguntas concretas.",
+"referencia": "ISO 9001:2026, 14001:2026 y 45001:2018, 7.3",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"auditoría"
+]
+},
+{
+"id": "U7L1-08",
+"unidad": "U7",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "La gestión documental del coordinador se apoya en la Ley ___ de 2000, ley general de archivo.",
+"opciones": [
+"594",
+"1581",
+"1480",
+"99"
+],
+"correcta": 0,
+"explicacion": "La Ley 594 de 2000 rige archivo y tablas de retención documental (TRD).",
+"referencia": "Ley 594 de 2000",
+"dificultad": 2,
+"etiquetas": [
+"coordinador",
+"legal"
+]
+},
+{
+"id": "U7L1-09",
+"unidad": "U7",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué evalúa el coordinador ante una gestión del cambio?",
+"opciones": [
+"Solo el costo",
+"El impacto del cambio en procesos, infraestructura, requisitos legales y tecnología antes de hacerlo",
+"Si al gerente le gusta",
+"Nada: los cambios se documentan después"
+],
+"correcta": 1,
+"explicacion": "Los cambios se planifican antes: propósito, consecuencias, recursos, responsables y riesgos.",
+"referencia": "ISO 9001:2026, 6.3; ISO 45001:2018, 8.1.3",
+"dificultad": 2,
+"etiquetas": [
+"coordinador",
+"cambio"
+]
+},
+{
+"id": "U7L1-10",
+"unidad": "U7",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Verificar las licencias de los gestores de residuos y la afiliación de contratistas es parte del radar del coordinador SIG.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Proveedores y contratistas son un frente de riesgo legal y operativo en las tres normas; se evalúan y reevalúan.",
+"referencia": "ISO 9001 8.4; ISO 14001:2026 8.1; ISO 45001:2018 8.1.4",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"proveedores"
+]
+},
+{
+"id": "U7L2-01",
+"unidad": "U7",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada actividad con su frecuencia típica.",
+"opciones": [
+[
+"Reunión del COPASST",
+"Mensual"
+],
+[
+"Comité de convivencia",
+"Trimestral"
+],
+[
+"Revisión por la dirección",
+"Anual"
+],
+[
+"Recertificación",
+"Cada 3 años"
+]
+],
+"correcta": null,
+"explicacion": "El calendario del SIG combina obligaciones legales (COPASST, convivencia) y del ciclo de certificación.",
+"referencia": "Res. 2013/1986; Res. 652/2012; ISO 9001:2026, 9.3; ISO/IEC 17021-1",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"calendario"
+]
+},
+{
+"id": "U7L2-02",
+"unidad": "U7",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Con qué frecuencia se hace la autoevaluación de estándares mínimos del SG-SST?",
+"opciones": [
+"Mensual",
+"Semestral",
+"Anual",
+"Cada 3 años"
+],
+"correcta": 2,
+"explicacion": "Es anual, con registro ante el Ministerio y plan de mejoramiento; la Circular 0027 de 2026 lo recordó.",
+"referencia": "Resolución 0312 de 2019; Circular 0027 de 2026",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"calendario"
+]
+},
+{
+"id": "U7L2-03",
+"unidad": "U7",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "Los indicadores del SIG se presentan a la dirección con su tendencia y su análisis, no solo con el dato del mes.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Un dato suelto no permite decidir. La revisión por la dirección de 9001:2026 pide además tendencias explícitamente.",
+"referencia": "ISO 9001:2026, 9.1.3 y 9.3.2 d)",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"indicadores"
+]
+},
+{
+"id": "U7L2-04",
+"unidad": "U7",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cuál es un buen indicador de la eficacia de las acciones correctivas?",
+"opciones": [
+"Número de NC abiertas",
+"Porcentaje de acciones que no reinciden",
+"Número de reuniones",
+"Páginas del manual"
+],
+"correcta": 1,
+"explicacion": "La eficacia se demuestra cuando el problema no vuelve. Contar NC abiertas mide carga, no eficacia.",
+"referencia": "ISO 9001:2026, 10.2",
+"dificultad": 2,
+"etiquetas": [
+"coordinador",
+"indicadores"
+]
+},
+{
+"id": "U7L2-05",
+"unidad": "U7",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "Para el coordinador, la meta de hallazgos de NC ___ en la auditoría de certificación es cero.",
+"opciones": [
+"mayor",
+"menor",
+"observación",
+"fortaleza"
+],
+"correcta": 0,
+"explicacion": "Una NC mayor pone en riesgo el certificado; las menores son normales y se gestionan con plan de acción.",
+"referencia": "ISO/IEC 17021-1:2015",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"indicadores"
+]
+},
+{
+"id": "U7L2-06",
+"unidad": "U7",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué actividad corresponde a la frecuencia semestral en el calendario tipo del SIG?",
+"opciones": [
+"Recertificación",
+"Auditoría interna parcial y revisión de matrices de peligros y aspectos",
+"Reporte de AT",
+"Política firmada"
+],
+"correcta": 1,
+"explicacion": "Mensual: indicadores, COPASST, NC; trimestral: convivencia y riesgos; semestral: auditoría parcial y matrices; anual: programa de auditoría, revisión por la dirección y 0312.",
+"referencia": "Práctica de gestión SIG",
+"dificultad": 2,
+"etiquetas": [
+"coordinador",
+"calendario"
+]
+},
+{
+"id": "U7L2-07",
+"unidad": "U7",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "La política de SST debe estar fechada, firmada y revisarse cada año.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Es requisito del SG-SST: política escrita, firmada por el representante legal, comunicada y revisada anualmente.",
+"referencia": "Decreto 1072 de 2015",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"SG-SST"
+]
+},
+{
+"id": "U7L2-08",
+"unidad": "U7",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué mide el «costo de no calidad»?",
+"opciones": [
+"El precio de la certificación",
+"Lo que cuestan los reprocesos, devoluciones, desperdicios y fallas",
+"El salario del coordinador",
+"El costo de los indicadores"
+],
+"correcta": 1,
+"explicacion": "Traduce los problemas de calidad a dinero; es útil para que la dirección priorice proyectos de mejora.",
+"referencia": "ISO 10014 (beneficios económicos de la gestión de la calidad)",
+"dificultad": 2,
+"etiquetas": [
+"coordinador",
+"indicadores"
+]
+},
+{
+"id": "U7L2-09",
+"unidad": "U7",
+"leccion": 2,
+"tipo": "ordenar",
+"enunciado": "Ordene la preparación de una certificación según el plan típico.",
+"opciones": [
+"Diagnóstico de brechas",
+"Diseño del sistema",
+"Implementación",
+"Verificación: auditoría interna y revisión por la dirección",
+"Certificación: Etapas 1 y 2"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4
+],
+"explicacion": "El plan de 3 a 6 meses va de diagnóstico a certificación; la auditoría interna y la revisión deben estar hechas antes de la Etapa 1.",
+"referencia": "ISO/IEC 17021-1:2015; práctica de implementación",
+"dificultad": 2,
+"etiquetas": [
+"coordinador",
+"certificación"
+]
+},
+{
+"id": "U7L2-10",
+"unidad": "U7",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué evidencia pide siempre el auditor sobre la medición?",
+"opciones": [
+"Fotos de los equipos",
+"Calibraciones vigentes de los equipos críticos, como básculas",
+"El manual del fabricante",
+"Facturas de compra"
+],
+"correcta": 1,
+"explicacion": "Sin calibración o verificación, los datos de medición no son confiables. Equipos sin calibrar es hallazgo frecuente.",
+"referencia": "ISO 9001:2026, 7.1.5; ISO 14001:2026, 9.1.1",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"metrología"
+]
+},
+{
+"id": "U7L3-01",
+"unidad": "U7",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada herramienta con su uso principal.",
+"opciones": [
+[
+"5 porqués",
+"Llegar a la causa raíz preguntando por qué"
+],
+[
+"Ishikawa",
+"Ordenar causas por categorías"
+],
+[
+"Pareto",
+"Priorizar las pocas causas que generan la mayoría de problemas"
+],
+[
+"5W2H",
+"Planificar una acción"
+]
+],
+"correcta": null,
+"explicacion": "Son las herramientas básicas de análisis y planificación que todo coordinador debe manejar.",
+"referencia": "Herramientas de calidad (ISO 9001:2026, 10.2)",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"herramientas"
+]
+},
+{
+"id": "U7L3-02",
+"unidad": "U7",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué herramienta describe un proceso como proveedor, entrada, actividad, salida y cliente?",
+"opciones": [
+"SIPOC",
+"DOFA",
+"AMFE",
+"PESTEL"
+],
+"correcta": 0,
+"explicacion": "El SIPOC (o caracterización) resume un proceso en esos cinco elementos; es la base del mapa de procesos.",
+"referencia": "ISO 9001:2026, 4.4",
+"dificultad": 2,
+"etiquetas": [
+"coordinador",
+"herramientas"
+]
+},
+{
+"id": "U7L3-03",
+"unidad": "U7",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué herramienta analiza modos de falla, sus efectos y su prioridad de riesgo?",
+"opciones": [
+"AMFE (FMEA)",
+"Pareto",
+"5S",
+"Kaizen"
+],
+"correcta": 0,
+"explicacion": "El AMFE identifica cómo puede fallar algo y prioriza por severidad, ocurrencia y detección.",
+"referencia": "Herramientas de gestión de riesgos (ISO 31000:2018)",
+"dificultad": 2,
+"etiquetas": [
+"coordinador",
+"herramientas"
+]
+},
+{
+"id": "U7L3-04",
+"unidad": "U7",
+"leccion": 3,
+"tipo": "completar",
+"enunciado": "Para analizar el contexto externo por factores políticos, económicos, sociales, tecnológicos, ecológicos y legales se usa el análisis ___.",
+"opciones": [
+"PESTEL",
+"SIPOC",
+"AMFE",
+"8D"
+],
+"correcta": 0,
+"explicacion": "PESTEL y DOFA son las herramientas habituales para evidenciar la cláusula 4.1.",
+"referencia": "ISO 9001:2026, 4.1",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"herramientas"
+]
+},
+{
+"id": "U7L3-05",
+"unidad": "U7",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Cuál es el ciclo de mejora de Six Sigma?",
+"opciones": [
+"DMAIC",
+"PHVA",
+"SIPOC",
+"5S"
+],
+"correcta": 0,
+"explicacion": "DMAIC: definir, medir, analizar, mejorar y controlar. PHVA es el ciclo general de las normas ISO.",
+"referencia": "Metodología Six Sigma",
+"dificultad": 2,
+"etiquetas": [
+"coordinador",
+"herramientas"
+]
+},
+{
+"id": "U7L3-06",
+"unidad": "U7",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Un SIG bien integrado tiene una sola revisión por la dirección que cubre las entradas de las tres normas.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La integración une contexto, política, mapa de procesos, riesgos, matriz legal, auditoría, NC/AC, revisión y control documental.",
+"referencia": "Estructura armonizada ISO; IAF MD 11",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"integración"
+]
+},
+{
+"id": "U7L3-07",
+"unidad": "U7",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Cuál es el principal riesgo de integrar calidad, ambiente y SST en un solo sistema?",
+"opciones": [
+"Que la certificación sea más cara",
+"Que se diluya el foco en SST, donde hay riesgo de lesiones graves",
+"Que se pierda el logo",
+"Ninguno"
+],
+"correcta": 1,
+"explicacion": "La integración ahorra duplicidad, pero la SST exige competencia especializada; diluirla aumenta el riesgo para las personas.",
+"referencia": "Práctica de integración SIG",
+"dificultad": 2,
+"etiquetas": [
+"coordinador",
+"integración"
+]
+},
+{
+"id": "U7L3-08",
+"unidad": "U7",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué metodología de orden y limpieza tiene cinco pasos de origen japonés?",
+"opciones": [
+"5S",
+"5W2H",
+"5 porqués",
+"Kanban"
+],
+"correcta": 0,
+"explicacion": "Las 5S (clasificar, ordenar, limpiar, estandarizar y disciplina) son base de Lean y de la seguridad en planta.",
+"referencia": "Metodología Lean",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"herramientas"
+]
+},
+{
+"id": "U7L3-09",
+"unidad": "U7",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Copiar plantillas de otra empresa sin adaptarlas es una buena práctica para implementar rápido.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Es un error típico: el sistema debe reflejar los procesos y riesgos reales; el auditor detecta rápido lo que no se usa.",
+"referencia": "Práctica de gestión SIG",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"errores"
+]
+},
+{
+"id": "U7L3-10",
+"unidad": "U7",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué norma da las directrices de gestión del riesgo que suele usar la matriz integrada?",
+"opciones": [
+"ISO 31000",
+"ISO 19011",
+"ISO 10002",
+"ISO 50001"
+],
+"correcta": 0,
+"explicacion": "ISO 31000:2018 ofrece el marco y proceso de gestión del riesgo; no es certificable pero orienta la metodología única del SIG.",
+"referencia": "ISO 31000:2018",
+"dificultad": 1,
+"etiquetas": [
+"coordinador",
+"riesgos"
+]
+},
+{
+"id": "U8L1-01",
+"unidad": "U8",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada norma con su tema en SST.",
+"opciones": [
+[
+"Decreto 1072 de 2015",
+"SG-SST (decreto único del trabajo)"
+],
+[
+"Res. 0312 de 2019",
+"Estándares mínimos"
+],
+[
+"Ley 1562 de 2012",
+"Sistema de riesgos laborales"
+],
+[
+"Ley 1010 de 2006",
+"Acoso laboral"
+]
+],
+"correcta": null,
+"explicacion": "Son las cuatro normas de SST más preguntadas en auditoría y en cargos de coordinación.",
+"referencia": "Decreto 1072/2015; Res. 0312/2019; Ley 1562/2012; Ley 1010/2006",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"SST"
+]
+},
+{
+"id": "U8L1-02",
+"unidad": "U8",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué norma gradúa las multas por incumplir el SG-SST?",
+"opciones": [
+"Decreto 472 de 2015",
+"Decreto 1076 de 2015",
+"Ley 1480 de 2011",
+"Res. 2184 de 2019"
+],
+"correcta": 0,
+"explicacion": "El Decreto 472 de 2015 gradúa las multas de la Ley 1562 de 2012 según tamaño, reincidencia y gravedad.",
+"referencia": "Decreto 472 de 2015",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"sanciones"
+]
+},
+{
+"id": "U8L1-03",
+"unidad": "U8",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué ley regula la desconexión laboral?",
+"opciones": [
+"Ley 2191 de 2022",
+"Ley 2088 de 2021",
+"Ley 1221 de 2008",
+"Ley 1616 de 2013"
+],
+"correcta": 0,
+"explicacion": "La 2191 de 2022 es desconexión laboral; la 2088 de 2021 trabajo en casa; la 1221 de 2008 teletrabajo; la 1616 de 2013 salud mental.",
+"referencia": "Ley 2191 de 2022",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"SST"
+]
+},
+{
+"id": "U8L1-04",
+"unidad": "U8",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada ley con su modalidad o tema laboral.",
+"opciones": [
+[
+"Ley 1221 de 2008",
+"Teletrabajo"
+],
+[
+"Ley 2088 de 2021",
+"Trabajo en casa"
+],
+[
+"Ley 2121 de 2021",
+"Trabajo remoto"
+],
+[
+"Ley 2365 de 2024",
+"Acoso sexual laboral"
+]
+],
+"correcta": null,
+"explicacion": "Las tres modalidades no presenciales tienen leyes distintas; el SG-SST debe cubrir también esos lugares de trabajo.",
+"referencia": "Leyes 1221/2008, 2088/2021, 2121/2021 y 2365/2024",
+"dificultad": 3,
+"etiquetas": [
+"legal",
+"SST"
+]
+},
+{
+"id": "U8L1-05",
+"unidad": "U8",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "La Res. 1409 de 2012 sigue siendo la norma vigente de trabajo en alturas.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Fue derogada por la Res. 4272 de 2021, hoy vigente para trabajo en alturas.",
+"referencia": "Resolución 4272 de 2021",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"SST"
+]
+},
+{
+"id": "U8L1-06",
+"unidad": "U8",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué decreto contiene la tabla de enfermedades laborales?",
+"opciones": [
+"Decreto 1477 de 2014",
+"Decreto 723 de 2013",
+"Decreto 1295 de 1994",
+"Decreto 2157 de 2017"
+],
+"correcta": 0,
+"explicacion": "El 1477 de 2014 adopta la tabla; el 723 de 2013 regula la afiliación de contratistas; el 2157 de 2017 los planes de gestión del riesgo de desastres.",
+"referencia": "Decreto 1477 de 2014",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"SST"
+]
+},
+{
+"id": "U8L1-07",
+"unidad": "U8",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "La afiliación de contratistas al sistema de riesgos laborales la regula el Decreto ___ de 2013.",
+"opciones": [
+"723",
+"472",
+"1477",
+"1496"
+],
+"correcta": 0,
+"explicacion": "Verificar la afiliación de contratistas es parte del control de 8.1.4 de 45001 y del SG-SST.",
+"referencia": "Decreto 723 de 2013",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"contratistas"
+]
+},
+{
+"id": "U8L1-08",
+"unidad": "U8",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué normas regulan el Sistema Globalmente Armonizado (SGA) para productos químicos?",
+"opciones": [
+"Decreto 1496 de 2018 y Res. 0773 de 2021",
+"Ley 99 de 1993",
+"Res. 2184 de 2019",
+"Ley 1480 de 2011"
+],
+"correcta": 0,
+"explicacion": "El SGA (GHS) estandariza clasificación, etiquetas y fichas de seguridad de los químicos en el trabajo.",
+"referencia": "Decreto 1496 de 2018; Resolución 0773 de 2021",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"químicos"
+]
+},
+{
+"id": "U8L1-09",
+"unidad": "U8",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué ley obliga al Plan Estratégico de Seguridad Vial (PESV)?",
+"opciones": [
+"Ley 1503 de 2011",
+"Ley 1523 de 2012",
+"Ley 1562 de 2012",
+"Ley 1581 de 2012"
+],
+"correcta": 0,
+"explicacion": "La 1503 de 2011 creó el PESV; su metodología vigente está en la Res. 40595 de 2022.",
+"referencia": "Ley 1503 de 2011; Resolución 40595 de 2022",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"vial"
+]
+},
+{
+"id": "U8L1-10",
+"unidad": "U8",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Ante un accidente mortal, la empresa reporta en 2 días hábiles y remite la investigación a la ARL en 15 días.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "El reporte sigue el art. 62 del Decreto-Ley 1295 de 1994 y la investigación la Res. 1401 de 2007.",
+"referencia": "Decreto-Ley 1295/1994, art. 62; Res. 1401/2007",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"reportes"
+]
+},
+{
+"id": "U8L2-01",
+"unidad": "U8",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué decreto compila la normativa del sector ambiente y desarrollo sostenible?",
+"opciones": [
+"Decreto 1076 de 2015",
+"Decreto 1072 de 2015",
+"Decreto 1077 de 2015",
+"Decreto 1074 de 2015"
+],
+"correcta": 0,
+"explicacion": "1076 ambiente; 1072 trabajo; 1077 vivienda (aseo y aprovechamiento); 1074 comercio.",
+"referencia": "Decreto 1076 de 2015",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"ambiental"
+]
+},
+{
+"id": "U8L2-02",
+"unidad": "U8",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada decreto único reglamentario con su sector.",
+"opciones": [
+[
+"Decreto 1072 de 2015",
+"Trabajo"
+],
+[
+"Decreto 1076 de 2015",
+"Ambiente"
+],
+[
+"Decreto 1077 de 2015",
+"Vivienda y servicio de aseo"
+],
+[
+"Decreto 1074 de 2015",
+"Comercio, industria y turismo"
+]
+],
+"correcta": null,
+"explicacion": "Los decretos únicos de 2015 compilan la reglamentación de cada sector; aprenderlos por número ahorra tiempo en la matriz legal.",
+"referencia": "Decretos 1072, 1074, 1076 y 1077 de 2015",
+"dificultad": 2,
+"etiquetas": [
+"legal"
+]
+},
+{
+"id": "U8L2-03",
+"unidad": "U8",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué ley creó el SINA y el Ministerio de Ambiente?",
+"opciones": [
+"Ley 99 de 1993",
+"Ley 1333 de 2009",
+"Ley 142 de 1994",
+"Ley 9 de 1979"
+],
+"correcta": 0,
+"explicacion": "La Ley 99 de 1993 organizó el Sistema Nacional Ambiental, el ministerio y las corporaciones autónomas regionales.",
+"referencia": "Ley 99 de 1993",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"ambiental"
+]
+},
+{
+"id": "U8L2-04",
+"unidad": "U8",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué ley fija el procedimiento sancionatorio ambiental, con multas de hasta 5.000 SMMLV?",
+"opciones": [
+"Ley 1333 de 2009",
+"Ley 1562 de 2012",
+"Ley 2111 de 2021",
+"Ley 1259 de 2008"
+],
+"correcta": 0,
+"explicacion": "La 1333 de 2009 regula el sancionatorio ambiental; la 2111 de 2021 tipificó delitos ambientales en el Código Penal.",
+"referencia": "Ley 1333 de 2009",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"sanciones"
+]
+},
+{
+"id": "U8L2-05",
+"unidad": "U8",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué norma regula la gestión de residuos peligrosos (RESPEL)?",
+"opciones": [
+"Decreto 4741 de 2005, compilado en el 1076 de 2015",
+"Ley 1480 de 2011",
+"Res. 2346 de 2007",
+"Ley 1581 de 2012"
+],
+"correcta": 0,
+"explicacion": "El 4741 de 2005 fija las obligaciones del generador de RESPEL; el registro de generadores está en la Res. 1362 de 2007.",
+"referencia": "Decreto 4741 de 2005; Decreto 1076 de 2015",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"residuos"
+]
+},
+{
+"id": "U8L2-06",
+"unidad": "U8",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "El registro de generadores de residuos peligrosos se hace ante el ___.",
+"opciones": [
+"IDEAM",
+"ONAC",
+"INVIMA",
+"SENA"
+],
+"correcta": 0,
+"explicacion": "El registro (Res. 1362 de 2007) se hace en el aplicativo del IDEAM, dentro del Registro Único Ambiental (RUA).",
+"referencia": "Resolución 1362 de 2007",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"residuos"
+]
+},
+{
+"id": "U8L2-07",
+"unidad": "U8",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué resolución adoptó el código de colores blanco, negro y verde para separar residuos?",
+"opciones": [
+"Res. 2184 de 2019",
+"Res. 1407 de 2018",
+"Res. 754 de 2014",
+"Res. 631 de 2015"
+],
+"correcta": 0,
+"explicacion": "La 2184 de 2019 unificó el código nacional de colores para la separación en la fuente.",
+"referencia": "Resolución 2184 de 2019",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"residuos"
+]
+},
+{
+"id": "U8L2-08",
+"unidad": "U8",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué resolución regula la responsabilidad extendida del productor para envases y empaques de papel, cartón, plástico, vidrio y metal?",
+"opciones": [
+"Res. 1407 de 2018",
+"Res. 1511 de 2010",
+"Res. 0316 de 2018",
+"Res. 627 de 2006"
+],
+"correcta": 0,
+"explicacion": "La 1407 de 2018 obliga a productores a planes de gestión ambiental de envases y empaques con metas anuales de aprovechamiento.",
+"referencia": "Resolución 1407 de 2018",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"residuos"
+]
+},
+{
+"id": "U8L2-09",
+"unidad": "U8",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada norma ambiental con su tema.",
+"opciones": [
+[
+"Res. 631 de 2015",
+"Límites de vertimientos"
+],
+[
+"Res. 627 de 2006",
+"Ruido"
+],
+[
+"Ley 1672 de 2013",
+"Residuos de aparatos eléctricos (RAEE)"
+],
+[
+"Ley 2232 de 2022",
+"Plásticos de un solo uso"
+]
+],
+"correcta": null,
+"explicacion": "Son normas que suelen aparecer en la matriz legal de operaciones con residuos, patios y maquinaria.",
+"referencia": "Res. 631/2015; Res. 627/2006; Ley 1672/2013; Ley 2232/2022",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"ambiental"
+]
+},
+{
+"id": "U8L2-10",
+"unidad": "U8",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "El certificado de disposición o aprovechamiento emitido por el gestor es el soporte probatorio ante la autoridad ambiental y los auditores.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Sin el certificado (gestor licenciado, cantidad y número) no se puede demostrar la gestión del residuo: es incumplimiento y riesgo sancionatorio.",
+"referencia": "Decreto 4741 de 2005; ISO 14001:2026, 8.1",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"residuos"
+]
+},
+{
+"id": "U8L3-01",
+"unidad": "U8",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué ley es el Estatuto del Consumidor?",
+"opciones": [
+"Ley 1480 de 2011",
+"Ley 1581 de 2012",
+"Ley 527 de 1999",
+"Ley 594 de 2000"
+],
+"correcta": 0,
+"explicacion": "La 1480 de 2011 regula garantía legal, información, publicidad y responsabilidad por producto defectuoso; la vigila la SIC.",
+"referencia": "Ley 1480 de 2011",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"consumidor"
+]
+},
+{
+"id": "U8L3-02",
+"unidad": "U8",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué ley regula la protección de datos personales (habeas data)?",
+"opciones": [
+"Ley 1581 de 2012",
+"Ley 1273 de 2009",
+"Ley 1712 de 2014",
+"Ley 1480 de 2011"
+],
+"correcta": 0,
+"explicacion": "La 1581 de 2012 y su decreto reglamentario 1377 de 2013 rigen el tratamiento de datos; la 1273 de 2009 tipifica delitos informáticos.",
+"referencia": "Ley 1581 de 2012; Decreto 1377 de 2013",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"datos"
+]
+},
+{
+"id": "U8L3-03",
+"unidad": "U8",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada ley con su tema.",
+"opciones": [
+[
+"Ley 527 de 1999",
+"Comercio electrónico y firma digital"
+],
+[
+"Ley 1273 de 2009",
+"Delitos informáticos"
+],
+[
+"Ley 594 de 2000",
+"Archivo"
+],
+[
+"Ley 1712 de 2014",
+"Transparencia en el sector público"
+]
+],
+"correcta": null,
+"explicacion": "Son normas que tocan la información documentada del SIG: firma, archivo, seguridad y acceso a la información.",
+"referencia": "Leyes 527/1999, 1273/2009, 594/2000 y 1712/2014",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"información"
+]
+},
+{
+"id": "U8L3-04",
+"unidad": "U8",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué entidad vigila los derechos del consumidor, los datos personales y la metrología legal?",
+"opciones": [
+"Superintendencia de Industria y Comercio",
+"Mintrabajo",
+"ANLA",
+"IDEAM"
+],
+"correcta": 0,
+"explicacion": "La SIC concentra consumidor, habeas data y metrología legal; por eso es la autoridad de la calibración de básculas de uso comercial.",
+"referencia": "Ley 1480/2011; Ley 1581/2012; Decreto 1074/2015",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"autoridades"
+]
+},
+{
+"id": "U8L3-05",
+"unidad": "U8",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada autoridad con su función.",
+"opciones": [
+[
+"Mintrabajo",
+"Inspección y vigilancia laboral y de SST"
+],
+[
+"ANLA",
+"Licencias ambientales nacionales"
+],
+[
+"ONAC",
+"Acreditación de organismos"
+],
+[
+"Superservicios",
+"Vigilancia del servicio de aseo"
+]
+],
+"correcta": null,
+"explicacion": "El coordinador debe saber ante quién responde cada obligación de la matriz legal.",
+"referencia": "Decreto 1072/2015; Ley 99/1993; Decreto 1595/2015; Ley 142/1994",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"autoridades"
+]
+},
+{
+"id": "U8L3-06",
+"unidad": "U8",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Con qué frecuencia debe actualizarse la matriz legal del SIG?",
+"opciones": [
+"Mensualmente, con vigilancia normativa",
+"Cada 3 años",
+"Solo antes de la auditoría",
+"Nunca, se hace una vez"
+],
+"correcta": 0,
+"explicacion": "Las normas cambian todo el tiempo; la vigilancia mensual evita auditar con una matriz desactualizada, hallazgo frecuente.",
+"referencia": "ISO 14001:2026, 6.1.3; ISO 45001:2018, 6.1.3",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"matriz"
+]
+},
+{
+"id": "U8L3-07",
+"unidad": "U8",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Ante un requerimiento de una autoridad, la respuesta debe darse dentro del plazo que fija el requerimiento.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Es una obligación «ante evento» del checklist del coordinador, como el reporte de accidentes o de derrames.",
+"referencia": "Obligaciones periódicas del SIG (matriz legal)",
+"dificultad": 1,
+"etiquetas": [
+"legal",
+"obligaciones"
+]
+},
+{
+"id": "U8L3-08",
+"unidad": "U8",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué ley fijó la meta de carbono neutralidad de Colombia a 2050?",
+"opciones": [
+"Ley 2169 de 2021",
+"Ley 1931 de 2018",
+"Ley 1715 de 2014",
+"Ley 1819 de 2016"
+],
+"correcta": 0,
+"explicacion": "La 2169 de 2021 fijó carbono neutralidad a 2050 y reducción de 51 % de emisiones a 2030. La 1931 de 2018 es la ley de cambio climático.",
+"referencia": "Ley 2169 de 2021",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"clima"
+]
+},
+{
+"id": "U8L3-09",
+"unidad": "U8",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué ley regula la gestión del riesgo de desastres y creó la UNGRD como eje del sistema?",
+"opciones": [
+"Ley 1523 de 2012",
+"Ley 1575 de 2012",
+"Ley 1503 de 2011",
+"Ley 99 de 1993"
+],
+"correcta": 0,
+"explicacion": "La 1523 de 2012 creó el Sistema Nacional de Gestión del Riesgo de Desastres; la 1575 de 2012 es la ley de bomberos.",
+"referencia": "Ley 1523 de 2012",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"emergencias"
+]
+},
+{
+"id": "U8L3-10",
+"unidad": "U8",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada obligación con su frecuencia.",
+"opciones": [
+[
+"Autoevaluación de estándares mínimos",
+"Anual"
+],
+[
+"Reporte de accidente de trabajo",
+"2 días hábiles"
+],
+[
+"Indicadores de SST",
+"Mensual"
+],
+[
+"Investigación de accidente grave",
+"15 días"
+]
+],
+"correcta": null,
+"explicacion": "Es el núcleo del calendario legal que controla el coordinador SIG.",
+"referencia": "Res. 0312/2019; Decreto-Ley 1295/1994; Res. 1401/2007",
+"dificultad": 2,
+"etiquetas": [
+"legal",
+"obligaciones"
+]
+}
 ]
 }

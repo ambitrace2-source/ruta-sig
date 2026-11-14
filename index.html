@@ -78,6 +78,11 @@ audio{width:100%;height:2.5rem}
 .sello.nc .marca{color:var(--bad)}
 .ref{font-size:.8rem;font-weight:600;border:1px solid currentColor;border-radius:.4rem;padding:.15rem .45rem;align-self:flex-start;color:var(--muted)}
 .fin{text-align:center;display:flex;flex-direction:column;gap:1rem;padding-block:1.5rem}
+.btn.sec{background:var(--surface);color:var(--accent);border:2px solid var(--accent);box-shadow:none}
+summary{cursor:pointer;font-weight:600;min-height:2.75rem;display:flex;align-items:center}
+summary:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.copia{display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem}
+textarea{width:100%;font:.8rem/1.4 ui-monospace,Consolas,monospace;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:.6rem;padding:.5rem;resize:vertical;overflow-wrap:anywhere}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
@@ -88,9 +93,55 @@ const K='rutaSIG.v1', DIA=864e5, EXAMEN=new Date(2026,10,18);
 const INTERVALO=[0,0,1,2,4,7]; // días hasta el próximo repaso según la caja Leitner (1 a 5)
 const TIPOS={om:'Opción múltiple',vf:'Verdadero o falso',completar:'Complete la frase',ordenar:'Ordene',emparejar:'Empareje'};
 const app=document.getElementById('app');
-let B, S={xp:0,racha:0,ultimo:0,cajas:{},lecc:{}}, Z, P;
-try{Object.assign(S,JSON.parse(localStorage.getItem(K))||{})}catch(e){}
-const guardar=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+const VACIO=()=>({xp:0,racha:0,ultimo:0,t:0,cajas:{},lecc:{}});
+let B, S=VACIO(), Z, P, ref=null, sync='', escribiendo=false, pendiente=false, tSubir, confirmar=false;
+
+// Valida todo progreso que entra de fuera (código pegado, nube o almacenamiento): solo números y forma esperada.
+function limpiar(d){
+  if(!d||typeof d!=='object')throw new Error('formato');
+  const n=v=>Number.isFinite(v)&&v>=0?Math.floor(v):0, o=VACIO();
+  o.xp=n(d.xp);o.racha=n(d.racha);o.ultimo=n(d.ultimo);o.t=n(d.t);
+  for(const[k,v]of Object.entries(d.cajas||{}))if(v&&v.c>=1&&v.c<=5&&Number.isFinite(v.v))o.cajas[k]={c:Math.floor(v.c),v:Math.floor(v.v)};
+  for(const[k,v]of Object.entries(d.lecc||{}))if(Number.isFinite(v))o.lecc[k]=n(v);
+  const s=d.sesion;
+  if(s&&Array.isArray(s.ids)&&s.ids.every(x=>typeof x==='string')&&['leccion','repaso'].includes(s.tipo))
+    o.sesion={tipo:s.tipo,ids:s.ids.slice(0,60),i:n(s.i),ok:n(s.ok),xp:n(s.xp),clave:typeof s.clave==='string'?s.clave:undefined};
+  return o;
+}
+function codigo(s=S){let b='';for(const x of new TextEncoder().encode(JSON.stringify(limpiar(s))))b+=String.fromCharCode(x);return 'SIG1.'+btoa(b)}
+function leerCodigo(c){c=c.trim();if(!c.startsWith('SIG1.'))throw new Error('prefijo');return limpiar(JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(c.slice(5)),ch=>ch.charCodeAt(0)))))}
+{const m={xp:30,racha:2,ultimo:5,t:9,cajas:{'U1L1-01':{c:3,v:7}},lecc:{U1L1:8},sesion:{tipo:'leccion',ids:['U1L1-01'],i:1,ok:1,xp:10,clave:'U1L1'}};
+ console.assert(JSON.stringify(leerCodigo(codigo(m)))===JSON.stringify(limpiar(m)),'codigo ida y vuelta');
+ console.assert(limpiar({xp:-5,cajas:{a:{c:9,v:1}}}).xp===0&&!limpiar({cajas:{a:{c:9,v:1}}}).cajas.a,'limpiar')}
+
+try{S=limpiar(JSON.parse(localStorage.getItem(K))||{})}catch(e){}
+const guardarLocal=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+const guardar=()=>{S.t=Date.now();guardarLocal();if(ref){clearTimeout(tSubir);tSubir=setTimeout(subir,1500)}};
+function avisar(t){sync=t;const e=document.getElementById('sync');if(e)e.textContent=t}
+
+// Nube: solo existe dentro del Artifact de claude.ai (sesión del Señor). Fuera de él, window.claude no existe y todo queda local.
+async function nube(){
+  const use=window.claude&&window.claude.use; if(!use)return;
+  const [db,user]=await Promise.all([use('db'),use('user')]); if(!db||!user)return;
+  const id=await user.id(); if(!id)return;
+  const r=db.doc('data/users/'+id+'/progreso');
+  avisar('Sincronizando con su cuenta…');
+  const espera=setTimeout(()=>avisar('Aún no se pudo conectar con su cuenta; el progreso sigue guardado en este dispositivo.'),10000);
+  try{
+    const s=await r.get(); clearTimeout(espera);
+    const d=s.exists?limpiar(s.data()):null; ref=r;
+    if(d&&d.t>S.t&&!Z){S=d;guardarLocal();inicio()}
+    else if(!d||d.t<S.t)subir();
+    avisar('Progreso sincronizado con su cuenta de Claude.');
+  }catch(e){clearTimeout(espera);avisar('No se pudo sincronizar; el progreso sigue guardado en este dispositivo.')}
+}
+async function subir(){
+  if(!ref)return; if(escribiendo){pendiente=true;return}
+  escribiendo=true;
+  try{await ref.set(JSON.parse(JSON.stringify(S)));avisar('Progreso sincronizado con su cuenta de Claude.')}
+  catch(e){avisar('No se pudo guardar en su cuenta; el progreso sigue en este dispositivo.')}
+  escribiendo=false; if(pendiente){pendiente=false;subir()}
+}
 const hoy=()=>Math.floor((Date.now()-new Date().getTimezoneOffset()*6e4)/DIA);
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const dias=n=>n+(n===1?' día':' días');
@@ -114,7 +165,8 @@ function inicio(){
     <div class="medidor xp"><b>${S.xp}</b><span>XP</span></div>
     <div class="medidor"><b>${Math.max(0,faltan)}</b><span>Días al 18-nov</span></div>
   </div>
-  <button class="btn" data-repaso ${rep?'':'disabled'}>${rep?`Repaso del día · ${rep} ${rep===1?'pregunta':'preguntas'}`:'Sin repasos pendientes hoy'}</button>
+  ${S.sesion?`<button class="btn" data-continuar>Continuar ${S.sesion.tipo==='leccion'?'lección':'repaso'} · pregunta ${Math.min(S.sesion.i+1,S.sesion.ids.length)} de ${S.sesion.ids.length}</button>`:''}
+  <button class="btn ${S.sesion?'sec':''}" data-repaso ${rep?'':'disabled'}>${rep?`Repaso del día · ${rep} ${rep===1?'pregunta':'preguntas'}`:'Sin repasos pendientes hoy'}</button>
   ${B.unidades.map(u=>{
     const total=B.preguntas.filter(q=>q.unidad===u.id).length;
     const logro=u.lecciones.reduce((s,_,i)=>s+(S.lecc[u.id+'L'+(i+1)]||0),0);
@@ -124,11 +176,33 @@ function inicio(){
     ${u.lecciones.map((t,i)=>{const m=S.lecc[u.id+'L'+(i+1)], n=deLeccion(u.id,i+1).length;
       return `<button class="leccion ${m!=null?'hecha':''}" data-u="${u.id}" data-l="${i+1}"><span class="n">${i+1}</span><span class="t">${esc(t)}</span><span class="p">${m!=null?m+'/'+n:'Nueva'}</span></button>`}).join('')}
     </section>`}).join('')}
-  <p class="muted">El progreso se guarda solo en este dispositivo.</p>`;
+  <section class="unidad"><h2>Su progreso</h2>
+    <p class="muted" id="sync">${esc(sync||'Guardado en este dispositivo.')}</p>
+    <p class="muted" id="offline"></p>
+    <details><summary>Copia de seguridad</summary><div class="copia">
+      <p class="muted">Guarde este código en una nota o envíeselo a sí mismo. Con él recupera el progreso en otro celular o navegador.</p>
+      <textarea id="codigo" rows="3" readonly aria-label="Código de su progreso">${codigo()}</textarea>
+      <button class="btn" data-copiar>Copiar código</button>
+      <label for="restaurar" class="muted">Restaurar desde un código</label>
+      <textarea id="restaurar" rows="3" placeholder="Pegue aquí el código SIG1…"></textarea>
+      <button class="btn sec" data-restaurar>Restaurar progreso</button>
+      <p class="muted" id="msg" role="status"></p>
+    </div></details>
+  </section>`;
+  confirmar=false;
+  if(navigator.serviceWorker)navigator.serviceWorker.ready.then(()=>{const e=document.getElementById('offline');if(e)e.textContent='Lista para usar sin conexión: preguntas y audios descargados.'});
+}
+function mensaje(t){const e=document.getElementById('msg');if(e)e.textContent=t}
+function reanudar(){
+  const s=S.sesion, m=new Map(B.preguntas.map(q=>[q.id,q])), cola=s.ids.map(i=>m.get(i)).filter(Boolean);
+  if(!cola.length){delete S.sesion;guardar();return inicio()}
+  Z={tipo:s.tipo,cola,clave:s.clave,i:Math.min(s.i,cola.length),ok:s.ok,xp:s.xp};
+  Z.i<cola.length?nueva():terminar();
 }
 
 function empezar(tipo,cola,clave){Z={tipo,cola,clave,i:0,ok:0,xp:0};nueva()}
 function nueva(){
+  S.sesion={tipo:Z.tipo,ids:Z.cola.map(q=>q.id),i:Z.i,ok:Z.ok,xp:Z.xp,clave:Z.clave}; guardar();
   const q=Z.cola[Z.i], idx=[...q.opciones.keys()];
   P={q,res:null,sel:null,sec:[],izq:null,mal:null,err:0,hechos:[],ord:q.tipo==='vf'?idx:mezclar(idx),ord2:mezclar(idx)};
   pregunta();
@@ -171,12 +245,13 @@ function pregunta(){
 function resolver(ok){
   P.res=ok; S.cajas[P.q.id]=leitner(S.cajas[P.q.id],ok,hoy());
   if(ok){const x=Z.tipo==='leccion'?10:5;Z.ok++;Z.xp+=x;S.xp+=x}
+  if(S.sesion)Object.assign(S.sesion,{i:Z.i+1,ok:Z.ok,xp:Z.xp});
   guardar(); pregunta();
 }
 function terminar(){
   sumarRacha(S,hoy());
   if(Z.clave)S.lecc[Z.clave]=Math.max(S.lecc[Z.clave]||0,Z.ok);
-  guardar();
+  delete S.sesion; guardar();
   const f=Z.cola.length-Z.ok;
   app.innerHTML=`<div class="fin"><h1>${Z.tipo==='leccion'?'Lección completada':'Repaso completado'}</h1>
   <div class="medidores">
@@ -192,6 +267,21 @@ app.onclick=e=>{
   const b=e.target.closest('button'); if(!b||b.disabled)return; const d=b.dataset;
   if('salir' in d)return inicio();
   if('repaso' in d)return empezar('repaso',pendientes());
+  if('continuar' in d)return reanudar();
+  if('copiar' in d){
+    const t=document.getElementById('codigo');
+    try{navigator.clipboard.writeText(t.value).then(()=>mensaje('Código copiado. Guárdelo en un lugar seguro.'),()=>{t.select();mensaje('Seleccioné el código: cópielo con el menú del teléfono.')})}
+    catch(e){t.select();mensaje('Seleccioné el código: cópielo con el menú del teléfono.')}
+    return;
+  }
+  if('restaurar' in d){
+    let nuevo;
+    try{nuevo=leerCodigo(document.getElementById('restaurar').value)}catch(e){return mensaje('El código no es válido. Revise que esté completo y empiece por SIG1.')}
+    if(!confirmar){confirmar=true;b.textContent='Toque otra vez: reemplaza su progreso actual';return}
+    S=nuevo; guardar(); inicio();
+    document.querySelector('details').open=true;
+    return mensaje(`Progreso restaurado: ${S.xp} XP y ${Object.keys(S.cajas).length} preguntas vistas.`);
+  }
   if(d.u)return empezar('leccion',deLeccion(d.u,+d.l),d.u+'L'+d.l);
   if('seguir' in d)return ++Z.i<Z.cola.length?nueva():terminar();
   const q=P.q;
@@ -208,7 +298,7 @@ app.onclick=e=>{
   pregunta();
 };
 
-fetch('banco_preguntas.json').then(r=>r.json()).then(b=>{B=b;inicio()})
+fetch('banco_preguntas.json').then(r=>r.json()).then(b=>{B=b;inicio();nube()})
   .catch(()=>{app.innerHTML='<h1>Ruta SIG</h1><p>No se pudo cargar el banco de preguntas. Revise la conexión y vuelva a abrir la página.</p>'});
 </script>
 
