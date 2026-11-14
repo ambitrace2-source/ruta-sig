@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es-CO"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B6E69"><link rel="manifest" href="manifest.json"><link rel="icon" href="icono.svg">
+<style>:root{color-scheme:light;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}body{margin:0}[hidden]{display:none!important}</style>
+</head><body>
+<title>Ruta SIG</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap">
+<style>
+/* Layout: una sola columna de teléfono (máx. 30rem), botones grandes; la retroalimentación es un "sello" de auditoría (Conforme / No conforme) con la cláusula como referencia. */
+:root{
+  --bg:#EEF2F1;--surface:#FFFFFF;--ink:#12262B;--muted:#55696E;--line:#C9D5D3;
+  --accent:#0B6E69;--accent-ink:#FFFFFF;--gold:#9A6400;
+  --ok:#1D7A46;--ok-bg:#DDF2E4;--bad:#B3261E;--bad-bg:#FBE3E0;
+  --display:"Space Grotesk","Segoe UI",system-ui,sans-serif;
+  --body:"Inter","Segoe UI",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1A1D;--surface:#172A2F;--ink:#E6EFEE;--muted:#9DB1B5;--line:#2F474D;
+  --accent:#4FD1C5;--accent-ink:#06211F;--gold:#F2B84B;
+  --ok:#6FD99A;--ok-bg:#12331F;--bad:#FF9A8F;--bad-bg:#3D1A17;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1A1D;--surface:#172A2F;--ink:#E6EFEE;--muted:#9DB1B5;--line:#2F474D;
+  --accent:#4FD1C5;--accent-ink:#06211F;--gold:#F2B84B;
+  --ok:#6FD99A;--ok-bg:#12331F;--bad:#FF9A8F;--bad-bg:#3D1A17;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 1rem/1.5 var(--body);
+  padding-block:1rem 2rem;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#app{max-width:30rem;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;line-height:1.2}
+h1{font-size:1.6rem}h2{font-size:1.2rem}h3{font-size:1.25rem;font-weight:600}
+p{margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,audio:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.muted{color:var(--muted);font-size:.875rem}
+.medidores{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.medidor{background:var(--surface);border:1px solid var(--line);border-radius:.75rem;padding:.6rem .5rem;text-align:center;min-width:0}
+.medidor b{display:block;font:700 1.5rem/1.1 var(--display);font-variant-numeric:tabular-nums}
+.medidor.xp b{color:var(--gold)}
+.medidor span{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.btn{min-height:3.25rem;width:100%;border:0;border-radius:.9rem;padding:.75rem 1rem;font-weight:600;
+  background:var(--accent);color:var(--accent-ink);box-shadow:0 4px 0 color-mix(in srgb,var(--accent) 65%,#000)}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 color-mix(in srgb,var(--accent) 65%,#000)}
+.btn:disabled{background:var(--line);color:var(--muted);box-shadow:none;cursor:default}
+.unidad{background:var(--surface);border:1px solid var(--line);border-radius:1rem;padding:1rem;display:flex;flex-direction:column;gap:.75rem}
+.unidad header{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem}
+.barra{height:.5rem;border-radius:1rem;background:var(--line);overflow:hidden;flex:1}
+.barra i{display:block;height:100%;background:var(--accent);transition:width .3s}
+audio{width:100%;height:2.5rem}
+.leccion{display:flex;align-items:center;gap:.75rem;width:100%;min-height:3.25rem;text-align:left;
+  background:var(--bg);border:1px solid var(--line);border-radius:.75rem;padding:.6rem .75rem}
+.leccion .n{flex:none;width:2rem;height:2rem;border-radius:50%;display:grid;place-items:center;font:700 .95rem var(--display);
+  border:2px solid var(--accent);color:var(--accent)}
+.leccion.hecha .n{background:var(--accent);color:var(--accent-ink)}
+.leccion .t{flex:1;min-width:0}
+.leccion .p{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.top{display:flex;align-items:center;gap:.75rem}
+.salir{background:none;border:1px solid var(--line);border-radius:.6rem;min-height:2.75rem;padding:0 .75rem;color:var(--muted)}
+.tipo{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.hueco{display:inline-block;min-width:4.5rem;border-bottom:2px solid var(--accent);color:var(--accent);text-align:center;font-weight:600}
+.ops{display:flex;flex-direction:column;gap:.6rem}
+.op{min-height:3.25rem;width:100%;text-align:left;background:var(--surface);border:2px solid var(--line);border-radius:.9rem;padding:.7rem .9rem}
+.op.sel{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--surface))}
+.op.bien{border-color:var(--ok);background:var(--ok-bg)}
+.op.mal{border-color:var(--bad);background:var(--bad-bg)}
+.op:disabled{cursor:default;color:inherit}
+.op.hecho{opacity:.55;border-style:dashed}
+.sec{margin:0;padding-left:1.6rem;display:flex;flex-direction:column;gap:.5rem;min-height:3.25rem;
+  border:2px dashed var(--line);border-radius:.9rem;padding-block:.5rem;padding-right:.5rem}
+.sec:empty::before{content:"Su orden aparecerá aquí";color:var(--muted);font-size:.875rem;margin-left:-.8rem;align-self:center}
+.pares{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.pares .ops{min-width:0}
+.pares .op{font-size:.9rem;padding:.6rem;overflow-wrap:anywhere}
+.sello{border-radius:1rem;padding:1rem;display:flex;flex-direction:column;gap:.6rem;border:2px solid var(--ok);background:var(--ok-bg)}
+.sello.nc{border-color:var(--bad);background:var(--bad-bg)}
+.sello .marca{font:700 1.05rem var(--display);text-transform:uppercase;letter-spacing:.05em;color:var(--ok)}
+.sello.nc .marca{color:var(--bad)}
+.ref{font-size:.8rem;font-weight:600;border:1px solid currentColor;border-radius:.4rem;padding:.15rem .45rem;align-self:flex-start;color:var(--muted)}
+.fin{text-align:center;display:flex;flex-direction:column;gap:1rem;padding-block:1.5rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<main id="app"><p class="muted">Cargando el banco de preguntas…</p></main>
+
+<script>
+const K='rutaSIG.v1', DIA=864e5, EXAMEN=new Date(2026,10,18);
+const INTERVALO=[0,0,1,2,4,7]; // días hasta el próximo repaso según la caja Leitner (1 a 5)
+const TIPOS={om:'Opción múltiple',vf:'Verdadero o falso',completar:'Complete la frase',ordenar:'Ordene',emparejar:'Empareje'};
+const app=document.getElementById('app');
+let B, S={xp:0,racha:0,ultimo:0,cajas:{},lecc:{}}, Z, P;
+try{Object.assign(S,JSON.parse(localStorage.getItem(K))||{})}catch(e){}
+const guardar=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+const hoy=()=>Math.floor((Date.now()-new Date().getTimezoneOffset()*6e4)/DIA);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const dias=n=>n+(n===1?' día':' días');
+function mezclar(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+// Leitner: acierto sube de caja (tope 5), fallo vuelve a la caja 1 y queda para hoy mismo.
+function leitner(c,ok,d){const caja=ok?Math.min(5,(c?c.c:1)+1):1;return{c:caja,v:d+INTERVALO[caja]}}
+function sumarRacha(s,d){if(s.ultimo!==d){s.racha=s.ultimo===d-1?s.racha+1:1;s.ultimo=d}}
+console.assert(leitner(undefined,true,10).v===11&&leitner({c:4},false,10).v===10&&leitner({c:5},true,0).c===5,'leitner');
+{const t={racha:3,ultimo:9};sumarRacha(t,10);sumarRacha(t,10);console.assert(t.racha===4,'racha');sumarRacha(t,13);console.assert(t.racha===1,'racha rota')}
+
+const pendientes=()=>B.preguntas.filter(q=>S.cajas[q.id]&&S.cajas[q.id].v<=hoy()).sort((a,b)=>S.cajas[a.id].c-S.cajas[b.id].c).slice(0,15);
+const deLeccion=(u,l)=>B.preguntas.filter(q=>q.unidad===u&&q.leccion===l);
+
+function inicio(){
+  Z=P=null;
+  const d=hoy(), faltan=Math.ceil((EXAMEN-Date.now())/DIA), rep=pendientes().length;
+  app.innerHTML=`<h1>Ruta SIG</h1>
+  <div class="medidores">
+    <div class="medidor"><b>${S.ultimo>=d-1?S.racha:0}</b><span>Racha (días)</span></div>
+    <div class="medidor xp"><b>${S.xp}</b><span>XP</span></div>
+    <div class="medidor"><b>${Math.max(0,faltan)}</b><span>Días al 18-nov</span></div>
+  </div>
+  <button class="btn" data-repaso ${rep?'':'disabled'}>${rep?`Repaso del día · ${rep} ${rep===1?'pregunta':'preguntas'}`:'Sin repasos pendientes hoy'}</button>
+  ${B.unidades.map(u=>{
+    const total=B.preguntas.filter(q=>q.unidad===u.id).length;
+    const logro=u.lecciones.reduce((s,_,i)=>s+(S.lecc[u.id+'L'+(i+1)]||0),0);
+    return `<section class="unidad"><header><h2>${esc(u.titulo)}</h2><span class="muted">${Math.round(100*logro/total)} % dominio</span></header>
+    <div class="barra"><i style="width:${100*logro/total}%"></i></div>
+    <div><p class="muted">Audio-clase de la unidad</p><audio controls preload="none" src="audio/${esc(u.audio)}"></audio></div>
+    ${u.lecciones.map((t,i)=>{const m=S.lecc[u.id+'L'+(i+1)], n=deLeccion(u.id,i+1).length;
+      return `<button class="leccion ${m!=null?'hecha':''}" data-u="${u.id}" data-l="${i+1}"><span class="n">${i+1}</span><span class="t">${esc(t)}</span><span class="p">${m!=null?m+'/'+n:'Nueva'}</span></button>`}).join('')}
+    </section>`}).join('')}
+  <p class="muted">El progreso se guarda solo en este dispositivo.</p>`;
+}
+
+function empezar(tipo,cola,clave){Z={tipo,cola,clave,i:0,ok:0,xp:0};nueva()}
+function nueva(){
+  const q=Z.cola[Z.i], idx=[...q.opciones.keys()];
+  P={q,res:null,sel:null,sec:[],izq:null,mal:null,err:0,hechos:[],ord:q.tipo==='vf'?idx:mezclar(idx),ord2:mezclar(idx)};
+  pregunta();
+}
+function pregunta(){
+  const q=P.q, fin=P.res!==null, off=fin?'disabled':'';
+  let enun=esc(q.enunciado), cuerpo, listo=true;
+  if(q.tipo==='ordenar'){
+    listo=P.sec.length===q.opciones.length;
+    cuerpo=`<p class="muted">Toque las tarjetas en orden. Toque una ya colocada para devolverla.</p>
+    <ol class="sec">${P.sec.map(i=>`<li><button class="op" data-quitar="${i}" ${off}>${esc(q.opciones[i])}</button></li>`).join('')}</ol>
+    <div class="ops">${P.ord.filter(i=>!P.sec.includes(i)).map(i=>`<button class="op" data-poner="${i}" ${off}>${esc(q.opciones[i])}</button>`).join('')}</div>`;
+  }else if(q.tipo==='emparejar'){
+    listo=false;
+    const col=(ord,lado,k)=>`<div class="ops">${ord.map(i=>{const h=P.hechos.includes(i);
+      return `<button class="op ${h?'hecho':lado==='izq'&&P.izq===i?'sel':lado==='der'&&P.mal===i?'mal':''}" data-${lado}="${i}" ${h||fin?'disabled':''}>${esc(q.opciones[i][k])}</button>`}).join('')}</div>`;
+    cuerpo=`<p class="muted">Toque un elemento de la izquierda y luego su pareja.</p><div class="pares">${col(P.ord,'izq',0)}${col(P.ord2,'der',1)}</div>`;
+  }else{
+    listo=P.sel!==null;
+    if(q.tipo==='completar')enun=enun.replace('___',`<span class="hueco">${P.sel!==null?esc(q.opciones[P.sel]):'&nbsp;'}</span>`);
+    cuerpo=`<div class="ops">${P.ord.map(i=>`<button class="op ${fin?(i===q.correcta?'bien':i===P.sel?'mal':''):(i===P.sel?'sel':'')}" data-op="${i}" aria-pressed="${i===P.sel}" ${off}>${esc(q.opciones[i])}</button>`).join('')}</div>`;
+  }
+  let pie=q.tipo==='emparejar'?'':`<button class="btn" data-comprobar ${listo?'':'disabled'}>Comprobar</button>`;
+  if(fin){
+    const correcta=q.tipo==='ordenar'?q.opciones.join(' → '):q.tipo==='emparejar'?q.opciones.map(p=>p.join(' ↔ ')).join(' · '):q.opciones[q.correcta];
+    pie=`<section class="sello ${P.res?'':'nc'}" role="status" aria-live="polite">
+      <p class="marca">${P.res?`Conforme · +${Z.tipo==='leccion'?10:5} XP`:'No conforme'}</p>
+      ${P.res?'':`<p><b>Respuesta correcta:</b> ${esc(correcta)}</p>`}
+      <p>${P.res?'':'<b>Por qué:</b> '}${esc(q.explicacion)}</p>
+      <p class="ref">${esc(q.referencia)}</p>
+      ${P.res?'':'<p class="muted">Esta pregunta vuelve hoy en el Repaso del día.</p>'}
+      <button class="btn" data-seguir id="seguir">Continuar</button></section>`;
+  }
+  app.innerHTML=`<div class="top"><button class="salir" data-salir aria-label="Salir de la sesión">Salir</button>
+    <div class="barra" role="progressbar" aria-valuemin="0" aria-valuemax="${Z.cola.length}" aria-valuenow="${Z.i}"><i style="width:${100*(Z.i+(fin?1:0))/Z.cola.length}%"></i></div>
+    <span class="muted">${Z.i+1}/${Z.cola.length}</span></div>
+  <p class="tipo">${TIPOS[q.tipo]}</p><h3>${enun}</h3>${cuerpo}${pie}`;
+  if(fin){const b=document.getElementById('seguir');b.focus({preventScroll:true});b.scrollIntoView({block:'nearest'})}
+}
+function resolver(ok){
+  P.res=ok; S.cajas[P.q.id]=leitner(S.cajas[P.q.id],ok,hoy());
+  if(ok){const x=Z.tipo==='leccion'?10:5;Z.ok++;Z.xp+=x;S.xp+=x}
+  guardar(); pregunta();
+}
+function terminar(){
+  sumarRacha(S,hoy());
+  if(Z.clave)S.lecc[Z.clave]=Math.max(S.lecc[Z.clave]||0,Z.ok);
+  guardar();
+  const f=Z.cola.length-Z.ok;
+  app.innerHTML=`<div class="fin"><h1>${Z.tipo==='leccion'?'Lección completada':'Repaso completado'}</h1>
+  <div class="medidores">
+    <div class="medidor"><b>${Z.ok}/${Z.cola.length}</b><span>Aciertos</span></div>
+    <div class="medidor xp"><b>+${Z.xp}</b><span>XP</span></div>
+    <div class="medidor"><b>${S.racha}</b><span>Racha (días)</span></div>
+  </div>
+  <p>${f?`${f} ${f===1?'pregunta fallada queda':'preguntas falladas quedan'} en el Repaso del día.`:'Sin fallos. Las preguntas volverán en repasos más espaciados.'}</p>
+  <button class="btn" data-salir>Volver a la ruta</button></div>`;
+}
+
+app.onclick=e=>{
+  const b=e.target.closest('button'); if(!b||b.disabled)return; const d=b.dataset;
+  if('salir' in d)return inicio();
+  if('repaso' in d)return empezar('repaso',pendientes());
+  if(d.u)return empezar('leccion',deLeccion(d.u,+d.l),d.u+'L'+d.l);
+  if('seguir' in d)return ++Z.i<Z.cola.length?nueva():terminar();
+  const q=P.q;
+  if('comprobar' in d)return resolver(q.tipo==='ordenar'?P.sec.every((v,k)=>v===k):P.sel===q.correcta);
+  if(d.op)P.sel=+d.op;
+  else if(d.poner)P.sec.push(+d.poner);
+  else if(d.quitar)P.sec=P.sec.filter(i=>i!==+d.quitar);
+  else if(d.izq){P.izq=+d.izq;P.mal=null}
+  else if(d.der&&P.izq!==null){
+    if(+d.der===P.izq){P.hechos.push(P.izq);P.mal=null}else{P.err++;P.mal=+d.der}
+    P.izq=null;
+    if(P.hechos.length===q.opciones.length)return resolver(P.err===0);
+  }
+  pregunta();
+};
+
+fetch('banco_preguntas.json').then(r=>r.json()).then(b=>{B=b;inicio()})
+  .catch(()=>{app.innerHTML='<h1>Ruta SIG</h1><p>No se pudo cargar el banco de preguntas. Revise la conexión y vuelva a abrir la página.</p>'});
+</script>
+
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})</script>
+</body></html>

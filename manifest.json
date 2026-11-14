@@ -1,0 +1,1 @@
+{"name": "Ruta SIG", "short_name": "Ruta SIG", "lang": "es-CO", "start_url": ".", "display": "standalone", "background_color": "#EEF2F1", "theme_color": "#0B6E69", "icons": [{"src": "icono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]}
