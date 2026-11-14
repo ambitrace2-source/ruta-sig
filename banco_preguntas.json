@@ -39,7 +39,8 @@
 "lecciones": [
 "Conceptos y liderazgo",
 "Peligros, controles y operación",
-"Evaluación, incidentes y mejora"
+"Evaluación, incidentes y mejora",
+"Verificado contra la norma"
 ]
 },
 {
@@ -80,6 +81,16 @@
 "Leyes de SST",
 "Ambiental y residuos",
 "Consumidor, datos y autoridades"
+]
+},
+{
+"id": "U9",
+"titulo": "ISO 19011:2026 · Auditar",
+"audio": "09_iso_19011.mp3",
+"lecciones": [
+"Términos y principios",
+"Programa de auditoría",
+"Realizar la auditoría y competencia"
 ]
 }
 ],
@@ -394,7 +405,7 @@
 ],
 "correcta": null,
 "explicacion": "9001 calidad, 14001 ambiente, 45001 SST. ISO 19011 no es certificable: es la guía para auditar los tres sistemas.",
-"referencia": "ISO 9001, 14001, 45001 e ISO 19011:2018",
+"referencia": "ISO 9001, 14001, 45001 e ISO 19011:2026",
 "dificultad": 1,
 "etiquetas": [
 "estructura"
@@ -757,7 +768,7 @@
 ],
 "correcta": null,
 "explicacion": "19011 guía al auditor, 17021-1 regula a los organismos de certificación, 31000 da directrices de riesgo y 9000 define fundamentos y vocabulario.",
-"referencia": "ISO 19011:2018; ISO/IEC 17021-1:2015; ISO 31000:2018; ISO 9000:2015",
+"referencia": "ISO 19011:2026; ISO/IEC 17021-1:2015; ISO 31000:2018; ISO 9000:2015",
 "dificultad": 2,
 "etiquetas": [
 "estructura",
@@ -2189,7 +2200,7 @@
 "unidad": "U4",
 "leccion": 1,
 "tipo": "vf",
-"enunciado": "En ISO 45001, un casi-accidente cuenta como incidente.",
+"enunciado": "En ISO 45001, un cuasi-accidente (evento sin lesión pero con potencial de causarla) cuenta como incidente.",
 "opciones": [
 "Verdadero",
 "Falso"
@@ -2257,7 +2268,7 @@
 ],
 "correcta": 1,
 "explicacion": "La norma no fija un umbral: exige eliminar peligros y reducir riesgos aplicando la jerarquía de controles.",
-"referencia": "ISO 45001:2018, 6.1.2 y 8.1.2",
+"referencia": "NTC-ISO 45001:2018, cap. 1 y 8.1.2",
 "dificultad": 2,
 "etiquetas": [
 "45001",
@@ -3473,8 +3484,8 @@
 "ISO 31000"
 ],
 "correcta": 0,
-"explicacion": "ISO 19011:2018 guía las auditorías internas y a proveedores. La 17021-1 regula a los organismos que certifican.",
-"referencia": "ISO 19011:2018",
+"explicacion": "ISO 19011:2026 guía las auditorías internas y a proveedores. La 17021-1 regula a los organismos que certifican.",
+"referencia": "ISO 19011:2026",
 "dificultad": 1,
 "etiquetas": [
 "auditoría"
@@ -3494,7 +3505,7 @@
 ],
 "correcta": 3,
 "explicacion": "Los principios son integridad, presentación imparcial, debido cuidado profesional, confidencialidad, independencia, enfoque basado en la evidencia y enfoque basado en riesgo.",
-"referencia": "ISO 19011:2018, cap. 4",
+"referencia": "ISO 19011:2026, cap. 4",
 "dificultad": 1,
 "etiquetas": [
 "auditoría",
@@ -3523,7 +3534,7 @@
 ],
 "correcta": null,
 "explicacion": "La tercera parte es la única que otorga un certificado; las otras dos sirven al control interno o a la relación comercial.",
-"referencia": "ISO 19011:2018",
+"referencia": "ISO 19011:2026",
 "dificultad": 1,
 "etiquetas": [
 "auditoría",
@@ -3583,7 +3594,7 @@
 "documental"
 ],
 "correcta": 0,
-"explicacion": "La auditoría integrada (IAF MD 11) puede reducir tiempo si el SIG está realmente integrado: política, objetivos, riesgos, revisión y auditoría únicos.",
+"explicacion": "ISO 19011 la llama auditoría combinada; cuando el SIG está realmente integrado se habla de auditoría integrada (IAF MD 11), que puede reducir tiempo.",
 "referencia": "IAF MD 11",
 "dificultad": 2,
 "etiquetas": [
@@ -3605,7 +3616,7 @@
 ],
 "correcta": 1,
 "explicacion": "La independencia exige que el auditor no audite su propio trabajo, para que sus conclusiones sean objetivas.",
-"referencia": "ISO 19011:2018, cap. 4",
+"referencia": "ISO 19011:2026, cap. 4",
 "dificultad": 2,
 "etiquetas": [
 "auditoría",
@@ -3633,7 +3644,7 @@
 4
 ],
 "explicacion": "Se define líder, alcance y criterios; se prepara el plan y las listas; se ejecuta con apertura, evidencias y cierre; se informa y se hace seguimiento de las acciones.",
-"referencia": "ISO 19011:2018, cap. 6",
+"referencia": "ISO 19011:2026, cap. 6",
 "dificultad": 2,
 "etiquetas": [
 "auditoría",
@@ -3652,7 +3663,7 @@
 ],
 "correcta": 1,
 "explicacion": "Las listas guían, pero el auditor sigue la evidencia que encuentra; si una pista lleva a otro requisito, debe seguirla.",
-"referencia": "ISO 19011:2018, 6.3",
+"referencia": "ISO 19011:2026, 6.3.4",
 "dificultad": 2,
 "etiquetas": [
 "auditoría"
@@ -3672,7 +3683,7 @@
 ],
 "correcta": 1,
 "explicacion": "En el cierre se comunican los hallazgos y conclusiones, cómo se clasificaron y los plazos para el plan de acción.",
-"referencia": "ISO 19011:2018, 6.4",
+"referencia": "ISO 19011:2026, 6.4.10",
 "dificultad": 1,
 "etiquetas": [
 "auditoría",
@@ -3890,7 +3901,7 @@
 ],
 "correcta": 1,
 "explicacion": "Responder solo lo que se pregunta y mostrar evidencia; adivinar puede convertir una duda en no conformidad.",
-"referencia": "Buenas prácticas de preparación de auditoría (ISO 19011:2018)",
+"referencia": "Buenas prácticas de preparación de auditoría (ISO 19011:2026)",
 "dificultad": 1,
 "etiquetas": [
 "certificación",
@@ -3956,7 +3967,7 @@
 2
 ],
 "explicacion": "Una NC bien redactada dice qué pasa, contra qué requisito y con qué evidencia verificable, sin opiniones.",
-"referencia": "ISO 19011:2018, 6.4.8",
+"referencia": "ISO 19011:2026, 6.4.8",
 "dificultad": 1,
 "etiquetas": [
 "hallazgos",
@@ -3977,7 +3988,7 @@
 ],
 "correcta": 1,
 "explicacion": "Tiene problema concreto, requisito con cláusula y evidencia verificable. Las demás son opiniones o recomendaciones.",
-"referencia": "ISO 19011:2018, 6.4.8",
+"referencia": "ISO 19011:2026, 6.4.8",
 "dificultad": 2,
 "etiquetas": [
 "hallazgos",
@@ -4028,7 +4039,7 @@
 ],
 "correcta": null,
 "explicacion": "Solo las NC exigen acción correctiva formal; observaciones y oportunidades son alertas y sugerencias.",
-"referencia": "ISO 19011:2018; ISO/IEC 17021-1:2015",
+"referencia": "ISO 19011:2026; ISO/IEC 17021-1:2015",
 "dificultad": 1,
 "etiquetas": [
 "hallazgos"
@@ -4055,7 +4066,7 @@
 4
 ],
 "explicacion": "Corregir apaga el síntoma; la acción correctiva elimina la causa; solo se cierra cuando se demuestra que no reincide.",
-"referencia": "ISO 9001:2026, 10.2; ISO 19011:2018",
+"referencia": "ISO 9001:2026, 10.2; ISO 19011:2026",
 "dificultad": 1,
 "etiquetas": [
 "hallazgos",
@@ -4095,7 +4106,7 @@
 ],
 "correcta": 1,
 "explicacion": "La auditoría busca evidencia y mejora del sistema. El auditado no es culpable; el foco está en el proceso.",
-"referencia": "ISO 19011:2018, principios",
+"referencia": "ISO 19011:2026, principios",
 "dificultad": 1,
 "etiquetas": [
 "hallazgos",
@@ -5483,6 +5494,897 @@
 "etiquetas": [
 "legal",
 "obligaciones"
+]
+},
+{
+"id": "U9L1-01",
+"unidad": "U9",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Cuál es la edición vigente de ISO 19011 a noviembre de 2026?",
+"opciones": [
+"2011",
+"2018",
+"2026 (4.ª edición)",
+"No tiene edición vigente"
+],
+"correcta": 2,
+"explicacion": "La 4.ª edición de 2026 reemplazó a la de 2018. En Colombia se adoptó como GTC-ISO 19011:2026, ratificada en mayo de 2026.",
+"referencia": "GTC-ISO 19011:2026, prólogo",
+"dificultad": 1,
+"etiquetas": [
+"19011",
+"versiones"
+]
+},
+{
+"id": "U9L1-02",
+"unidad": "U9",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Cuál es el cambio principal de ISO 19011:2026 frente a la edición 2018?",
+"opciones": [
+"Más orientación sobre auditoría remota y ubicaciones virtuales",
+"Elimina los principios de auditoría",
+"La vuelve certificable",
+"Exige auditar solo en sitio"
+],
+"correcta": 0,
+"explicacion": "Incorpora la orientación de la ISO/IEC TS 17012 sobre métodos remotos y amplía el Anexo A con auditoría remota y ubicaciones virtuales. Los siete principios se mantienen.",
+"referencia": "GTC-ISO 19011:2026, prólogo; ISO/IEC TS 17012:2024",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"versiones",
+"remota"
+]
+},
+{
+"id": "U9L1-03",
+"unidad": "U9",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "ISO 19011 es una guía con recomendaciones, no una norma de requisitos certificable.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Por eso en Colombia es GTC (Guía Técnica Colombiana) y su texto usa «debería». Los requisitos para certificar sistemas están en la ISO/IEC 17021-1.",
+"referencia": "GTC-ISO 19011:2026, introducción",
+"dificultad": 1,
+"etiquetas": [
+"19011"
+]
+},
+{
+"id": "U9L1-04",
+"unidad": "U9",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada término con su significado.",
+"opciones": [
+[
+"Auditoría combinada",
+"Un auditado, dos o más sistemas de gestión"
+],
+[
+"Auditoría conjunta",
+"Un auditado, dos o más organizaciones auditoras"
+],
+[
+"Programa de auditoría",
+"Conjunto de auditorías en un periodo con un propósito"
+],
+[
+"Plan de auditoría",
+"Actividades y detalles de una sola auditoría"
+]
+],
+"correcta": null,
+"explicacion": "Confundir programa con plan, o combinada con conjunta, es un error frecuente en exámenes de auditor.",
+"referencia": "GTC-ISO 19011:2026, 3.2, 3.3, 3.5 y 3.7",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"términos"
+]
+},
+{
+"id": "U9L1-05",
+"unidad": "U9",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué es un método de auditoría remota según ISO 19011:2026?",
+"opciones": [
+"Solo una auditoría por videollamada a otro país",
+"Cualquier actividad de auditoría hecha desde un lugar distinto de la ubicación del auditado",
+"Una auditoría sin evidencia",
+"Una auditoría hecha por correo"
+],
+"correcta": 1,
+"explicacion": "La distancia no importa: basta con estar fuera de las instalaciones del auditado. Puede combinarse con métodos in situ y sirve para ubicaciones virtuales.",
+"referencia": "GTC-ISO 19011:2026, 3.4 y Anexo A.1",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"remota"
+]
+},
+{
+"id": "U9L1-06",
+"unidad": "U9",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Un experto técnico del equipo auditor puede actuar como auditor y firmar hallazgos.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "El experto técnico aporta conocimiento específico (del proceso, el sector, el idioma o la cultura) pero no actúa como auditor.",
+"referencia": "GTC-ISO 19011:2026, 3.17",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"términos"
+]
+},
+{
+"id": "U9L1-07",
+"unidad": "U9",
+"leccion": 1,
+"tipo": "ordenar",
+"enunciado": "Ordene el recorrido de la información hasta las conclusiones de la auditoría.",
+"opciones": [
+"Fuente de información",
+"Recopilación mediante muestreo",
+"Evidencia de la auditoría",
+"Evaluación frente a los criterios",
+"Hallazgos de la auditoría",
+"Conclusiones de la auditoría"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4,
+5
+],
+"explicacion": "La evidencia se compara con los criterios para obtener hallazgos; los hallazgos, revisados frente a los objetivos, llevan a las conclusiones.",
+"referencia": "GTC-ISO 19011:2026, 6.4.7 (figura de recopilación y verificación)",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"evidencia"
+]
+},
+{
+"id": "U9L1-08",
+"unidad": "U9",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Si los criterios de auditoría son requisitos legales, ¿cómo se suele llamar al hallazgo?",
+"opciones": [
+"Conformidad u observación",
+"Cumplimiento o incumplimiento",
+"Fortaleza o debilidad",
+"Aprobado o reprobado"
+],
+"correcta": 1,
+"explicacion": "Con criterios legales o reglamentarios se habla de cumplimiento o incumplimiento en lugar de conformidad o no conformidad.",
+"referencia": "GTC-ISO 19011:2026, 3.8 y 3.11",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"hallazgos"
+]
+},
+{
+"id": "U9L1-09",
+"unidad": "U9",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada principio de auditoría con su idea central.",
+"opciones": [
+[
+"Integridad",
+"Base de la profesionalidad"
+],
+[
+"Presentación imparcial",
+"Informar con veracidad y exactitud"
+],
+[
+"Independencia",
+"Base de la imparcialidad y la objetividad"
+],
+[
+"Enfoque basado en la evidencia",
+"Conclusiones fiables y reproducibles"
+]
+],
+"correcta": null,
+"explicacion": "Los otros tres principios son debido cuidado profesional, confidencialidad y enfoque basado en el riesgo.",
+"referencia": "GTC-ISO 19011:2026, 4.2 a 4.8",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"principios"
+]
+},
+{
+"id": "U9L1-10",
+"unidad": "U9",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Un auditor interno de una empresa pequeña no puede ser independiente del área que audita. ¿Qué pide ISO 19011?",
+"opciones": [
+"Cancelar la auditoría",
+"Hacer todo lo posible para eliminar el sesgo y fomentar la objetividad",
+"Que la audite el gerente",
+"Contratar siempre una certificadora"
+],
+"correcta": 1,
+"explicacion": "La independencia se busca siempre que sea posible; cuando no lo es, el auditor debe actuar sin sesgo ni conflicto de intereses.",
+"referencia": "GTC-ISO 19011:2026, 4.6",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"principios",
+"caso"
+]
+},
+{
+"id": "U9L2-01",
+"unidad": "U9",
+"leccion": 2,
+"tipo": "ordenar",
+"enunciado": "Ordene la gestión del programa de auditoría según el ciclo PHVA de ISO 19011.",
+"opciones": [
+"Establecer los objetivos del programa",
+"Determinar sus riesgos y oportunidades",
+"Establecer el programa",
+"Implementar el programa",
+"Hacer seguimiento del programa",
+"Revisar y mejorar el programa"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4,
+5
+],
+"explicacion": "Planificar: 5.2, 5.3 y 5.4. Hacer: 5.5. Verificar: 5.6. Actuar: 5.7, que retroalimenta los objetivos.",
+"referencia": "GTC-ISO 19011:2026, 5.2 a 5.7 (Figura 1)",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"programa",
+"PHVA"
+]
+},
+{
+"id": "U9L2-02",
+"unidad": "U9",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Quién debe aprobar el programa de auditoría?",
+"opciones": [
+"El auditado",
+"El cliente de la auditoría",
+"ONAC",
+"El auditor más antiguo"
+],
+"correcta": 1,
+"explicacion": "Quienes gestionan el programa lo preparan y piden su aprobación al cliente de la auditoría, que es quien la solicita.",
+"referencia": "GTC-ISO 19011:2026, 5.4.1",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"programa"
+]
+},
+{
+"id": "U9L2-03",
+"unidad": "U9",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "Los objetivos del programa de auditoría deben ser coherentes con la dirección estratégica del cliente de la auditoría.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "El programa debe apoyar la política y los objetivos del sistema; un ejemplo de objetivo es evaluar la alineación de los objetivos del sistema con la estrategia.",
+"referencia": "GTC-ISO 19011:2026, 5.2",
+"dificultad": 1,
+"etiquetas": [
+"19011",
+"programa"
+]
+},
+{
+"id": "U9L2-04",
+"unidad": "U9",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cuál de estos es un riesgo del programa de auditoría que menciona ISO 19011:2026?",
+"opciones": [
+"Que el auditado tenga muchos clientes",
+"Elegir plataformas de comunicación inseguras para auditar",
+"Que la empresa crezca",
+"Que haya muchas normas"
+],
+"correcta": 1,
+"explicacion": "Entre los riesgos están la planificación, los recursos, el equipo, el método (in situ o remoto), la comunicación, el patrocinio del liderazgo y la seguridad de las tecnologías de información.",
+"referencia": "GTC-ISO 19011:2026, 5.3",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"programa",
+"remota"
+]
+},
+{
+"id": "U9L2-05",
+"unidad": "U9",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "Si el equipo auditor no tiene toda la competencia necesaria, se apoya en ___.",
+"opciones": [
+"expertos técnicos",
+"observadores",
+"guías",
+"el auditado"
+],
+"correcta": 0,
+"explicacion": "Los expertos técnicos completan la competencia del equipo. Guías y observadores no aportan competencia auditora.",
+"referencia": "GTC-ISO 19011:2026, 5.5.4",
+"dificultad": 1,
+"etiquetas": [
+"19011",
+"equipo"
+]
+},
+{
+"id": "U9L2-06",
+"unidad": "U9",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "Si el equipo auditor es una sola persona, esa persona debe cumplir también las tareas del líder del equipo.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Es el caso típico de auditorías internas en organizaciones pequeñas: el auditor único planifica, conduce las reuniones e informa.",
+"referencia": "GTC-ISO 19011:2026, 5.5.4",
+"dificultad": 1,
+"etiquetas": [
+"19011",
+"equipo"
+]
+},
+{
+"id": "U9L2-07",
+"unidad": "U9",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cómo deben participar los auditores en formación?",
+"opciones": [
+"No pueden participar",
+"Bajo la dirección y orientación de un auditor",
+"Como líderes del equipo",
+"Solo como observadores sin hablar"
+],
+"correcta": 1,
+"explicacion": "Pueden integrar el equipo, pero siempre guiados por un auditor competente.",
+"referencia": "GTC-ISO 19011:2026, 3.15 y 5.5.4",
+"dificultad": 1,
+"etiquetas": [
+"19011",
+"equipo"
+]
+},
+{
+"id": "U9L2-08",
+"unidad": "U9",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cómo recomienda ISO 19011:2026 elegir entre auditar en sitio o en remoto?",
+"opciones": [
+"Siempre en sitio",
+"Siempre en remoto, por costo",
+"Equilibrar ambos métodos según los riesgos y oportunidades",
+"Lo decide el auditado sin consultar"
+],
+"correcta": 2,
+"explicacion": "Se puede auditar en sitio, en remoto o combinando, y el uso debe estar equilibrado considerando si el método permite lograr los objetivos.",
+"referencia": "GTC-ISO 19011:2026, 5.5.3 y Anexo A.1",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"remota"
+]
+},
+{
+"id": "U9L2-09",
+"unidad": "U9",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada grupo de registros con un ejemplo.",
+"opciones": [
+[
+"Registros del programa",
+"Calendario de auditorías"
+],
+[
+"Registros de cada auditoría",
+"Plan, informe y evidencias"
+],
+[
+"Registros del equipo auditor",
+"Evaluación de competencia y desempeño"
+]
+],
+"correcta": null,
+"explicacion": "Los registros deben demostrar que se lograron los objetivos del programa y proteger la información confidencial.",
+"referencia": "GTC-ISO 19011:2026, 5.5.7",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"programa"
+]
+},
+{
+"id": "U9L2-10",
+"unidad": "U9",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué evalúa el seguimiento del programa de auditoría?",
+"opciones": [
+"Las ventas del auditado",
+"El cumplimiento del calendario, el desempeño del equipo y la retroalimentación recibida",
+"El salario de los auditores",
+"Solo el número de no conformidades"
+],
+"correcta": 1,
+"explicacion": "El seguimiento revisa calendario y objetivos, desempeño de auditores y expertos, capacidad de cumplir el plan, retroalimentación y suficiencia de la información documentada.",
+"referencia": "GTC-ISO 19011:2026, 5.6",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"programa"
+]
+},
+{
+"id": "U9L3-01",
+"unidad": "U9",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué se hace si una auditoría no es viable, por ejemplo por falta de información o de cooperación?",
+"opciones": [
+"Se audita igual",
+"Se propone al cliente de la auditoría una alternativa, de acuerdo con el auditado",
+"Se emite una no conformidad mayor",
+"Se cancela el programa entero"
+],
+"correcta": 1,
+"explicacion": "La viabilidad se determina al inicio; si no la hay, se busca una alternativa acordada.",
+"referencia": "GTC-ISO 19011:2026, 6.2.3",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"realización"
+]
+},
+{
+"id": "U9L3-02",
+"unidad": "U9",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Durante la auditoría se descubre un riesgo inmediato y significativo. ¿Qué hace el equipo auditor?",
+"opciones": [
+"Lo anota para el informe final",
+"Lo comunica sin demora al auditado y, según corresponda, al cliente",
+"Lo ignora porque está fuera del plan",
+"Detiene la empresa"
+],
+"correcta": 1,
+"explicacion": "La evidencia de un riesgo inmediato y significativo se comunica de inmediato, no se espera al cierre.",
+"referencia": "GTC-ISO 19011:2026, 6.4.4",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"realización",
+"caso"
+]
+},
+{
+"id": "U9L3-03",
+"unidad": "U9",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Según ISO 19011:2026, las no conformidades siempre deben clasificarse como mayores o menores.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "La clasificación puede ser cualitativa (mayor o menor) o cuantitativa (por ejemplo, de 1 a 5); la organización auditora define y comunica sus criterios.",
+"referencia": "GTC-ISO 19011:2026, 6.4.8",
+"dificultad": 3,
+"etiquetas": [
+"19011",
+"hallazgos"
+]
+},
+{
+"id": "U9L3-04",
+"unidad": "U9",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Una no conformidad que no se presentó durante la auditoría ni en la reunión de cierre puede agregarse después en el informe.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "El informe no debe traer sorpresas: solo incluye no conformidades que se presentaron y discutieron con el auditado.",
+"referencia": "GTC-ISO 19011:2026, 6.5.1",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"informe"
+]
+},
+{
+"id": "U9L3-05",
+"unidad": "U9",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "En la reunión de cierre, ¿qué advertencia se hace sobre la evidencia?",
+"opciones": [
+"Que es completa y definitiva",
+"Que se basó en una muestra y puede no representar todo el proceso",
+"Que el auditado debe firmar sin leer",
+"Que no tiene valor"
+],
+"correcta": 1,
+"explicacion": "La auditoría es un ejercicio de muestreo; el informe también debe declararlo.",
+"referencia": "GTC-ISO 19011:2026, 6.4.10 y 6.5.1",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"informe"
+]
+},
+{
+"id": "U9L3-06",
+"unidad": "U9",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Las recomendaciones que da el auditor son obligatorias para el auditado.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Las oportunidades de mejora pueden presentarse como recomendaciones, pero se debe aclarar que no son obligatorias; además deben cuidarse para no afectar la imparcialidad.",
+"referencia": "GTC-ISO 19011:2026, 6.4.9 y 6.4.10",
+"dificultad": 1,
+"etiquetas": [
+"19011",
+"informe"
+]
+},
+{
+"id": "U9L3-07",
+"unidad": "U9",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Cuántos métodos se recomienda combinar para evaluar a un auditor?",
+"opciones": [
+"Uno",
+"Dos o más",
+"Exactamente cinco",
+"Ninguno: basta el certificado del curso"
+],
+"correcta": 1,
+"explicacion": "Se combinan dos o más métodos (revisión de registros, retroalimentación, entrevista, observación, examen o revisión posterior) para un resultado objetivo y fiable.",
+"referencia": "GTC-ISO 19011:2026, 7.4 (Tabla 2)",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"competencia"
+]
+},
+{
+"id": "U9L3-08",
+"unidad": "U9",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "En muestreo estadístico, ¿qué nivel de confianza corresponde a un riesgo muestral del 5 %?",
+"opciones": [
+"5 %",
+"50 %",
+"95 %",
+"100 %"
+],
+"correcta": 2,
+"explicacion": "Aceptar un riesgo muestral del 5 % equivale a una confianza del 95 %: 1 de cada 20 muestras podría no reflejar la realidad.",
+"referencia": "GTC-ISO 19011:2026, Anexo A.6.3",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"muestreo",
+"cálculo"
+]
+},
+{
+"id": "U9L3-09",
+"unidad": "U9",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "En una entrevista por videollamada, ¿qué advierte ISO 19011:2026?",
+"opciones": [
+"Que no se puede entrevistar en remoto",
+"Que se pierde parte de la comunicación no verbal, así que hay que cuidar más el tipo de preguntas",
+"Que la entrevista debe grabarse siempre sin pedir permiso",
+"Que basta con enviar un cuestionario"
+],
+"correcta": 1,
+"explicacion": "En entornos virtuales la comunicación no verbal es limitada; además se pide permiso antes de grabar o capturar pantalla.",
+"referencia": "GTC-ISO 19011:2026, Anexo A.16 y A.17",
+"dificultad": 2,
+"etiquetas": [
+"19011",
+"remota",
+"entrevistas"
+]
+},
+{
+"id": "U9L3-10",
+"unidad": "U9",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "En una auditoría combinada, un hallazgo afecta a la vez a ISO 9001 y a ISO 14001. ¿Cómo puede registrarse?",
+"opciones": [
+"Solo contra una norma",
+"Como hallazgos separados por criterio o como uno solo con varias referencias, según se acuerde con el cliente",
+"No se registra",
+"Se registra dos veces sin avisar"
+],
+"correcta": 1,
+"explicacion": "La guía deja ambas opciones, según lo acordado con el cliente de la auditoría, y pide considerar el impacto en criterios similares de los otros sistemas.",
+"referencia": "GTC-ISO 19011:2026, Anexo A.18.4",
+"dificultad": 3,
+"etiquetas": [
+"19011",
+"hallazgos",
+"integración"
+]
+},
+{
+"id": "U4L4-01",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Una organización puede declarar conformidad con ISO 45001 aunque excluya algunos requisitos que no le aplican.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "ISO 45001 solo acepta declarar conformidad si todos sus requisitos están incorporados y se cumplen, sin exclusiones. En ISO 9001 sí puede justificarse un requisito no aplicable.",
+"referencia": "NTC-ISO 45001:2018, cap. 1",
+"dificultad": 3,
+"etiquetas": [
+"45001",
+"alcance"
+]
+},
+{
+"id": "U4L4-02",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "En la figura PHVA de ISO 45001, ¿qué capítulo ocupa el centro del ciclo?",
+"opciones": [
+"4 Contexto",
+"5 Liderazgo y participación de los trabajadores",
+"6 Planificación",
+"10 Mejora"
+],
+"correcta": 1,
+"explicacion": "El liderazgo y la participación de los trabajadores (5) va en el centro; Planificación (6) es P, Apoyo y Operación (7 y 8) son H, Evaluación (9) es V y Mejora (10) es A.",
+"referencia": "NTC-ISO 45001:2018, introducción 0.4 (Figura 1)",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"PHVA"
+]
+},
+{
+"id": "U4L4-03",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué compromiso de la alta dirección en ISO 45001 se relaciona directamente con el COPASST?",
+"opciones": [
+"Apoyar el establecimiento y funcionamiento de comités de seguridad y salud",
+"Aprobar el presupuesto de ventas",
+"Contratar una certificadora",
+"Nombrar un representante de calidad"
+],
+"correcta": 0,
+"explicacion": "El liderazgo incluye apoyar los comités de seguridad y salud, proteger de represalias a quien reporta y asegurar procesos de consulta y participación.",
+"referencia": "NTC-ISO 45001:2018, 5.1 l) y m)",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"liderazgo",
+"SG-SST"
+]
+},
+{
+"id": "U4L4-04",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Al identificar peligros, ¿qué factores sociales pide considerar ISO 45001?",
+"opciones": [
+"La carga de trabajo, las horas de trabajo y el acoso o la intimidación",
+"Solo el ruido y la iluminación",
+"Las ventas del mes",
+"La marca de los equipos"
+],
+"correcta": 0,
+"explicacion": "La identificación incluye cómo se organiza el trabajo, los factores sociales, el liderazgo y la cultura: es la puerta de entrada del riesgo psicosocial.",
+"referencia": "NTC-ISO 45001:2018, 6.1.2.1 a)",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"peligros",
+"psicosocial"
+]
+},
+{
+"id": "U4L4-05",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "emparejar",
+"enunciado": "Empareje cada tema con lo que pide ISO 45001 a los trabajadores no directivos.",
+"opciones": [
+[
+"Identificar peligros y evaluar riesgos",
+"Participación"
+],
+[
+"Investigar incidentes",
+"Participación"
+],
+[
+"Establecer la política de SST",
+"Consulta"
+],
+[
+"Planificar los programas de auditoría",
+"Consulta"
+]
+],
+"correcta": null,
+"explicacion": "La norma separa los temas en los que se pide opinión (consulta) de aquellos en que el trabajador toma parte en la decisión (participación).",
+"referencia": "NTC-ISO 45001:2018, 5.4 d) y e)",
+"dificultad": 3,
+"etiquetas": [
+"45001",
+"participación"
+]
+},
+{
+"id": "U4L4-06",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Según ISO 45001, en un lugar de trabajo con varios empleadores la organización debe coordinar su sistema de SST con las otras organizaciones.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "El control operacional incluye coordinar con los demás empleadores presentes y adaptar el trabajo a los trabajadores.",
+"referencia": "NTC-ISO 45001:2018, 8.1.1",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"operación"
+]
+},
+{
+"id": "U4L4-07",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué dice la nota de ISO 45001 sobre el costo de los equipos de protección personal?",
+"opciones": [
+"Que el trabajador debe pagarlos",
+"Que en muchos países deben entregarse sin costo para el trabajador",
+"Que son opcionales",
+"Que los paga la ARL siempre"
+],
+"correcta": 1,
+"explicacion": "La nota recuerda que la ley de muchos países exige entregar el EPP gratis; en Colombia lo exige la normativa de SST.",
+"referencia": "NTC-ISO 45001:2018, 8.1.2 (nota)",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"EPP"
+]
+},
+{
+"id": "U4L4-08",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Antes de implementar una acción correctiva que introduce un equipo nuevo, ¿qué exige ISO 45001?",
+"opciones": [
+"Nada: se implementa de inmediato",
+"Evaluar los riesgos de los peligros nuevos o modificados antes de actuar",
+"Esperar la próxima auditoría",
+"Pedir permiso a la ARL"
+],
+"correcta": 1,
+"explicacion": "La acción correctiva no puede crear riesgos sin evaluar; además debe seguir la jerarquía de controles y la gestión del cambio.",
+"referencia": "NTC-ISO 45001:2018, 10.2 d) y e)",
+"dificultad": 3,
+"etiquetas": [
+"45001",
+"incidentes"
+]
+},
+{
+"id": "U4L4-09",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "completar",
+"enunciado": "Al planificar la comunicación, ISO 45001 pide tener en cuenta la ___ (género, idioma, cultura, alfabetización, discapacidad).",
+"opciones": [
+"diversidad",
+"productividad",
+"rentabilidad",
+"antigüedad"
+],
+"correcta": 0,
+"explicacion": "Un mensaje de seguridad que no se entiende no protege: la comunicación debe adaptarse a quien la recibe.",
+"referencia": "NTC-ISO 45001:2018, 7.4.1",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"comunicación"
+]
+},
+{
+"id": "U4L4-10",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Los hallazgos pertinentes de la auditoría interna de SST deben informarse también a los trabajadores y a sus representantes.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "En 45001 los resultados de auditoría no se quedan en la dirección: llegan también a los trabajadores y a otras partes interesadas pertinentes.",
+"referencia": "NTC-ISO 45001:2018, 9.2.2 d)",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"auditoría"
 ]
 }
 ]
