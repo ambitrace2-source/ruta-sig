@@ -82,6 +82,14 @@ audio{width:100%;height:2.5rem}
 summary{cursor:pointer;font-weight:600;min-height:2.75rem;display:flex;align-items:center}
 summary:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .copia{display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem}
+.fila{display:grid;grid-template-columns:minmax(0,8.5rem) 1fr 2.8rem;gap:.5rem;align-items:center;font-size:.85rem}
+.fila>span{overflow-wrap:anywhere}
+.fila b{text-align:right;font-variant-numeric:tabular-nums}
+.fila small{grid-column:3;text-align:right;margin-top:-.4rem}
+.barra.meta i{background:var(--ok)}
+.sub{font-size:1rem}
+.debiles{margin:0;padding-left:1.1rem;display:flex;flex-direction:column;gap:.35rem;font-size:.875rem}
+details summary{font-weight:400}
 textarea{width:100%;font:.8rem/1.4 ui-monospace,Consolas,monospace;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:.6rem;padding:.5rem;resize:vertical;overflow-wrap:anywhere}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -93,7 +101,9 @@ const K='rutaSIG.v1', DIA=864e5, EXAMEN=new Date(2026,10,18);
 const INTERVALO=[0,0,1,2,4,7]; // días hasta el próximo repaso según la caja Leitner (1 a 5)
 const TIPOS={om:'Opción múltiple',vf:'Verdadero o falso',completar:'Complete la frase',ordenar:'Ordene',emparejar:'Empareje'};
 const app=document.getElementById('app');
-const VACIO=()=>({xp:0,racha:0,ultimo:0,t:0,cajas:{},lecc:{}});
+const VACIO=()=>({xp:0,racha:0,ultimo:0,t:0,cajas:{},lecc:{},examenes:[]});
+const PESO=[0,0,.5,.75,1,1]; // dominio según caja Leitner: fallada 0, acertada una vez 50 %, consolidada 100 %
+const META=80;
 let B, S=VACIO(), Z, P, ref=null, sync='', escribiendo=false, pendiente=false, tSubir, confirmar=false;
 
 // Valida todo progreso que entra de fuera (código pegado, nube o almacenamiento): solo números y forma esperada.
@@ -104,8 +114,12 @@ function limpiar(d){
   for(const[k,v]of Object.entries(d.cajas||{}))if(v&&v.c>=1&&v.c<=5&&Number.isFinite(v.v))o.cajas[k]={c:Math.floor(v.c),v:Math.floor(v.v)};
   for(const[k,v]of Object.entries(d.lecc||{}))if(Number.isFinite(v))o.lecc[k]=n(v);
   const s=d.sesion;
-  if(s&&Array.isArray(s.ids)&&s.ids.every(x=>typeof x==='string')&&['leccion','repaso'].includes(s.tipo))
-    o.sesion={tipo:s.tipo,ids:s.ids.slice(0,60),i:n(s.i),ok:n(s.ok),xp:n(s.xp),clave:typeof s.clave==='string'?s.clave:undefined};
+  if(s&&Array.isArray(s.ids)&&s.ids.every(x=>typeof x==='string')&&['leccion','repaso','examen'].includes(s.tipo))
+    o.sesion={tipo:s.tipo,ids:s.ids.slice(0,60),i:n(s.i),ok:n(s.ok),xp:n(s.xp),clave:typeof s.clave==='string'?s.clave:undefined,
+      fallas:Array.isArray(s.fallas)?s.fallas.filter(x=>typeof x==='string').slice(0,60):[],t0:n(s.t0)};
+  o.examenes=(Array.isArray(d.examenes)?d.examenes:[]).filter(e=>e&&Number.isFinite(e.ok)&&Number.isFinite(e.n)).slice(-10).map(e=>{
+    const p={};for(const[k,v]of Object.entries(e.porU||{}))if(Array.isArray(v)&&v.length===2&&v.every(Number.isFinite))p[k]=[n(v[0]),n(v[1])];
+    return{t:n(e.t),ok:n(e.ok),n:n(e.n),porU:p}});
   return o;
 }
 function codigo(s=S){let b='';for(const x of new TextEncoder().encode(JSON.stringify(limpiar(s))))b+=String.fromCharCode(x);return 'SIG1.'+btoa(b)}
@@ -165,13 +179,14 @@ function inicio(){
     <div class="medidor xp"><b>${S.xp}</b><span>XP</span></div>
     <div class="medidor"><b>${Math.max(0,faltan)}</b><span>Días al 18-nov</span></div>
   </div>
-  ${S.sesion?`<button class="btn" data-continuar>Continuar ${S.sesion.tipo==='leccion'?'lección':'repaso'} · pregunta ${Math.min(S.sesion.i+1,S.sesion.ids.length)} de ${S.sesion.ids.length}</button>`:''}
+  ${S.sesion?`<button class="btn" data-continuar>Continuar ${{leccion:'lección',repaso:'repaso',examen:'simulacro'}[S.sesion.tipo]} · pregunta ${Math.min(S.sesion.i+1,S.sesion.ids.length)} de ${S.sesion.ids.length}</button>`:''}
   <button class="btn ${S.sesion?'sec':''}" data-repaso ${rep?'':'disabled'}>${rep?`Repaso del día · ${rep} ${rep===1?'pregunta':'preguntas'}`:'Sin repasos pendientes hoy'}</button>
+  <button class="btn sec" data-examen>Simulacro de examen · 40 preguntas</button>
+  ${panel()}
   ${B.unidades.map(u=>{
-    const total=B.preguntas.filter(q=>q.unidad===u.id).length;
-    const logro=u.lecciones.reduce((s,_,i)=>s+(S.lecc[u.id+'L'+(i+1)]||0),0);
-    return `<section class="unidad"><header><h2>${esc(u.titulo)}</h2><span class="muted">${Math.round(100*logro/total)} % dominio</span></header>
-    <div class="barra"><i style="width:${100*logro/total}%"></i></div>
+    const dm=dominio(u.id);
+    return `<section class="unidad"><header><h2>${esc(u.titulo)}</h2><span class="muted">${dm} % dominio</span></header>
+    <div class="barra"><i style="width:${dm}%"></i></div>
     <div><p class="muted">Audio-clase de la unidad</p><audio controls preload="none" src="audio/${esc(u.audio)}"></audio></div>
     ${u.lecciones.map((t,i)=>{const m=S.lecc[u.id+'L'+(i+1)], n=deLeccion(u.id,i+1).length;
       return `<button class="leccion ${m!=null?'hecha':''}" data-u="${u.id}" data-l="${i+1}"><span class="n">${i+1}</span><span class="t">${esc(t)}</span><span class="p">${m!=null?m+'/'+n:'Nueva'}</span></button>`}).join('')}
@@ -196,13 +211,50 @@ function mensaje(t){const e=document.getElementById('msg');if(e)e.textContent=t}
 function reanudar(){
   const s=S.sesion, m=new Map(B.preguntas.map(q=>[q.id,q])), cola=s.ids.map(i=>m.get(i)).filter(Boolean);
   if(!cola.length){delete S.sesion;guardar();return inicio()}
-  Z={tipo:s.tipo,cola,clave:s.clave,i:Math.min(s.i,cola.length),ok:s.ok,xp:s.xp};
+  Z={tipo:s.tipo,cola,clave:s.clave,i:Math.min(s.i,cola.length),ok:s.ok,xp:s.xp,fallas:s.fallas||[],t0:s.t0||Date.now()};
   Z.i<cola.length?nueva():terminar();
 }
 
-function empezar(tipo,cola,clave){Z={tipo,cola,clave,i:0,ok:0,xp:0};nueva()}
+function dominio(u){const qs=B.preguntas.filter(q=>q.unidad===u);return qs.length?Math.round(100*qs.reduce((s,q)=>s+(S.cajas[q.id]?PESO[S.cajas[q.id].c]:0),0)/qs.length):0}
+function textoCorrecta(q){return q.tipo==='ordenar'?q.opciones.join(' → '):q.tipo==='emparejar'?q.opciones.map(p=>p.join(' ↔ ')).join(' · '):q.opciones[q.correcta]}
+// Toma preguntas por turnos de cada unidad para que el simulacro cubra todas las normas.
+function armarExamen(n=40){
+  const g=B.unidades.map(u=>mezclar(B.preguntas.filter(q=>q.unidad===u.id))), c=[];
+  for(let i=0;c.length<n&&g.some(x=>x.length);i=(i+1)%g.length)if(g[i].length)c.push(g[i].pop());
+  return mezclar(c);
+}
+function filaNorma(titulo,pct,extra=''){return `<div class="fila"><span>${esc(titulo)}</span><div class="barra ${pct>=META?'meta':''}"><i style="width:${pct}%"></i></div><b>${pct} %</b>${extra}</div>`}
+function panel(){
+  const vistas=Object.keys(S.cajas).length; if(!vistas)return '';
+  const refs=[...new Set(B.preguntas.filter(q=>S.cajas[q.id]&&S.cajas[q.id].c===1).map(q=>q.referencia))].slice(0,6);
+  const ult=S.examenes[S.examenes.length-1];
+  return `<section class="unidad"><h2>Dominio por norma</h2>
+    ${B.unidades.map(u=>filaNorma(u.titulo,dominio(u.id))).join('')}
+    <p class="muted">Sube al acertar y al repasar. Meta antes del miércoles: ${META} % en cada norma.</p>
+    ${refs.length?`<h3 class="sub">Temas para reforzar</h3><ul class="debiles">${refs.map(r=>`<li>${esc(r)}</li>`).join('')}</ul>`:''}
+    ${ult?`<p class="muted">Último simulacro: ${Math.round(100*ult.ok/ult.n)} % (${ult.ok} de ${ult.n}).</p>`:''}
+  </section>`;
+}
+function resultadoExamen(){
+  const f=new Set(Z.fallas), porU={}, n=Z.cola.length;
+  for(const q of Z.cola){const r=porU[q.unidad]||(porU[q.unidad]=[0,0]);r[1]++;if(!f.has(q.id))r[0]++}
+  const pct=Math.round(100*Z.ok/n), min=Math.max(1,Math.round((Date.now()-Z.t0)/6e4));
+  S.examenes=S.examenes.concat({t:Date.now(),ok:Z.ok,n,porU}).slice(-10);
+  const fallos=Z.cola.filter(q=>f.has(q.id));
+  app.innerHTML=`<div class="fin"><h1>Simulacro: ${pct} %</h1>
+    <p>${Z.ok} de ${n} correctas en ${min} min. ${pct>=META?'Meta cumplida.':`La meta es ${META} %: refuerce las normas en rojo.`}</p></div>
+  <section class="unidad"><h2>Resultado por norma</h2>
+    ${B.unidades.filter(u=>porU[u.id]).map(u=>{const[o,t]=porU[u.id];return filaNorma(u.titulo,Math.round(100*o/t),`<small class="muted">${o}/${t}</small>`)}).join('')}
+  </section>
+  ${fallos.length?`<section class="unidad"><h2>Revise sus fallos</h2>
+    ${fallos.map(q=>`<details><summary>${esc(q.enunciado)}</summary><div class="copia">
+      <p><b>Respuesta correcta:</b> ${esc(textoCorrecta(q))}</p><p><b>Por qué:</b> ${esc(q.explicacion)}</p><p class="ref">${esc(q.referencia)}</p></div></details>`).join('')}
+    <p class="muted">Estas preguntas quedaron en el Repaso del día.</p></section>`:''}
+  <button class="btn" data-salir>Volver a la ruta</button>`;
+}
+function empezar(tipo,cola,clave){Z={tipo,cola,clave,i:0,ok:0,xp:0,fallas:[],t0:Date.now()};nueva()}
 function nueva(){
-  S.sesion={tipo:Z.tipo,ids:Z.cola.map(q=>q.id),i:Z.i,ok:Z.ok,xp:Z.xp,clave:Z.clave}; guardar();
+  S.sesion={tipo:Z.tipo,ids:Z.cola.map(q=>q.id),i:Z.i,ok:Z.ok,xp:Z.xp,clave:Z.clave,fallas:Z.fallas,t0:Z.t0}; guardar();
   const q=Z.cola[Z.i], idx=[...q.opciones.keys()];
   P={q,res:null,sel:null,sec:[],izq:null,mal:null,err:0,hechos:[],ord:q.tipo==='vf'?idx:mezclar(idx),ord2:mezclar(idx)};
   pregunta();
@@ -225,9 +277,9 @@ function pregunta(){
     if(q.tipo==='completar')enun=enun.replace('___',`<span class="hueco">${P.sel!==null?esc(q.opciones[P.sel]):'&nbsp;'}</span>`);
     cuerpo=`<div class="ops">${P.ord.map(i=>`<button class="op ${fin?(i===q.correcta?'bien':i===P.sel?'mal':''):(i===P.sel?'sel':'')}" data-op="${i}" aria-pressed="${i===P.sel}" ${off}>${esc(q.opciones[i])}</button>`).join('')}</div>`;
   }
-  let pie=q.tipo==='emparejar'?'':`<button class="btn" data-comprobar ${listo?'':'disabled'}>Comprobar</button>`;
+  let pie=q.tipo==='emparejar'?'':`<button class="btn" data-comprobar ${listo?'':'disabled'}>${Z.tipo==='examen'?'Responder':'Comprobar'}</button>`;
   if(fin){
-    const correcta=q.tipo==='ordenar'?q.opciones.join(' → '):q.tipo==='emparejar'?q.opciones.map(p=>p.join(' ↔ ')).join(' · '):q.opciones[q.correcta];
+    const correcta=textoCorrecta(q);
     pie=`<section class="sello ${P.res?'':'nc'}" role="status" aria-live="polite">
       <p class="marca">${P.res?`Conforme · +${Z.tipo==='leccion'?10:5} XP`:'No conforme'}</p>
       ${P.res?'':`<p><b>Respuesta correcta:</b> ${esc(correcta)}</p>`}
@@ -239,17 +291,23 @@ function pregunta(){
   app.innerHTML=`<div class="top"><button class="salir" data-salir aria-label="Salir de la sesión">Salir</button>
     <div class="barra" role="progressbar" aria-valuemin="0" aria-valuemax="${Z.cola.length}" aria-valuenow="${Z.i}"><i style="width:${100*(Z.i+(fin?1:0))/Z.cola.length}%"></i></div>
     <span class="muted">${Z.i+1}/${Z.cola.length}</span></div>
-  <p class="tipo">${TIPOS[q.tipo]}</p><h3>${enun}</h3>${cuerpo}${pie}`;
+  <p class="tipo">${Z.tipo==='examen'?'Simulacro · ':''}${TIPOS[q.tipo]}</p><h3>${enun}</h3>${cuerpo}${pie}`;
   if(fin){const b=document.getElementById('seguir');b.focus({preventScroll:true});b.scrollIntoView({block:'nearest'})}
 }
 function resolver(ok){
   P.res=ok; S.cajas[P.q.id]=leitner(S.cajas[P.q.id],ok,hoy());
   if(ok){const x=Z.tipo==='leccion'?10:5;Z.ok++;Z.xp+=x;S.xp+=x}
-  if(S.sesion)Object.assign(S.sesion,{i:Z.i+1,ok:Z.ok,xp:Z.xp});
-  guardar(); pregunta();
+  else if(Z.tipo==='examen')Z.fallas.push(P.q.id);
+  if(S.sesion)Object.assign(S.sesion,{i:Z.i+1,ok:Z.ok,xp:Z.xp,fallas:Z.fallas});
+  guardar();
+  // En el simulacro no se muestra la corrección: se pasa a la siguiente y todo se revisa al final.
+  // shortcut: en «emparejar» el par equivocado se sigue marcando en rojo al tocarlo; ocultarlo si el simulacro debe ser 100 % ciego.
+  if(Z.tipo==='examen')return ++Z.i<Z.cola.length?nueva():terminar();
+  pregunta();
 }
 function terminar(){
   sumarRacha(S,hoy());
+  if(Z.tipo==='examen'){delete S.sesion;resultadoExamen();guardar();window.scrollTo(0,0);return}
   if(Z.clave)S.lecc[Z.clave]=Math.max(S.lecc[Z.clave]||0,Z.ok);
   delete S.sesion; guardar();
   const f=Z.cola.length-Z.ok;
@@ -268,6 +326,7 @@ app.onclick=e=>{
   if('salir' in d)return inicio();
   if('repaso' in d)return empezar('repaso',pendientes());
   if('continuar' in d)return reanudar();
+  if('examen' in d)return empezar('examen',armarExamen());
   if('copiar' in d){
     const t=document.getElementById('codigo');
     try{navigator.clipboard.writeText(t.value).then(()=>mensaje('Código copiado. Guárdelo en un lugar seguro.'),()=>{t.select();mensaje('Seleccioné el código: cópielo con el menú del teléfono.')})}
