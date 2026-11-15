@@ -116,7 +116,7 @@ function limpiar(d){
   o.xp=n(d.xp);o.racha=n(d.racha);o.ultimo=n(d.ultimo);o.t=n(d.t);
   for(const[k,v]of Object.entries(d.cajas||{}))if(v&&v.c>=1&&v.c<=5&&Number.isFinite(v.v))o.cajas[k]={c:Math.floor(v.c),v:Math.floor(v.v)};
   for(const[k,v]of Object.entries(d.lecc||{}))if(Number.isFinite(v))o.lecc[k]=n(v);
-  for(const k of Object.keys(d.oidos||{}))if(/^U\d+$/.test(k))o.oidos[k]=1;
+  for(const k of Object.keys(d.oidos||{}))if(/^U\d+(L\d+)?$/.test(k))o.oidos[k]=1;
   const s=d.sesion;
   if(s&&Array.isArray(s.ids)&&s.ids.every(x=>typeof x==='string')&&['leccion','repaso','examen'].includes(s.tipo))
     o.sesion={tipo:s.tipo,ids:s.ids.slice(0,60),i:n(s.i),ok:n(s.ok),xp:n(s.xp),clave:typeof s.clave==='string'?s.clave:undefined,
@@ -205,8 +205,12 @@ function inicio(){
     <div class="barra"><i style="width:${dm}%"></i></div>
     <div><p class="muted">Paso 1 · Escuche la audio-clase</p><audio controls preload="none" data-audio="${u.id}" src="audio/${esc(u.audio)}"></audio>
       ${oido?'<p class="muted">✓ Audio-clase escuchada</p>':`<button class="btn sec" data-oido="${u.id}">Ya la escuché · abrir la lección 1</button>`}</div>
-    ${u.lecciones.map((t,i)=>{const m=S.lecc[u.id+'L'+(i+1)], n=tamano(u.id,i+1), ap=aprobada(u.id,i+1), libre=i?aprobada(u.id,i):oido;
-      return `<button class="leccion ${ap?'hecha':''}" data-u="${u.id}" data-l="${i+1}" ${libre?'':'disabled'}><span class="n">${ap?'✓':i+1}</span><span class="t">${esc(t)}</span><span class="p">${m!=null?Math.min(m,n)+'/'+n:libre?'Nueva':'Bloqueada'}</span></button>`}).join('')}
+    ${u.lecciones.map((t,i)=>{const k=u.id+'L'+(i+1), m=S.lecc[k], n=tamano(u.id,i+1), ap=aprobada(u.id,i+1);
+      // Lección con audio propio: se abre al aprobar la anterior y escuchar su audio.
+      const al=u.audios_leccion&&u.audios_leccion[i+1], oidoL=!al||hecho||ap||S.oidos[k], previa=i?aprobada(u.id,i):oido, libre=previa&&oidoL;
+      const pre=al&&previa?`<div><p class="muted">Antes de la lección ${i+1} · Escuche su audio-clase</p><audio controls preload="none" data-audio="${k}" src="audio/${esc(al)}"></audio>
+        ${oidoL?'<p class="muted">✓ Audio-clase escuchada</p>':`<button class="btn sec" data-oido="${k}">Ya la escuché · abrir la lección ${i+1}</button>`}</div>`:'';
+      return `${pre}<button class="leccion ${ap?'hecha':''}" data-u="${u.id}" data-l="${i+1}" ${libre?'':'disabled'}><span class="n">${ap?'✓':i+1}</span><span class="t">${esc(t)}</span><span class="p">${m!=null?Math.min(m,n)+'/'+n:libre?'Nueva':'Bloqueada'}</span></button>`}).join('')}
     <p class="muted">Apruebe cada lección con ${Math.round(APRUEBA*100)} % para abrir la siguiente.</p>
     </section>`}).join('')}
   <section class="unidad ${abierto<0?'':'bloq'}"><header><h2>Evaluación final</h2><span class="muted">${abierto<0?'Abierta':'Bloqueada'}</span></header>

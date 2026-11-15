@@ -41,7 +41,10 @@
 "Peligros, controles y operación",
 "Evaluación, incidentes y mejora",
 "Verificado contra la norma"
-]
+],
+"audios_leccion": {
+"4": "04b_iso_45001_detalle.mp3"
+}
 },
 {
 "id": "U5",
@@ -12742,6 +12745,1020 @@
 "etiquetas": [
 "45001",
 "auditoría"
+]
+},
+{
+"id": "U4L4-11",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "En la figura del ciclo PHVA de ISO 45001, ¿qué ocupa el centro?",
+"opciones": [
+"La cláusula 5, liderazgo y participación de los trabajadores",
+"La cláusula 6, planificación",
+"La cláusula 9, evaluación",
+"La cláusula 10, mejora"
+],
+"correcta": 0,
+"explicacion": "El liderazgo y los trabajadores son el eje.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, introducción (Figura 1)",
+"dificultad": 1,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-12",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "En la figura de ISO 45001, la planificación (6) corresponde a…",
+"opciones": [
+"Planear",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": 0,
+"explicacion": "Planificación = Planear.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, introducción (Figura 1)",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-13",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "En la figura de ISO 45001, apoyo (7) y operación (8) corresponden a…",
+"opciones": [
+"Planear",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": 1,
+"explicacion": "Apoyo y operación = Hacer.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, introducción (Figura 1)",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-14",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "En la figura de ISO 45001, ¿qué papel tiene el contexto (4)?",
+"opciones": [
+"Es el punto de partida o entrada del ciclo",
+"Es el centro",
+"Es el Actuar",
+"No aparece"
+],
+"correcta": 0,
+"explicacion": "El contexto entra al ciclo.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, introducción (Figura 1)",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-15",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "ISO 45001 fija criterios específicos de desempeño en SST.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "No fija criterios de desempeño ni de diseño.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, cap. 1",
+"dificultad": 1,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-16",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Cuál de estos temas NO trata ISO 45001?",
+"opciones": [
+"La seguridad del producto",
+"La consulta de los trabajadores",
+"La jerarquía de controles",
+"Los incidentes"
+],
+"correcta": 0,
+"explicacion": "Tampoco daños a la propiedad ni impactos ambientales.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, cap. 1",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-17",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Un derrame que contamina un río, ¿lo trata ISO 45001?",
+"opciones": [
+"No: los impactos ambientales son de ISO 14001",
+"Sí, siempre",
+"Solo si hay lesionados",
+"Solo en Colombia"
+],
+"correcta": 0,
+"explicacion": "ISO 45001 no trata impactos ambientales.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, cap. 1",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-18",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Una empresa quiere declarar conformidad con ISO 45001 excluyendo la gestión de contratistas porque «casi no tiene». ¿Puede?",
+"opciones": [
+"No: la norma no admite exclusiones",
+"Sí, si lo justifica",
+"Sí, si es pequeña",
+"Solo con permiso de la ARL"
+],
+"correcta": 0,
+"explicacion": "Debe cumplir todos los requisitos.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, cap. 1",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-19",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Para ISO 45001, la alta dirección también es trabajador.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Trabajador incluye alta dirección, directivos y no directivos.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 3.3",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-20",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Quiénes son trabajadores bajo control compartido?",
+"opciones": [
+"Contratistas y temporales",
+"Solo los gerentes",
+"Los clientes",
+"Los visitantes ocasionales"
+],
+"correcta": 0,
+"explicacion": "Trabajan bajo control compartido.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 3.3",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-21",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Un incidente con lesión se llama…",
+"opciones": [
+"Accidente",
+"Cuasi accidente",
+"No conformidad",
+"Peligro"
+],
+"correcta": 0,
+"explicacion": "Con lesión: accidente.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 3.35",
+"dificultad": 1,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-22",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Un montacargas casi atropella a un operario, sin lesión. ¿Cómo se llama?",
+"opciones": [
+"Cuasi accidente",
+"Accidente",
+"No conformidad mayor",
+"Riesgo"
+],
+"correcta": 0,
+"explicacion": "Sin lesión pero con potencial.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 3.35",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-23",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Puede haber un incidente sin que exista una no conformidad.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Se cumplió todo y aun así ocurrió.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 3.35",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-24",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "emparejar",
+"enunciado": "Empareje cada término con su significado.",
+"opciones": [
+[
+"Accidente",
+"Incidente con lesión"
+],
+[
+"Cuasi accidente",
+"Incidente sin lesión con potencial"
+],
+[
+"Trabajador",
+"Incluye alta dirección y contratistas"
+]
+],
+"correcta": null,
+"explicacion": "Definiciones finas de la norma.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, cap. 3",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-25",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué compromiso de la alta dirección protege a quien reporta?",
+"opciones": [
+"Protegerlo de represalias",
+"Darle un bono",
+"Cambiarlo de puesto",
+"Ninguno"
+],
+"correcta": 0,
+"explicacion": "Proteger de represalias a quien reporta.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.1",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-26",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Un operario reporta un peligro y su jefe le quita horas extra. ¿Qué compromiso de liderazgo se incumple?",
+"opciones": [
+"Proteger de represalias a quien reporta",
+"Cumplir la ley ambiental",
+"Mejorar la satisfacción del cliente",
+"Ninguno"
+],
+"correcta": 0,
+"explicacion": "Reportar no debe traer represalias.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.1",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-27",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Cuántos compromisos tiene la política de SST?",
+"opciones": [
+"Seis",
+"Tres",
+"Cuatro",
+"Diez"
+],
+"correcta": 0,
+"explicacion": "Seis compromisos.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.2",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-28",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Cuál de estos es uno de los seis compromisos de la política de SST?",
+"opciones": [
+"Proporcionar un marco para los objetivos",
+"Aumentar las ventas",
+"Certificarse en tres años",
+"Reducir la nómina"
+],
+"correcta": 0,
+"explicacion": "Marco para los objetivos.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.2",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-29",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "emparejar",
+"enunciado": "Empareje cada compromiso de la política de SST.",
+"opciones": [
+[
+"Condiciones",
+"Seguras y saludables"
+],
+[
+"Legal",
+"Cumplir los requisitos"
+],
+[
+"Peligros",
+"Eliminarlos y reducir riesgos"
+],
+[
+"Trabajadores",
+"Consulta y participación"
+]
+],
+"correcta": null,
+"explicacion": "Más el marco de objetivos y la mejora continua.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.2",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-30",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Sobre qué se CONSULTA a los no directivos?",
+"opciones": [
+"Política, roles, requisitos legales, objetivos y programas de auditoría",
+"Investigación de incidentes",
+"Identificación de peligros",
+"Definición de controles"
+],
+"correcta": 0,
+"explicacion": "Consulta: opinión antes de decidir.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.4 d)",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-31",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿En qué PARTICIPAN los no directivos?",
+"opciones": [
+"Identificar peligros, definir acciones y controles, formación e investigación de incidentes",
+"La política únicamente",
+"Los programas de auditoría únicamente",
+"La fijación de precios"
+],
+"correcta": 0,
+"explicacion": "Participación: se involucran en la decisión.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.4 e)",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-32",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Los trabajadores dan su opinión sobre qué indicadores medir. ¿Consulta o participación?",
+"opciones": [
+"Consulta",
+"Participación",
+"Ninguna",
+"Auditoría"
+],
+"correcta": 0,
+"explicacion": "Qué se mide es tema de consulta.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.4 d)",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-33",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Dos operarios hacen parte del equipo que investiga un accidente. ¿Consulta o participación?",
+"opciones": [
+"Participación",
+"Consulta",
+"Ninguna",
+"Revisión por la dirección"
+],
+"correcta": 0,
+"explicacion": "La investigación es tema de participación.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.4 e)",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-34",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué barreras a la participación nombra la norma?",
+"opciones": [
+"No recibir respuesta, el idioma y el miedo a represalias",
+"El clima y la distancia",
+"El salario y el cargo",
+"Ninguna"
+],
+"correcta": 0,
+"explicacion": "Es una pregunta de repaso.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.4",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-35",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Cómo sugiere la norma eliminar barreras a la participación?",
+"opciones": [
+"Con formación sin costo y dentro del horario de trabajo",
+"Con sanciones",
+"Con formación fuera del horario y pagada por el trabajador",
+"No las elimina"
+],
+"correcta": 0,
+"explicacion": "Quitar costos y horarios que impiden participar.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.4",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-36",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Los reportes de los trabajadores nunca reciben respuesta y dejaron de reportar. ¿Qué ocurre?",
+"opciones": [
+"Una barrera a la participación: falta de respuesta",
+"Una buena práctica",
+"Nada relevante",
+"Un tema ambiental"
+],
+"correcta": 0,
+"explicacion": "La falta de respuesta desmotiva.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.4",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-37",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Varios operarios no leen bien español y la capacitación es solo escrita. ¿Qué barrera aparece?",
+"opciones": [
+"El idioma o la alfabetización",
+"La falta de presupuesto",
+"El clima",
+"Ninguna"
+],
+"correcta": 0,
+"explicacion": "Barreras de idioma y comunicación.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.4 y 7.4.1",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-38",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Las metodologías de evaluación de riesgos deben ser más proactivas que reactivas.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Anticiparse, no esperar el accidente.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 6.1.2.2",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-39",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Una empresa solo revisa sus riesgos después de cada accidente. ¿Qué le diría el auditor?",
+"opciones": [
+"La metodología debe ser más proactiva que reactiva",
+"Está perfecto",
+"Debe esperar dos accidentes",
+"Es tema de calidad"
+],
+"correcta": 0,
+"explicacion": "Anticiparse.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 6.1.2.2",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-40",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Cómo deben ser los objetivos de SST según el texto oficial?",
+"opciones": [
+"Medibles si es posible, o evaluables",
+"Siempre en dinero",
+"Secretos",
+"Opcionales"
+],
+"correcta": 0,
+"explicacion": "Medibles o evaluables.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 6.2.1",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-41",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "La carga de trabajo, las horas y el acoso son factores…",
+"opciones": [
+"Sociales, que se consideran al identificar peligros",
+"Ambientales",
+"Del cliente",
+"Financieros"
+],
+"correcta": 0,
+"explicacion": "Vínculo con el riesgo psicosocial.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 6.1.2.1",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-42",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Cada trabajador puede alejarse de un peligro inminente y serio, protegido de consecuencias indebidas.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Toma de conciencia.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 7.3",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-43",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "emparejar",
+"enunciado": "Empareje cada aspecto de diversidad con un ejemplo.",
+"opciones": [
+[
+"Idioma",
+"Trabajadores que hablan otra lengua"
+],
+[
+"Alfabetización",
+"Personas que leen con dificultad"
+],
+[
+"Discapacidad",
+"Trabajador con baja audición"
+],
+[
+"Cultura",
+"Costumbres distintas"
+]
+],
+"correcta": null,
+"explicacion": "Se consideran al planificar la comunicación.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 7.4.1",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-44",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Según la norma, ¿qué se adapta a qué?",
+"opciones": [
+"El trabajo a los trabajadores",
+"Los trabajadores al trabajo",
+"El cliente al proveedor",
+"Nada"
+],
+"correcta": 0,
+"explicacion": "El trabajo se adapta a las personas.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 8.1.1",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-45",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "En la planta conviven la empresa, una contratista de vigilancia y otra de aseo. ¿Qué pide la norma?",
+"opciones": [
+"Coordinar el sistema de SST con los otros empleadores",
+"Que cada uno se encargue solo",
+"Expulsar a los contratistas",
+"Nada"
+],
+"correcta": 0,
+"explicacion": "Lugares con múltiples empleadores.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 8.1.1",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-46",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Una nota de la norma indica que en muchos países el EPP debe entregarse sin costo para el trabajador.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Nota del 8.1.2.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 8.1.2",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-47",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué cambios cubre la gestión del cambio en ISO 45001?",
+"opciones": [
+"Temporales y permanentes",
+"Solo permanentes",
+"Solo de personal",
+"Solo de precios"
+],
+"correcta": 0,
+"explicacion": "Ambos tipos.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 8.1.3",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-48",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Una máquina se dañó y se trajo otra prestada por una semana sin evaluarla. ¿Qué se incumple?",
+"opciones": [
+"La gestión de cambios temporales",
+"Nada, es temporal",
+"La política ambiental",
+"La revisión por la dirección"
+],
+"correcta": 0,
+"explicacion": "Los cambios temporales también se gestionan.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 8.1.3",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-49",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué pide la norma ante cambios no previstos?",
+"opciones": [
+"Revisar sus consecuencias",
+"Ignorarlos",
+"Esperar la auditoría",
+"Solo informarlos al cliente"
+],
+"correcta": 0,
+"explicacion": "Revisar consecuencias de lo no previsto.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 8.1.3",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-50",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué criterios se usan para seleccionar contratistas?",
+"opciones": [
+"Criterios de seguridad y salud en el trabajo",
+"Solo el precio",
+"Solo la cercanía",
+"Ninguno"
+],
+"correcta": 0,
+"explicacion": "Criterios de SST.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 8.1.4.2",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-51",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "La preparación ante emergencias incluye los primeros auxilios.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Lo dice el 8.2.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 8.2",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-52",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿A quién se informan también los hallazgos pertinentes de la auditoría interna?",
+"opciones": [
+"A los trabajadores y sus representantes",
+"Solo al gerente",
+"Solo a la ARL",
+"A nadie"
+],
+"correcta": 0,
+"explicacion": "Transparencia con los trabajadores.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 9.2.2",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-53",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué entrada de la revisión por la dirección destaca este audio?",
+"opciones": [
+"Los resultados de la consulta y la participación",
+"Las ventas",
+"El presupuesto",
+"La publicidad"
+],
+"correcta": 0,
+"explicacion": "Entrada propia de SST.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 9.3",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-54",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Una acción correctiva introduce un montacargas eléctrico nuevo. ¿Qué se hace antes de implementarla?",
+"opciones": [
+"Evaluar los riesgos de los peligros nuevos o modificados",
+"Implementarla de inmediato",
+"Pedir permiso al cliente",
+"Nada"
+],
+"correcta": 0,
+"explicacion": "Es una pregunta de repaso.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 10.2",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-55",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Con qué se eligen las acciones correctivas en ISO 45001?",
+"opciones": [
+"Con la jerarquía de controles y la gestión del cambio",
+"Al azar",
+"Por el precio",
+"Por votación"
+],
+"correcta": 0,
+"explicacion": "Jerarquía y gestión del cambio.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 10.2",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-56",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Las acciones correctivas se comunican a los trabajadores.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Lo pide el 10.2.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 10.2",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-57",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué conserva ISO 45001:2018 que ISO 9001:2026 e ISO 14001:2026 eliminaron?",
+"opciones": [
+"La cláusula 10.3 de mejora continua",
+"La cláusula 4",
+"La política",
+"La auditoría interna"
+],
+"correcta": 0,
+"explicacion": "La 45001 sí tiene 10.3.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 10.3",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-58",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Un auditor pregunta qué está en el centro del ciclo de ISO 45001. ¿Qué responde?",
+"opciones": [
+"El liderazgo y la participación de los trabajadores",
+"La matriz de peligros",
+"El EPP",
+"La certificación"
+],
+"correcta": 0,
+"explicacion": "Es una pregunta de repaso.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, introducción (Figura 1)",
+"dificultad": 3,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-59",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué tipo de comités debe apoyar la alta dirección?",
+"opciones": [
+"Los comités de seguridad y salud, como el COPASST",
+"Los comités de ventas",
+"Los comités de compras",
+"Ninguno"
+],
+"correcta": 0,
+"explicacion": "Apoyar comités de SST.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.1",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
+]
+},
+{
+"id": "U4L4-60",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Los programas de auditoría son un tema sobre el que se consulta a los no directivos.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Consulta, no participación.",
+"referencia": "Audio-clase 4b; NTC-ISO 45001:2018, 5.4 d)",
+"dificultad": 2,
+"etiquetas": [
+"audio4"
 ]
 },
 {
