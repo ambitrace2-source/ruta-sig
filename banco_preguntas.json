@@ -122,10 +122,10 @@
 "tipo": "om",
 "enunciado": "En la regla de memoria C-L-P-A-O-E-M, ¿qué cláusula representa la «A»?",
 "opciones": [
-"Auditoría (9.2)",
-"Alcance (4.3)",
-"Apoyo (7)",
-"Acción correctiva (10.2)"
+"Auditoría",
+"Alcance",
+"Apoyo",
+"Acción correctiva"
 ],
 "correcta": 2,
 "explicacion": "C-L-P-A-O-E-M recorre los capítulos 4 a 10: Contexto, Liderazgo, Planificación, Apoyo, Operación, Evaluación y Mejora. La A es el capítulo 7, Apoyo.",
@@ -359,6 +359,792 @@
 ]
 },
 {
+"id": "U1L1-13",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Cuántas cláusulas tiene la estructura común de las normas ISO de sistemas de gestión?",
+"opciones": [
+"7",
+"10",
+"12",
+"4"
+],
+"correcta": 1,
+"explicacion": "Son diez cláusulas, con los mismos títulos y en el mismo orden en las tres normas.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-14",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Desde qué año las normas ISO de sistemas de gestión comparten la misma estructura?",
+"opciones": [
+"2000",
+"2008",
+"2012",
+"2018"
+],
+"correcta": 2,
+"explicacion": "La estructura de alto nivel se adoptó en 2012 y desde entonces la usan todas las normas de sistemas de gestión.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-15",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "La estructura de alto nivel hace que ISO 9001, 14001 y 45001 tengan los mismos títulos de cláusula y en el mismo orden.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Ese es justamente el aporte del Anexo SL: un esqueleto idéntico para todas.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-16",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué contienen las cláusulas 1, 2 y 3?",
+"opciones": [
+"Objeto, referencias normativas y términos",
+"Contexto, liderazgo y planificación",
+"Requisitos de operación",
+"Auditoría y mejora"
+],
+"correcta": 0,
+"explicacion": "Son introductorias; los requisitos auditables empiezan en la 4.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-17",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "La regla C-L-P-A-O-E-M sirve para memorizar las cláusulas de la ___ a la 10.",
+"opciones": [
+"1",
+"3",
+"4",
+"7"
+],
+"correcta": 2,
+"explicacion": "Las siete letras corresponden a las cláusulas 4, 5, 6, 7, 8, 9 y 10.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-18",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "En C-L-P-A-O-E-M, ¿qué representa la «E»?",
+"opciones": [
+"Emergencias",
+"Evaluación del desempeño",
+"Eficacia",
+"Estrategia"
+],
+"correcta": 1,
+"explicacion": "E es la cláusula 9, Evaluación del desempeño.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-19",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "En C-L-P-A-O-E-M, ¿qué representa la «O»?",
+"opciones": [
+"Objetivos",
+"Organización",
+"Operación",
+"Oportunidades"
+],
+"correcta": 2,
+"explicacion": "O es la cláusula 8, Operación.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-20",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "En C-L-P-A-O-E-M, ¿qué representa la «P»?",
+"opciones": [
+"Política",
+"Planificación",
+"Procesos",
+"Proveedores"
+],
+"correcta": 1,
+"explicacion": "P es la cláusula 6, Planificación. La política está dentro de Liderazgo (5).",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-21",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué número tiene la cláusula de Liderazgo?",
+"opciones": [
+"4",
+"5",
+"6",
+"7"
+],
+"correcta": 1,
+"explicacion": "C-L-P-A-O-E-M: la L es la segunda, es decir, la cláusula 5.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-22",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué número tiene la cláusula de Apoyo?",
+"opciones": [
+"5",
+"6",
+"7",
+"8"
+],
+"correcta": 2,
+"explicacion": "A es la cuarta letra: cláusula 7.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-23",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "La cláusula 10 se llama ___.",
+"opciones": [
+"Evaluación",
+"Mejora",
+"Operación",
+"Contexto"
+],
+"correcta": 1,
+"explicacion": "La M final de la regla: Mejora.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-24",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "La cláusula 7 es Operación.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "La 7 es Apoyo; Operación es la 8.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-25",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "ordenar",
+"enunciado": "Ordene las letras de la regla de memoria, de la cláusula 4 a la 10.",
+"opciones": [
+"C · Contexto",
+"L · Liderazgo",
+"P · Planificación",
+"A · Apoyo",
+"O · Operación",
+"E · Evaluación",
+"M · Mejora"
+],
+"correcta": [
+0,
+1,
+2,
+3,
+4,
+5,
+6
+],
+"explicacion": "Contexto, Liderazgo, Planificación, Apoyo, Operación, Evaluación, Mejora.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-26",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada cláusula con su número.",
+"opciones": [
+[
+"Contexto",
+"4"
+],
+[
+"Liderazgo",
+"5"
+],
+[
+"Apoyo",
+"7"
+],
+[
+"Evaluación del desempeño",
+"9"
+]
+],
+"correcta": null,
+"explicacion": "Con la regla C-L-P-A-O-E-M se deduce cualquier número.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-27",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué significa PHVA?",
+"opciones": [
+"Planificar, hacer, verificar y actuar",
+"Prevenir, hallar, validar y auditar",
+"Política, hallazgo, verificación y acción",
+"Proceso, herramienta, valor y alcance"
+],
+"correcta": 0,
+"explicacion": "Es el ciclo de mejora sobre el que se ordenan las cláusulas 4 a 10.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-28",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿A qué etapa del PHVA corresponde la cláusula 7 (Apoyo)?",
+"opciones": [
+"Planificar",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": 1,
+"explicacion": "Hacer agrupa Apoyo (7) y Operación (8).",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-29",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿A qué etapa del PHVA corresponde la cláusula 5 (Liderazgo)?",
+"opciones": [
+"Planificar",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": 0,
+"explicacion": "Planificar agrupa 4, 5 y 6.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-30",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿A qué etapa del PHVA corresponde la cláusula 4 (Contexto)?",
+"opciones": [
+"Planificar",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": 0,
+"explicacion": "Planificar arranca entendiendo el contexto (4).",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-31",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "En el PHVA, Verificar corresponde a la cláusula 9.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La 9 mide, audita y revisa: eso es verificar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-32",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "En el PHVA, Actuar corresponde a la cláusula 8.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Actuar es la 10, Mejora. La 8 es Hacer.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-33",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "emparejar",
+"enunciado": "Empareje cada etapa del PHVA con sus cláusulas.",
+"opciones": [
+[
+"Planificar",
+"4, 5 y 6"
+],
+[
+"Hacer",
+"7 y 8"
+],
+[
+"Verificar",
+"9"
+],
+[
+"Actuar",
+"10"
+]
+],
+"correcta": null,
+"explicacion": "Planificar 4-5-6, Hacer 7-8, Verificar 9, Actuar 10.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-34",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "ordenar",
+"enunciado": "Ordene las etapas del ciclo PHVA.",
+"opciones": [
+"Planificar",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": [
+0,
+1,
+2,
+3
+],
+"explicacion": "Primero se planifica, luego se hace, se verifica y se actúa para mejorar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-35",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Cuántas cláusulas agrupa la etapa Planificar?",
+"opciones": [
+"Una",
+"Dos",
+"Tres",
+"Cuatro"
+],
+"correcta": 2,
+"explicacion": "Tres: Contexto (4), Liderazgo (5) y Planificación (6).",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-36",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "La etapa Hacer agrupa Apoyo y ___.",
+"opciones": [
+"Operación",
+"Mejora",
+"Liderazgo",
+"Contexto"
+],
+"correcta": 0,
+"explicacion": "Hacer = 7 Apoyo + 8 Operación.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-37",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Un auditor pregunta: «¿Cómo funciona su sistema?». ¿Cuál es una buena forma de explicarlo?",
+"opciones": [
+"Recitar la política de memoria",
+"Con el ciclo PHVA: planificar 4-6, hacer 7-8, verificar 9, actuar 10",
+"Mostrar el certificado vigente",
+"Entregar la lista de documentos"
+],
+"correcta": 1,
+"explicacion": "El PHVA muestra que el sistema es un ciclo vivo y no un archivo de papeles.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-38",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Un compañero dice que, en el PHVA, Planificar va de la cláusula 4 a la 7. ¿Qué le responde?",
+"opciones": [
+"Tiene razón",
+"La 7 es Hacer: Planificar es 4, 5 y 6",
+"Planificar es solo la 6",
+"Planificar empieza en la 1"
+],
+"correcta": 1,
+"explicacion": "Apoyo (7) ya es ejecución: recursos, competencia, comunicación y documentos.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-39",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Un auditor puede levantar una no conformidad porque la empresa «no cumple» la cláusula 2, referencias normativas.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Las cláusulas 1 a 3 son introductorias; no tienen requisitos que auditar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-40",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Cómo se llama también la estructura de alto nivel?",
+"opciones": [
+"Anexo SL",
+"Anexo A",
+"Guía de auditoría",
+"Norma de vocabulario"
+],
+"correcta": 0,
+"explicacion": "Estructura de alto nivel o Anexo SL: dos nombres para lo mismo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-41",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Gracias a la estructura común, las tres normas pasan a verse como un solo esqueleto con tres enfoques.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Es la idea central de la clase: misma estructura, distinto foco.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-42",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Una empresa tiene ISO 9001 y quiere añadir ISO 14001. ¿Qué le facilita la estructura común?",
+"opciones": [
+"Nada: debe crear otro sistema desde cero",
+"Reutilizar el mismo esqueleto de cláusulas y sumar el foco ambiental",
+"Saltarse la auditoría",
+"Usar la política de calidad sin cambios"
+],
+"correcta": 1,
+"explicacion": "Como las cláusulas coinciden, se amplía el sistema existente en vez de duplicarlo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-43",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué cláusula viene justo después de Planificación?",
+"opciones": [
+"Contexto",
+"Apoyo",
+"Operación",
+"Mejora"
+],
+"correcta": 1,
+"explicacion": "P-A: después de la 6 viene la 7, Apoyo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-44",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿Qué cláusula viene justo antes de Mejora?",
+"opciones": [
+"Operación",
+"Evaluación del desempeño",
+"Apoyo",
+"Liderazgo"
+],
+"correcta": 1,
+"explicacion": "E-M: la 9 antecede a la 10.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-45",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "completar",
+"enunciado": "La frase de memoria es: Contexto, Liderazgo, Planificación, Apoyo, Operación, Evaluación y ___.",
+"opciones": [
+"Mejora",
+"Medición",
+"Método",
+"Mantenimiento"
+],
+"correcta": 0,
+"explicacion": "La M final es Mejora, cláusula 10.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-46",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "vf",
+"enunciado": "Lo que realmente se audita va de la cláusula 4 a la 10.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Las cláusulas 1 a 3 solo introducen la norma.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-47",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "¿En qué etapa del PHVA está la revisión por la dirección?",
+"opciones": [
+"Planificar",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": 2,
+"explicacion": "La revisión por la dirección es parte de la cláusula 9, es decir, Verificar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-48",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Tratar una no conformidad y buscar su causa raíz, ¿a qué etapa del PHVA corresponde?",
+"opciones": [
+"Planificar",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": 3,
+"explicacion": "Es la cláusula 10, Mejora: el Actuar del ciclo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-49",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Capacitar al personal para que sea competente, ¿a qué etapa del PHVA corresponde?",
+"opciones": [
+"Planificar",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": 1,
+"explicacion": "La competencia está en Apoyo (7), que pertenece a Hacer.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L1-50",
+"unidad": "U1",
+"leccion": 1,
+"tipo": "om",
+"enunciado": "Fijar objetivos medibles, ¿a qué etapa del PHVA corresponde?",
+"opciones": [
+"Planificar",
+"Hacer",
+"Verificar",
+"Actuar"
+],
+"correcta": 0,
+"explicacion": "Los objetivos se fijan en la cláusula 6, dentro de Planificar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL), cap. 4-10 y ciclo PHVA",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
 "id": "U1L2-01",
 "unidad": "U1",
 "leccion": 2,
@@ -384,28 +1170,24 @@
 "unidad": "U1",
 "leccion": 2,
 "tipo": "emparejar",
-"enunciado": "Empareje cada norma con su tema.",
+"enunciado": "Empareje cada norma con su foco.",
 "opciones": [
 [
 "ISO 9001",
-"Calidad y cliente"
+"El cliente y el producto o servicio"
 ],
 [
 "ISO 14001",
-"Medio ambiente"
+"El impacto ambiental y la ley ambiental"
 ],
 [
 "ISO 45001",
-"Seguridad y salud en el trabajo"
-],
-[
-"ISO 19011",
-"Auditoría de sistemas de gestión"
+"Las personas: evitar lesiones y enfermedades"
 ]
 ],
 "correcta": null,
-"explicacion": "9001 calidad, 14001 ambiente, 45001 SST. ISO 19011 no es certificable: es la guía para auditar los tres sistemas.",
-"referencia": "ISO 9001, 14001, 45001 e ISO 19011:2026",
+"explicacion": "Las tres comparten estructura, pero cada una mira algo distinto: calidad mira al cliente, ambiente al entorno y SST a los trabajadores.",
+"referencia": "Audio-clase 1; objeto de ISO 9001, ISO 14001 e ISO 45001",
 "dificultad": 1,
 "etiquetas": [
 "estructura"
@@ -416,7 +1198,7 @@
 "unidad": "U1",
 "leccion": 2,
 "tipo": "om",
-"enunciado": "Dentro de la planificación (6.1), ¿qué identifica ISO 14001 en su apartado 6.1.2?",
+"enunciado": "En la cláusula 6 (Planificación), ¿qué identifica ISO 14001?",
 "opciones": [
 "Peligros para los trabajadores",
 "Aspectos ambientales y sus impactos",
@@ -424,8 +1206,8 @@
 "Proveedores críticos"
 ],
 "correcta": 1,
-"explicacion": "El 6.1.2 de 14001 es la matriz de aspectos e impactos. En 45001 el 6.1.2 identifica peligros y evalúa riesgos de SST.",
-"referencia": "ISO 14001:2026, 6.1.2",
+"explicacion": "En ambiente, planificar es identificar aspectos e impactos y obligaciones de cumplimiento; los peligros son de ISO 45001.",
+"referencia": "Audio-clase 1; ISO 14001:2026, cap. 6",
 "dificultad": 2,
 "etiquetas": [
 "estructura",
@@ -437,16 +1219,16 @@
 "unidad": "U1",
 "leccion": 2,
 "tipo": "om",
-"enunciado": "¿Qué apartado del capítulo de Liderazgo existe solo en ISO 45001?",
+"enunciado": "Además de política y roles, ¿qué suma la cláusula 5 (Liderazgo) en ISO 45001?",
 "opciones": [
-"5.1 Liderazgo y compromiso",
-"5.2 Política",
-"5.3 Roles y responsabilidades",
-"5.4 Consulta y participación de los trabajadores"
+"La consulta y participación de los trabajadores",
+"La satisfacción del cliente",
+"La evaluación de aspectos ambientales",
+"La auditoría interna"
 ],
-"correcta": 3,
-"explicacion": "9001 y 14001 llegan hasta 5.3. Solo 45001 añade el 5.4, porque la participación de los trabajadores es el rasgo propio de la SST.",
-"referencia": "ISO 45001:2018, 5.4",
+"correcta": 0,
+"explicacion": "En SST la dirección no decide sola: debe consultar a los trabajadores y hacerlos participar.",
+"referencia": "Audio-clase 1; ISO 45001:2018, cap. 5",
 "dificultad": 2,
 "etiquetas": [
 "estructura",
@@ -458,14 +1240,14 @@
 "unidad": "U1",
 "leccion": 2,
 "tipo": "vf",
-"enunciado": "La cláusula 4.2 pide determinar las partes interesadas pertinentes y cuáles de sus necesidades y expectativas se convierten en requisitos del sistema.",
+"enunciado": "La cláusula 4 (Contexto) pide identificar las partes interesadas y lo que esperan de la organización.",
 "opciones": [
 "Verdadero",
 "Falso"
 ],
 "correcta": 0,
-"explicacion": "No basta con listar interesados: hay que decidir cuáles de sus expectativas se asumen como requisitos. La evidencia habitual es una matriz de partes interesadas.",
-"referencia": "Estructura armonizada ISO, 4.2",
+"explicacion": "Contexto es entender dónde está parada la empresa: factores internos y externos, partes interesadas y lo que quieren.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4",
 "dificultad": 1,
 "etiquetas": [
 "contexto"
@@ -476,7 +1258,7 @@
 "unidad": "U1",
 "leccion": 2,
 "tipo": "completar",
-"enunciado": "La cláusula 4.3 determina el ___ del sistema de gestión, que debe estar como información documentada.",
+"enunciado": "Dentro de la cláusula 4 (Contexto), la organización define el ___ de su sistema de gestión.",
 "opciones": [
 "alcance",
 "presupuesto",
@@ -484,8 +1266,8 @@
 "objetivo"
 ],
 "correcta": 0,
-"explicacion": "El alcance fija los límites y la aplicabilidad del sistema: qué sedes, procesos, productos y servicios cubre.",
-"referencia": "Estructura armonizada ISO, 4.3",
+"explicacion": "El alcance dice qué sedes, procesos y productos cubre el sistema; se fija al entender el contexto.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4",
 "dificultad": 1,
 "etiquetas": [
 "contexto"
@@ -496,7 +1278,7 @@
 "unidad": "U1",
 "leccion": 2,
 "tipo": "om",
-"enunciado": "¿Qué añadió la Enmienda 1:2024 a la cláusula 4.1 de las tres normas?",
+"enunciado": "¿Qué añadió la enmienda de 2024 a la cláusula 4 (Contexto) de las tres normas?",
 "opciones": [
 "Determinar si el cambio climático es una cuestión pertinente",
 "Nombrar un representante de la dirección",
@@ -504,8 +1286,8 @@
 "Certificarse en ISO 14064"
 ],
 "correcta": 0,
-"explicacion": "La enmienda solo pide analizar si el cambio climático es pertinente para la organización, y en 4.2 recuerda que los interesados pueden tener requisitos sobre el clima. No obliga a medir huella.",
-"referencia": "Enmienda 1:2024 a ISO 9001/14001/45001, 4.1 y 4.2",
+"explicacion": "La enmienda pide preguntarse si el cambio climático afecta a la organización; no obliga a medir la huella de carbono.",
+"referencia": "Audio-clase 1; Enmienda 1:2024 a ISO 9001/14001/45001, cap. 4",
 "dificultad": 2,
 "etiquetas": [
 "contexto",
@@ -517,14 +1299,14 @@
 "unidad": "U1",
 "leccion": 2,
 "tipo": "vf",
-"enunciado": "En las tres normas, la cláusula 6.2 trata la auditoría interna.",
+"enunciado": "La auditoría interna hace parte de la cláusula 6 (Planificación).",
 "opciones": [
 "Verdadero",
 "Falso"
 ],
 "correcta": 1,
-"explicacion": "La 6.2 trata los objetivos (de calidad, ambientales o de SST) y cómo planificar su logro. La auditoría interna está en la 9.2.",
-"referencia": "Estructura armonizada ISO, 6.2 y 9.2",
+"explicacion": "La auditoría interna está en la cláusula 9, Evaluación del desempeño, junto con la medición y la revisión por la dirección.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 6 y 9",
 "dificultad": 1,
 "etiquetas": [
 "estructura"
@@ -535,23 +1317,19 @@
 "unidad": "U1",
 "leccion": 2,
 "tipo": "ordenar",
-"enunciado": "Ordene la secuencia lógica con la que se planifica un sistema de gestión.",
+"enunciado": "Ordene lo que se hace en la etapa Planificar, de la cláusula 4 a la 6.",
 "opciones": [
-"Comprender el contexto (4.1)",
-"Determinar partes interesadas (4.2)",
-"Definir el alcance (4.3)",
-"Abordar riesgos y oportunidades (6.1)",
-"Fijar objetivos y planes (6.2)"
+"Entender el contexto y las partes interesadas",
+"Que la alta dirección defina la política y los roles",
+"Identificar riesgos y fijar objetivos medibles"
 ],
 "correcta": [
 0,
 1,
-2,
-3,
-4
+2
 ],
-"explicacion": "Primero se entiende el entorno y a los interesados, con eso se delimita el alcance, luego se determinan riesgos y oportunidades, y al final se fijan objetivos.",
-"referencia": "Estructura armonizada ISO, 4.1-4.3, 6.1 y 6.2",
+"explicacion": "Planificar recorre 4 (contexto), 5 (liderazgo) y 6 (planificación), en ese orden.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
 "dificultad": 2,
 "etiquetas": [
 "estructura",
@@ -563,7 +1341,7 @@
 "unidad": "U1",
 "leccion": 2,
 "tipo": "completar",
-"enunciado": "En ISO 45001, el apartado 6.1.2 identifica ___ y evalúa los riesgos para la SST.",
+"enunciado": "En la cláusula 6 (Planificación), ISO 45001 identifica ___, riesgos y requisitos legales.",
 "opciones": [
 "aspectos",
 "peligros",
@@ -571,8 +1349,8 @@
 "impactos"
 ],
 "correcta": 1,
-"explicacion": "En SST se habla de peligros (fuentes de daño) y riesgos. Aspectos e impactos son el vocabulario de 14001.",
-"referencia": "ISO 45001:2018, 6.1.2",
+"explicacion": "En SST se planifica a partir de los peligros; aspectos e impactos son el lenguaje de ISO 14001.",
+"referencia": "Audio-clase 1; ISO 45001:2018, cap. 6",
 "dificultad": 1,
 "etiquetas": [
 "estructura",
@@ -580,20 +1358,819 @@
 ]
 },
 {
+"id": "U1L2-11",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué busca la cláusula 4 (Contexto)?",
+"opciones": [
+"Que la empresa entienda dónde está parada",
+"Que la empresa mida sus indicadores",
+"Que la empresa corrija no conformidades",
+"Que la empresa compre equipos"
+],
+"correcta": 0,
+"explicacion": "Contexto es el diagnóstico: factores, partes interesadas y alcance.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-12",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "La cláusula 4 analiza los factores internos y externos que afectan a la organización.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Es lo primero que pide el contexto.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-13",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Una nueva ley, la llegada de un competidor y la cultura interna son ejemplos de…",
+"opciones": [
+"Cuestiones de contexto (cláusula 4)",
+"No conformidades (cláusula 10)",
+"Recursos (cláusula 7)",
+"Controles operacionales (cláusula 8)"
+],
+"correcta": 0,
+"explicacion": "Son factores externos e internos que la empresa analiza en su contexto.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-14",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Clientes, trabajadores, vecinos y autoridades son ejemplos de…",
+"opciones": [
+"Partes interesadas",
+"Auditores",
+"Proveedores críticos",
+"Objetivos"
+],
+"correcta": 0,
+"explicacion": "La cláusula 4 pide saber quiénes son las partes interesadas y qué quieren.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-15",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "Con la enmienda de 2024, la empresa debe preguntarse si el cambio climático es una cuestión pertinente para ella.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La enmienda lo añadió al contexto de las tres normas.",
+"referencia": "Audio-clase 1; Enmienda 1:2024 a ISO 9001/14001/45001, cap. 4",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-16",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Tras la enmienda de 2024, una empresa concluye que el cambio climático no le afecta. ¿Qué exige la norma?",
+"opciones": [
+"Medir igualmente su huella de carbono",
+"Haberse hecho la pregunta y considerarlo en su contexto",
+"Certificarse en otra norma",
+"Nada: la enmienda solo aplica a ISO 14001"
+],
+"correcta": 1,
+"explicacion": "La exigencia es preguntarse si es pertinente y tenerlo en cuenta; no impone medir la huella.",
+"referencia": "Audio-clase 1; Enmienda 1:2024 a ISO 9001/14001/45001, cap. 4",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-17",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "La enmienda de 2024 sobre cambio climático aplica solo a ISO 14001.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Aplica a las tres normas, porque toca la cláusula común de contexto.",
+"referencia": "Audio-clase 1; Enmienda 1:2024 a ISO 9001/14001/45001, cap. 4",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-18",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué cláusula define la política y asigna roles?",
+"opciones": [
+"4 Contexto",
+"5 Liderazgo",
+"6 Planificación",
+"7 Apoyo"
+],
+"correcta": 1,
+"explicacion": "Política, roles y compromiso son el corazón del Liderazgo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-19",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "En la cláusula 5, la alta dirección puede delegar toda la responsabilidad del sistema en el coordinador.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Puede asignar tareas, pero la responsabilidad no se delega: la conserva la alta dirección.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-20",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "En una auditoría, ¿con quién quiere hablar siempre el auditor para evaluar el liderazgo?",
+"opciones": [
+"Con el gerente o la alta dirección",
+"Solo con el coordinador SIG",
+"Con los clientes",
+"Con un proveedor"
+],
+"correcta": 0,
+"explicacion": "El compromiso de la dirección se evidencia hablando con ella.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-21",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué debe demostrar la alta dirección en la cláusula 5?",
+"opciones": [
+"Compromiso con el sistema",
+"Conocimiento técnico de cada máquina",
+"Que no existen riesgos",
+"Que el certificado está vigente"
+],
+"correcta": 0,
+"explicacion": "Liderazgo es demostrar compromiso, no solo firmar documentos.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-22",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "En seguridad y salud en el trabajo, la cláusula 5 suma la consulta y la ___ de los trabajadores.",
+"opciones": [
+"participación",
+"evaluación",
+"sanción",
+"contratación"
+],
+"correcta": 0,
+"explicacion": "Es lo propio de ISO 45001 dentro de Liderazgo.",
+"referencia": "Audio-clase 1; ISO 45001:2018, cap. 5",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-23",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "El gerente aprobó la política, pero nunca asiste a las revisiones ni asigna recursos. ¿Qué cláusula se ve débil?",
+"opciones": [
+"5 Liderazgo",
+"8 Operación",
+"10 Mejora",
+"4 Contexto"
+],
+"correcta": 0,
+"explicacion": "Firmar la política no basta: el liderazgo exige compromiso visible.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-24",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "La clase describe la cláusula 6 como…",
+"opciones": [
+"El cerebro del sistema",
+"El archivo del sistema",
+"El cierre del ciclo",
+"La parte opcional"
+],
+"correcta": 0,
+"explicacion": "Planificación anticipa riesgos y fija hacia dónde va el sistema.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-25",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué se hace en la cláusula 6?",
+"opciones": [
+"Identificar riesgos y oportunidades, fijar objetivos medibles y planificar cambios",
+"Hacer la auditoría interna",
+"Tratar no conformidades",
+"Controlar proveedores"
+],
+"correcta": 0,
+"explicacion": "Riesgos, objetivos y cambios: eso es planificar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-26",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "Los objetivos del sistema deben ser medibles.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Sin medida no hay forma de saber si se cumplen.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-27",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "En ISO 9001, la planificación habla sobre todo de…",
+"opciones": [
+"Riesgos y oportunidades",
+"Aspectos e impactos",
+"Peligros",
+"Emergencias químicas"
+],
+"correcta": 0,
+"explicacion": "Calidad usa el lenguaje de riesgos y oportunidades.",
+"referencia": "Audio-clase 1; ISO 9001:2026, cap. 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-28",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "En ISO 14001, además de aspectos e impactos, la planificación incluye…",
+"opciones": [
+"Obligaciones de cumplimiento",
+"La satisfacción del cliente",
+"El diseño del producto",
+"Los incidentes laborales"
+],
+"correcta": 0,
+"explicacion": "Ambiente planifica sus aspectos e impactos y lo que la ley le obliga a cumplir.",
+"referencia": "Audio-clase 1; ISO 14001:2026, cap. 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-29",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada norma con lo que identifica al planificar.",
+"opciones": [
+[
+"ISO 9001",
+"Riesgos y oportunidades"
+],
+[
+"ISO 14001",
+"Aspectos e impactos ambientales"
+],
+[
+"ISO 45001",
+"Peligros y riesgos para la SST"
+]
+],
+"correcta": null,
+"explicacion": "Misma cláusula 6, tres lenguajes distintos.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-30",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "En una bodega, un derrame de aceite puede contaminar el suelo. ¿Con qué norma y concepto se trabaja?",
+"opciones": [
+"ISO 14001: aspecto e impacto ambiental",
+"ISO 9001: requisito del cliente",
+"ISO 45001: consulta de trabajadores",
+"ISO 9001: competencia"
+],
+"correcta": 0,
+"explicacion": "El derrame es un aspecto; la contaminación del suelo, su impacto.",
+"referencia": "Audio-clase 1; ISO 14001:2026, cap. 6",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-31",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Un montacargas podría atropellar a un operario. En ISO 45001, eso se identifica como…",
+"opciones": [
+"Un peligro",
+"Un aspecto ambiental",
+"Un requisito del cliente",
+"Una oportunidad"
+],
+"correcta": 0,
+"explicacion": "Lo que puede causar lesión o enfermedad es un peligro.",
+"referencia": "Audio-clase 1; ISO 45001:2018, cap. 6",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-32",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "El riesgo de perder un cliente por entregas tardías se planifica sobre todo con…",
+"opciones": [
+"ISO 9001",
+"ISO 14001",
+"ISO 45001",
+"Ninguna norma"
+],
+"correcta": 0,
+"explicacion": "Afecta al cliente y al servicio: es terreno de calidad.",
+"referencia": "Audio-clase 1; ISO 9001:2026, cap. 6",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-33",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cuál es el foco de ISO 9001?",
+"opciones": [
+"El cliente y el producto o servicio",
+"El medio ambiente",
+"Las personas",
+"La auditoría"
+],
+"correcta": 0,
+"explicacion": "Calidad mira al cliente.",
+"referencia": "Audio-clase 1; ISO 9001:2026, objeto",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-34",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cuál es el foco de ISO 14001?",
+"opciones": [
+"El impacto ambiental y el cumplimiento de la ley ambiental",
+"El cliente",
+"Evitar lesiones",
+"Los costos"
+],
+"correcta": 0,
+"explicacion": "Ambiente mira qué impacto genera la empresa y si cumple la ley.",
+"referencia": "Audio-clase 1; ISO 14001:2026, objeto",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-35",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "ISO 45001 se centra en evitar lesiones y enfermedades, con la participación de los trabajadores.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Ese es su foco: las personas.",
+"referencia": "Audio-clase 1; ISO 45001:2018, objeto",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-36",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "ordenar",
+"enunciado": "Ordene las cláusulas de la etapa Planificar.",
+"opciones": [
+"Contexto (4)",
+"Liderazgo (5)",
+"Planificación (6)"
+],
+"correcta": [
+0,
+1,
+2
+],
+"explicacion": "Primero se entiende el entorno, luego la dirección fija el rumbo y después se planifica.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-37",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Qué tienen en común las tres normas en la cláusula 6, aunque usen palabras distintas?",
+"opciones": [
+"Anticipar lo que puede salir mal o bien y fijar objetivos",
+"Auditar a los proveedores",
+"Medir la satisfacción",
+"Atender emergencias"
+],
+"correcta": 0,
+"explicacion": "Riesgos, aspectos o peligros: en todos los casos se anticipa y se fijan metas.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-38",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "En ISO 45001, identificar los requisitos legales hace parte de la planificación.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La clase lo menciona: peligros, riesgos y requisitos legales.",
+"referencia": "Audio-clase 1; ISO 45001:2018, cap. 6",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-39",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "completar",
+"enunciado": "Las partes ___ y lo que quieren se analizan en la cláusula 4.",
+"opciones": [
+"interesadas",
+"técnicas",
+"externas",
+"auditadas"
+],
+"correcta": 0,
+"explicacion": "Partes interesadas: quienes afectan o son afectados por la organización.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-40",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Planificar los cambios del sistema, ¿en qué cláusula está?",
+"opciones": [
+"6",
+"7",
+"9",
+"10"
+],
+"correcta": 0,
+"explicacion": "Los cambios se planifican en la cláusula 6 y se controlan en la operación.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-41",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "Definir la política del sistema es parte de la cláusula 6.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "La política la define la alta dirección en la cláusula 5.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-42",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Una empresa fija el objetivo «mejorar la seguridad». ¿Qué le falta según la cláusula 6?",
+"opciones": [
+"Que sea medible",
+"Que lo firme el auditor",
+"Que esté en inglés",
+"Nada"
+],
+"correcta": 0,
+"explicacion": "Un objetivo sin indicador ni meta no se puede verificar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-43",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cuál de estos es un factor externo de contexto?",
+"opciones": [
+"Una nueva ley",
+"La competencia del personal",
+"La cultura de la empresa",
+"Los equipos propios"
+],
+"correcta": 0,
+"explicacion": "Lo que viene de fuera de la organización es externo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-44",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "¿Cuál de estos es un factor interno de contexto?",
+"opciones": [
+"La cultura y las capacidades de la empresa",
+"Una nueva ley",
+"El clima del país",
+"La competencia del mercado"
+],
+"correcta": 0,
+"explicacion": "Lo que depende de la propia organización es interno.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-45",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "En un sistema integrado puede haber una sola política que cubra calidad, ambiente y SST.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "La política integrada es uno de los beneficios del SIG.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-46",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Los trabajadores de una planta nunca son consultados sobre los riesgos de su puesto. ¿Qué norma se incumple de forma específica?",
+"opciones": [
+"ISO 45001",
+"ISO 9001",
+"ISO 14001",
+"Ninguna"
+],
+"correcta": 0,
+"explicacion": "Consulta y participación de los trabajadores es propio de ISO 45001.",
+"referencia": "Audio-clase 1; ISO 45001:2018, cap. 5",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-47",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "emparejar",
+"enunciado": "Empareje cada cláusula con su idea central.",
+"opciones": [
+[
+"4 Contexto",
+"Dónde está parada la empresa"
+],
+[
+"5 Liderazgo",
+"La dirección no delega la responsabilidad"
+],
+[
+"6 Planificación",
+"El cerebro del sistema"
+]
+],
+"correcta": null,
+"explicacion": "Así resume la clase cada cláusula de Planificar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-48",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "vf",
+"enunciado": "La cláusula de contexto es la número 4.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "C es la primera letra de la regla: cláusula 4.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-49",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "Quiénes son las partes interesadas y qué quieren se analiza en…",
+"opciones": [
+"4 Contexto",
+"6 Planificación",
+"9 Evaluación",
+"8 Operación"
+],
+"correcta": 0,
+"explicacion": "Es parte del diagnóstico inicial del contexto.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L2-50",
+"unidad": "U1",
+"leccion": 2,
+"tipo": "om",
+"enunciado": "La empresa de energía anuncia racionamientos por sequía. ¿Dónde se considera primero esta cuestión?",
+"opciones": [
+"En el contexto (4), donde también se pregunta por el cambio climático",
+"En Mejora (10)",
+"En Apoyo (7)",
+"No se considera"
+],
+"correcta": 0,
+"explicacion": "Es un factor externo que puede afectar al sistema; se analiza en el contexto.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 4 a 6",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
 "id": "U1L3-01",
 "unidad": "U1",
 "leccion": 3,
 "tipo": "om",
-"enunciado": "¿Qué tema del capítulo 9 comparten ISO 14001 e ISO 45001 y no aparece así en ISO 9001?",
+"enunciado": "¿Cuál es la cláusula más larga y en la que más hallazgos se encuentran en las auditorías?",
 "opciones": [
-"Satisfacción del cliente",
-"Evaluación del cumplimiento legal y de otros requisitos",
-"Auditoría interna",
-"Revisión por la dirección"
+"7 Apoyo",
+"8 Operación",
+"9 Evaluación del desempeño",
+"10 Mejora"
 ],
 "correcta": 1,
-"explicacion": "14001 y 45001 exigen evaluar periódicamente el cumplimiento de sus obligaciones (9.1.2). En 9001 el 9.1.2 se dedica a la satisfacción del cliente.",
-"referencia": "ISO 14001 9.1.2; ISO 45001 9.1.2; ISO 9001 9.1.2",
+"explicacion": "Operación es donde el sistema se vuelve trabajo real; por eso concentra la mayoría de los hallazgos.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 8",
 "dificultad": 2,
 "etiquetas": [
 "estructura",
@@ -605,16 +2182,16 @@
 "unidad": "U1",
 "leccion": 3,
 "tipo": "om",
-"enunciado": "¿En qué cláusula está la auditoría interna en las tres normas?",
+"enunciado": "¿En qué cláusula están la medición, la auditoría interna y la revisión por la dirección?",
 "opciones": [
-"8.2",
-"9.1",
-"9.2",
-"10.2"
+"6 Planificación",
+"7 Apoyo",
+"9 Evaluación del desempeño",
+"10 Mejora"
 ],
 "correcta": 2,
-"explicacion": "La 9.2 pide un programa de auditorías a intervalos planificados, con auditores objetivos e imparciales.",
-"referencia": "Estructura armonizada ISO, 9.2",
+"explicacion": "La cláusula 9 mide, analiza, audita y lleva todo a la revisión por la dirección: es el Verificar del PHVA.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 9",
 "dificultad": 1,
 "etiquetas": [
 "estructura",
@@ -626,16 +2203,16 @@
 "unidad": "U1",
 "leccion": 3,
 "tipo": "om",
-"enunciado": "¿En qué cláusula está la revisión por la dirección en las tres normas?",
+"enunciado": "¿Qué ventaja da un sistema integrado de gestión?",
 "opciones": [
-"5.1",
-"9.3",
-"10.1",
-"6.3"
+"Una sola política, una sola auditoría interna y una sola revisión por la dirección",
+"Certificar las tres normas sin auditoría",
+"Dejar de cumplir requisitos legales",
+"Reemplazar las cláusulas por un solo manual"
 ],
-"correcta": 1,
-"explicacion": "La 9.3 fija las entradas que la alta dirección debe revisar y las salidas (decisiones) que debe dejar.",
-"referencia": "Estructura armonizada ISO, 9.3",
+"correcta": 0,
+"explicacion": "Como las tres normas comparten estructura, se unifican política, procesos, auditoría, revisión y control de documentos.",
+"referencia": "Audio-clase 1; estructura armonizada ISO (Anexo SL)",
 "dificultad": 1,
 "etiquetas": [
 "estructura",
@@ -647,14 +2224,14 @@
 "unidad": "U1",
 "leccion": 3,
 "tipo": "vf",
-"enunciado": "En ISO 45001, el capítulo 10 trata, además de no conformidades y acciones correctivas, los incidentes.",
+"enunciado": "Integrar las tres normas permite prescindir de la competencia especializada en seguridad y salud en el trabajo.",
 "opciones": [
 "Verdadero",
 "Falso"
 ],
-"correcta": 0,
-"explicacion": "En SST un incidente (incluido el accidente) se investiga y se trata con la misma lógica que una no conformidad: causa y acción correctiva.",
-"referencia": "ISO 45001:2018, 10.2",
+"correcta": 1,
+"explicacion": "Integrar no es diluir: en SST un error puede costar una vida, así que se mantiene personal competente en la materia.",
+"referencia": "Audio-clase 1; ISO 45001:2018, cap. 7",
 "dificultad": 2,
 "etiquetas": [
 "estructura",
@@ -666,16 +2243,16 @@
 "unidad": "U1",
 "leccion": 3,
 "tipo": "completar",
-"enunciado": "La preparación y respuesta ante emergencias está en la cláusula ___ de ISO 14001 y de ISO 45001.",
+"enunciado": "Controlar procesos, proveedores, contratistas, emergencias y cambios es parte de la cláusula ___.",
 "opciones": [
-"6.1",
-"7.4",
-"8.2",
-"9.1"
+"6",
+"7",
+"8",
+"9"
 ],
 "correcta": 2,
-"explicacion": "En ambas normas la 8.2 exige planes de emergencia, pruebas periódicas (simulacros) y revisión después de cada evento o prueba.",
-"referencia": "ISO 14001 8.2; ISO 45001 8.2",
+"explicacion": "La cláusula 8, Operación, controla el trabajo real, incluidos proveedores, contratistas y emergencias.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 8",
 "dificultad": 1,
 "etiquetas": [
 "estructura",
@@ -708,16 +2285,16 @@
 "unidad": "U1",
 "leccion": 3,
 "tipo": "om",
-"enunciado": "¿Hasta cuándo son válidos los certificados ISO 9001:2015 durante la transición a la edición 2026?",
+"enunciado": "¿Cuánto tiempo tienen, aproximadamente, las empresas certificadas para migrar a ISO 9001:2026?",
 "opciones": [
-"31 de diciembre de 2026",
-"30 de septiembre de 2027",
-"30 de septiembre de 2029",
-"No tienen fecha límite"
+"Seis meses",
+"Un año",
+"Unos tres años",
+"No deben migrar"
 ],
 "correcta": 2,
-"explicacion": "La edición 2026 se publicó el 16 de septiembre de 2026 y la transición dura tres años: los certificados 2015 valen hasta el 30 de septiembre de 2029.",
-"referencia": "ISO 9001:2026, periodo de transición (IAF / organismos de certificación)",
+"explicacion": "Tras publicarse una nueva edición, los certificados de la anterior tienen un periodo de transición de unos tres años.",
+"referencia": "Audio-clase 1; ISO 9001:2026, periodo de transición (IAF)",
 "dificultad": 2,
 "etiquetas": [
 "versiones",
@@ -747,28 +2324,28 @@
 "unidad": "U1",
 "leccion": 3,
 "tipo": "emparejar",
-"enunciado": "Empareje cada norma de apoyo con lo que trata.",
+"enunciado": "Empareje cada cláusula con lo que trata.",
 "opciones": [
 [
-"ISO 19011",
-"Directrices de auditoría"
+"5 Liderazgo",
+"Política, roles y compromiso de la dirección"
 ],
 [
-"ISO/IEC 17021-1",
-"Requisitos para certificadoras"
+"7 Apoyo",
+"Recursos, competencia, comunicación y documentos"
 ],
 [
-"ISO 31000",
-"Gestión del riesgo"
+"9 Evaluación",
+"Medir, auditar y revisar por la dirección"
 ],
 [
-"ISO 9000",
-"Vocabulario de calidad"
+"10 Mejora",
+"No conformidades y causa raíz"
 ]
 ],
 "correcta": null,
-"explicacion": "19011 guía al auditor, 17021-1 regula a los organismos de certificación, 31000 da directrices de riesgo y 9000 define fundamentos y vocabulario.",
-"referencia": "ISO 19011:2026; ISO/IEC 17021-1:2015; ISO 31000:2018; ISO 9000:2015",
+"explicacion": "Cada cláusula se resume en una frase; dominarlas es dominar el esqueleto común.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 5, 7, 9 y 10",
 "dificultad": 2,
 "etiquetas": [
 "estructura",
@@ -780,27 +2357,830 @@
 "unidad": "U1",
 "leccion": 3,
 "tipo": "ordenar",
-"enunciado": "Ordene los pasos para cerrar una no conformidad.",
+"enunciado": "Ordene cómo trata la cláusula 10 una no conformidad.",
 "opciones": [
-"Corregir lo encontrado",
-"Analizar la causa raíz",
-"Implementar la acción correctiva",
-"Verificar la eficacia",
-"Cerrar con evidencia"
+"Identificar la no conformidad",
+"Encontrar la causa raíz",
+"Corregir",
+"Verificar que la solución funcionó"
 ],
 "correcta": [
 0,
 1,
 2,
-3,
-4
+3
 ],
-"explicacion": "Primero se contiene y corrige; luego se busca la causa, se actúa sobre ella y solo se cierra cuando hay evidencia de que la acción fue eficaz (no reincide).",
-"referencia": "Estructura armonizada ISO, 10.2",
+"explicacion": "Sin causa raíz el problema vuelve; y sin verificar la eficacia no se sabe si la solución sirvió.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 10",
 "dificultad": 2,
 "etiquetas": [
 "mejora",
 "no conformidad"
+]
+},
+{
+"id": "U1L3-11",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué incluye la cláusula 7 (Apoyo)?",
+"opciones": [
+"Recursos, competencia, toma de conciencia, comunicación e información documentada",
+"Control de procesos",
+"Auditoría interna",
+"Acciones correctivas"
+],
+"correcta": 0,
+"explicacion": "Apoyo da a la gente lo que necesita para hacer bien su trabajo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-12",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "La información documentada hace parte de la cláusula 7.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Documentos y registros están en Apoyo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-13",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Según la clase, ¿cuánta documentación necesita el sistema?",
+"opciones": [
+"Toda la posible",
+"La necesaria, ni más ni menos",
+"Ninguna",
+"Solo un manual"
+],
+"correcta": 1,
+"explicacion": "Documentar de más también es un problema: se pide lo necesario.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-14",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Un operario no conoce la política ni sabe cómo su trabajo afecta el sistema. ¿Qué tema de la cláusula 7 falla?",
+"opciones": [
+"Toma de conciencia",
+"Revisión por la dirección",
+"Planificación de cambios",
+"Auditoría"
+],
+"correcta": 0,
+"explicacion": "Que la gente sepa lo que tiene que saber es toma de conciencia.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-15",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿En qué cláusula el sistema se vuelve trabajo real?",
+"opciones": [
+"8 Operación",
+"6 Planificación",
+"4 Contexto",
+"10 Mejora"
+],
+"correcta": 0,
+"explicacion": "Operación controla los procesos del día a día.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-16",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Controlar a los contratistas hace parte de la cláusula 8.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Operación incluye procesos, proveedores, contratistas, emergencias y cambios.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-17",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Una empresa contrata un transportador sin evaluarlo. ¿Qué cláusula se ve afectada?",
+"opciones": [
+"8 Operación",
+"5 Liderazgo",
+"9 Evaluación",
+"4 Contexto"
+],
+"correcta": 0,
+"explicacion": "El control de proveedores y contratistas es operación.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-18",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "No existe un plan para atender un incendio. ¿Qué cláusula se incumple?",
+"opciones": [
+"8 Operación (emergencias)",
+"7 Apoyo",
+"6 Planificación",
+"10 Mejora"
+],
+"correcta": 0,
+"explicacion": "Las emergencias se controlan dentro de la operación.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-19",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "completar",
+"enunciado": "La cláusula ___ es la más larga y donde más hallazgos se encuentran.",
+"opciones": [
+"8",
+"4",
+"5",
+"10"
+],
+"correcta": 0,
+"explicacion": "Operación: es la más extensa y la más auditada en terreno.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-20",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué incluye la cláusula 9?",
+"opciones": [
+"Medir, analizar, auditar internamente y revisar por la dirección",
+"Definir la política",
+"Controlar proveedores",
+"Fijar el alcance"
+],
+"correcta": 0,
+"explicacion": "Evaluación del desempeño es el Verificar del ciclo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-21",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "completar",
+"enunciado": "Si no se mide, no se puede ___.",
+"opciones": [
+"mejorar",
+"certificar",
+"auditar",
+"planificar"
+],
+"correcta": 0,
+"explicacion": "Es la idea que resume la cláusula 9.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-22",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "La revisión por la dirección hace parte de la cláusula 9.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Junto con la medición y la auditoría interna.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-23",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "La empresa tiene indicadores, pero nadie los analiza ni los presenta a la gerencia. ¿Qué cláusula está débil?",
+"opciones": [
+"9 Evaluación del desempeño",
+"7 Apoyo",
+"4 Contexto",
+"8 Operación"
+],
+"correcta": 0,
+"explicacion": "Medir no basta: hay que analizar y revisar con la dirección.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-24",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué trata la cláusula 10?",
+"opciones": [
+"No conformidades, causa raíz y mejora continua",
+"Recursos",
+"Política",
+"Partes interesadas"
+],
+"correcta": 0,
+"explicacion": "Mejora cierra el ciclo y lo reinicia.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-25",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Corregir un problema sin buscar la causa raíz cumple por completo la cláusula 10.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Sin causa raíz el problema vuelve; la norma pide atacar la causa.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-26",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Se corrigió un error y se cerró sin comprobar si volvió a pasar. ¿Qué paso faltó?",
+"opciones": [
+"Verificar que la solución funcionó",
+"Definir el alcance",
+"Consultar al cliente",
+"Actualizar el contexto"
+],
+"correcta": 0,
+"explicacion": "Cerrar sin verificar la eficacia deja el ciclo incompleto.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-27",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "ordenar",
+"enunciado": "Ordene el tratamiento de una no conformidad.",
+"opciones": [
+"Detectar el problema",
+"Buscar la causa raíz",
+"Corregir",
+"Verificar la eficacia"
+],
+"correcta": [
+0,
+1,
+2,
+3
+],
+"explicacion": "Detectar, entender la causa, corregir y comprobar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-28",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué es un sistema integrado de gestión?",
+"opciones": [
+"Gestionar calidad, ambiente y SST con un solo sistema",
+"Tener tres certificados separados",
+"Un software de documentos",
+"Una auditoría externa"
+],
+"correcta": 0,
+"explicacion": "Se aprovecha la estructura común para manejar las tres normas juntas.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-29",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "En un SIG puede haber una sola auditoría interna para las tres normas.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Una sola auditoría, una sola revisión, un solo control de documentos.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-30",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué beneficio trae integrar?",
+"opciones": [
+"Ahorra tiempo y dinero y evita duplicar trabajo",
+"Elimina la auditoría externa",
+"Quita requisitos legales",
+"Hace innecesaria la capacitación"
+],
+"correcta": 0,
+"explicacion": "Es la razón práctica de un SIG.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-31",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Integrar significa diluir los temas de SST dentro de los de calidad.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Integrar no es diluir: SST mantiene su competencia especializada.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-32",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Por qué la clase advierte que integrar no significa diluir?",
+"opciones": [
+"Porque en SST un error puede costar una vida",
+"Porque ISO 14001 lo prohíbe",
+"Porque integrar cuesta más",
+"Porque el auditor lo exige"
+],
+"correcta": 0,
+"explicacion": "La gravedad de los riesgos de SST exige conocimiento especializado.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-33",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Cuándo se publicó ISO 9001:2026?",
+"opciones": [
+"Abril de 2026",
+"Septiembre de 2026",
+"Enero de 2026",
+"Aún no se publica"
+],
+"correcta": 1,
+"explicacion": "Calidad salió en septiembre; ambiente, en abril.",
+"referencia": "Audio-clase 1; ISO 9001:2026, ISO 14001:2026 e ISO 45001:2018",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-34",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Cuándo se publicó ISO 14001:2026?",
+"opciones": [
+"Abril de 2026",
+"Septiembre de 2026",
+"En 2015",
+"En 2018"
+],
+"correcta": 0,
+"explicacion": "ISO 14001:2026 salió en abril, antes que la 9001.",
+"referencia": "Audio-clase 1; ISO 9001:2026, ISO 14001:2026 e ISO 45001:2018",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-35",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "ISO 45001:2018 sigue vigente.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Su revisión se espera para 2027.",
+"referencia": "Audio-clase 1; ISO 9001:2026, ISO 14001:2026 e ISO 45001:2018",
+"dificultad": 1,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-36",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Para cuándo se espera la revisión de ISO 45001?",
+"opciones": [
+"2026",
+"2027",
+"2030",
+"No habrá revisión"
+],
+"correcta": 1,
+"explicacion": "Por ahora rige la edición 2018.",
+"referencia": "Audio-clase 1; ISO 9001:2026, ISO 14001:2026 e ISO 45001:2018",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-37",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "Las empresas certificadas deben migrar a ISO 9001:2026 el mismo mes de su publicación.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "Tienen un periodo de transición de unos tres años.",
+"referencia": "Audio-clase 1; ISO 9001:2026, ISO 14001:2026 e ISO 45001:2018",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-38",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada norma con su situación actual.",
+"opciones": [
+[
+"ISO 9001:2026",
+"Publicada en septiembre de 2026"
+],
+[
+"ISO 14001:2026",
+"Publicada en abril de 2026"
+],
+[
+"ISO 45001:2018",
+"Vigente; revisión esperada en 2027"
+]
+],
+"correcta": null,
+"explicacion": "Dos normas nuevas en 2026 y una que sigue en su edición 2018.",
+"referencia": "Audio-clase 1; ISO 9001:2026, ISO 14001:2026 e ISO 45001:2018",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-39",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Una empresa certificada en ISO 9001:2015 pregunta si su certificado ya venció. ¿Qué le responde?",
+"opciones": [
+"Sí, venció con la publicación de 2026",
+"No: hay un periodo de transición de unos tres años",
+"Solo si cambia de gerente",
+"Nunca vence"
+],
+"correcta": 1,
+"explicacion": "La transición permite migrar de forma planificada.",
+"referencia": "Audio-clase 1; ISO 9001:2026, ISO 14001:2026 e ISO 45001:2018",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-40",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué cláusula forma la etapa Hacer junto con la 8?",
+"opciones": [
+"7",
+"6",
+"9",
+"10"
+],
+"correcta": 0,
+"explicacion": "Hacer = Apoyo (7) + Operación (8).",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-41",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "La auditoría interna y la revisión por la dirección corresponden a Verificar.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Ambas están en la cláusula 9.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-42",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "En una auditoría se encuentra que los cambios en un proceso se hicieron sin control. ¿Dónde se ubica el hallazgo?",
+"opciones": [
+"8 Operación",
+"4 Contexto",
+"5 Liderazgo",
+"10 Mejora"
+],
+"correcta": 0,
+"explicacion": "El control de los cambios en el trabajo real es operación.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-43",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "No existe el registro de una capacitación. ¿Qué cláusula pide conservar esa información documentada?",
+"opciones": [
+"7 Apoyo",
+"9 Evaluación",
+"6 Planificación",
+"8 Operación"
+],
+"correcta": 0,
+"explicacion": "Competencia e información documentada están en Apoyo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-44",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "emparejar",
+"enunciado": "Empareje cada situación con su cláusula.",
+"opciones": [
+[
+"No hay plan de emergencias",
+"8 Operación"
+],
+[
+"Nadie conoce la política",
+"7 Apoyo"
+],
+[
+"No se hizo la auditoría interna",
+"9 Evaluación"
+],
+[
+"La misma falla se repite",
+"10 Mejora"
+]
+],
+"correcta": null,
+"explicacion": "Ubicar el hallazgo en su cláusula es la primera habilidad de un auditor.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-45",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "vf",
+"enunciado": "En un SIG, un solo control de documentos puede servir para las tres normas.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "Es uno de los ahorros de integrar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-46",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué cláusula se asegura de que la gente sepa lo que tiene que saber?",
+"opciones": [
+"7 Apoyo",
+"4 Contexto",
+"9 Evaluación",
+"10 Mejora"
+],
+"correcta": 0,
+"explicacion": "Competencia, toma de conciencia y comunicación están en Apoyo.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-47",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "completar",
+"enunciado": "La cláusula 10 busca mejorar de forma ___.",
+"opciones": [
+"continua",
+"ocasional",
+"externa",
+"opcional"
+],
+"correcta": 0,
+"explicacion": "La mejora continua reinicia el ciclo PHVA.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-48",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "El gerente revisa los resultados de auditoría y los indicadores, y decide recursos. ¿Qué actividad es?",
+"opciones": [
+"Revisión por la dirección (cláusula 9)",
+"Auditoría externa",
+"Planificación de cambios (cláusula 6)",
+"Control operacional (cláusula 8)"
+],
+"correcta": 0,
+"explicacion": "Es la revisión por la dirección, cierre del Verificar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-49",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "¿Qué cláusula es el Actuar del PHVA?",
+"opciones": [
+"10",
+"9",
+"8",
+"6"
+],
+"correcta": 0,
+"explicacion": "Mejora: tratar no conformidades y mejorar.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 2,
+"etiquetas": [
+"audio1"
+]
+},
+{
+"id": "U1L3-50",
+"unidad": "U1",
+"leccion": 3,
+"tipo": "om",
+"enunciado": "Una auditoría encontró muchos hallazgos en procesos, contratistas y emergencias. ¿Le sorprende?",
+"opciones": [
+"No: la cláusula 8 es la más larga y donde más hallazgos hay",
+"Sí: esos hallazgos suelen estar en la 4",
+"Sí: la 8 casi nunca se audita",
+"No: son de la cláusula 2"
+],
+"correcta": 0,
+"explicacion": "Es lo esperable: Operación concentra la mayoría de hallazgos.",
+"referencia": "Audio-clase 1; estructura armonizada ISO, cap. 7 a 10",
+"dificultad": 3,
+"etiquetas": [
+"audio1"
 ]
 },
 {
@@ -2812,6 +5192,224 @@
 "45001",
 "incidentes",
 "caso"
+]
+},
+{
+"id": "U4L4-01",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Una organización puede declarar conformidad con ISO 45001 aunque excluya algunos requisitos que no le aplican.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 1,
+"explicacion": "ISO 45001 solo acepta declarar conformidad si todos sus requisitos están incorporados y se cumplen, sin exclusiones. En ISO 9001 sí puede justificarse un requisito no aplicable.",
+"referencia": "NTC-ISO 45001:2018, cap. 1",
+"dificultad": 3,
+"etiquetas": [
+"45001",
+"alcance"
+]
+},
+{
+"id": "U4L4-02",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "En la figura PHVA de ISO 45001, ¿qué capítulo ocupa el centro del ciclo?",
+"opciones": [
+"4 Contexto",
+"5 Liderazgo y participación de los trabajadores",
+"6 Planificación",
+"10 Mejora"
+],
+"correcta": 1,
+"explicacion": "El liderazgo y la participación de los trabajadores (5) va en el centro; Planificación (6) es P, Apoyo y Operación (7 y 8) son H, Evaluación (9) es V y Mejora (10) es A.",
+"referencia": "NTC-ISO 45001:2018, introducción 0.4 (Figura 1)",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"PHVA"
+]
+},
+{
+"id": "U4L4-03",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué compromiso de la alta dirección en ISO 45001 se relaciona directamente con el COPASST?",
+"opciones": [
+"Apoyar el establecimiento y funcionamiento de comités de seguridad y salud",
+"Aprobar el presupuesto de ventas",
+"Contratar una certificadora",
+"Nombrar un representante de calidad"
+],
+"correcta": 0,
+"explicacion": "El liderazgo incluye apoyar los comités de seguridad y salud, proteger de represalias a quien reporta y asegurar procesos de consulta y participación.",
+"referencia": "NTC-ISO 45001:2018, 5.1 l) y m)",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"liderazgo",
+"SG-SST"
+]
+},
+{
+"id": "U4L4-04",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Al identificar peligros, ¿qué factores sociales pide considerar ISO 45001?",
+"opciones": [
+"La carga de trabajo, las horas de trabajo y el acoso o la intimidación",
+"Solo el ruido y la iluminación",
+"Las ventas del mes",
+"La marca de los equipos"
+],
+"correcta": 0,
+"explicacion": "La identificación incluye cómo se organiza el trabajo, los factores sociales, el liderazgo y la cultura: es la puerta de entrada del riesgo psicosocial.",
+"referencia": "NTC-ISO 45001:2018, 6.1.2.1 a)",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"peligros",
+"psicosocial"
+]
+},
+{
+"id": "U4L4-05",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "emparejar",
+"enunciado": "Empareje cada tema con lo que pide ISO 45001 a los trabajadores no directivos.",
+"opciones": [
+[
+"Identificar peligros y evaluar riesgos",
+"Participación"
+],
+[
+"Investigar incidentes",
+"Participación"
+],
+[
+"Establecer la política de SST",
+"Consulta"
+],
+[
+"Planificar los programas de auditoría",
+"Consulta"
+]
+],
+"correcta": null,
+"explicacion": "La norma separa los temas en los que se pide opinión (consulta) de aquellos en que el trabajador toma parte en la decisión (participación).",
+"referencia": "NTC-ISO 45001:2018, 5.4 d) y e)",
+"dificultad": 3,
+"etiquetas": [
+"45001",
+"participación"
+]
+},
+{
+"id": "U4L4-06",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Según ISO 45001, en un lugar de trabajo con varios empleadores la organización debe coordinar su sistema de SST con las otras organizaciones.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "El control operacional incluye coordinar con los demás empleadores presentes y adaptar el trabajo a los trabajadores.",
+"referencia": "NTC-ISO 45001:2018, 8.1.1",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"operación"
+]
+},
+{
+"id": "U4L4-07",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "¿Qué dice la nota de ISO 45001 sobre el costo de los equipos de protección personal?",
+"opciones": [
+"Que el trabajador debe pagarlos",
+"Que en muchos países deben entregarse sin costo para el trabajador",
+"Que son opcionales",
+"Que los paga la ARL siempre"
+],
+"correcta": 1,
+"explicacion": "La nota recuerda que la ley de muchos países exige entregar el EPP gratis; en Colombia lo exige la normativa de SST.",
+"referencia": "NTC-ISO 45001:2018, 8.1.2 (nota)",
+"dificultad": 1,
+"etiquetas": [
+"45001",
+"EPP"
+]
+},
+{
+"id": "U4L4-08",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "om",
+"enunciado": "Antes de implementar una acción correctiva que introduce un equipo nuevo, ¿qué exige ISO 45001?",
+"opciones": [
+"Nada: se implementa de inmediato",
+"Evaluar los riesgos de los peligros nuevos o modificados antes de actuar",
+"Esperar la próxima auditoría",
+"Pedir permiso a la ARL"
+],
+"correcta": 1,
+"explicacion": "La acción correctiva no puede crear riesgos sin evaluar; además debe seguir la jerarquía de controles y la gestión del cambio.",
+"referencia": "NTC-ISO 45001:2018, 10.2 d) y e)",
+"dificultad": 3,
+"etiquetas": [
+"45001",
+"incidentes"
+]
+},
+{
+"id": "U4L4-09",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "completar",
+"enunciado": "Al planificar la comunicación, ISO 45001 pide tener en cuenta la ___ (género, idioma, cultura, alfabetización, discapacidad).",
+"opciones": [
+"diversidad",
+"productividad",
+"rentabilidad",
+"antigüedad"
+],
+"correcta": 0,
+"explicacion": "Un mensaje de seguridad que no se entiende no protege: la comunicación debe adaptarse a quien la recibe.",
+"referencia": "NTC-ISO 45001:2018, 7.4.1",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"comunicación"
+]
+},
+{
+"id": "U4L4-10",
+"unidad": "U4",
+"leccion": 4,
+"tipo": "vf",
+"enunciado": "Los hallazgos pertinentes de la auditoría interna de SST deben informarse también a los trabajadores y a sus representantes.",
+"opciones": [
+"Verdadero",
+"Falso"
+],
+"correcta": 0,
+"explicacion": "En 45001 los resultados de auditoría no se quedan en la dirección: llegan también a los trabajadores y a otras partes interesadas pertinentes.",
+"referencia": "NTC-ISO 45001:2018, 9.2.2 d)",
+"dificultad": 2,
+"etiquetas": [
+"45001",
+"auditoría"
 ]
 },
 {
@@ -6167,224 +8765,6 @@
 "19011",
 "hallazgos",
 "integración"
-]
-},
-{
-"id": "U4L4-01",
-"unidad": "U4",
-"leccion": 4,
-"tipo": "vf",
-"enunciado": "Una organización puede declarar conformidad con ISO 45001 aunque excluya algunos requisitos que no le aplican.",
-"opciones": [
-"Verdadero",
-"Falso"
-],
-"correcta": 1,
-"explicacion": "ISO 45001 solo acepta declarar conformidad si todos sus requisitos están incorporados y se cumplen, sin exclusiones. En ISO 9001 sí puede justificarse un requisito no aplicable.",
-"referencia": "NTC-ISO 45001:2018, cap. 1",
-"dificultad": 3,
-"etiquetas": [
-"45001",
-"alcance"
-]
-},
-{
-"id": "U4L4-02",
-"unidad": "U4",
-"leccion": 4,
-"tipo": "om",
-"enunciado": "En la figura PHVA de ISO 45001, ¿qué capítulo ocupa el centro del ciclo?",
-"opciones": [
-"4 Contexto",
-"5 Liderazgo y participación de los trabajadores",
-"6 Planificación",
-"10 Mejora"
-],
-"correcta": 1,
-"explicacion": "El liderazgo y la participación de los trabajadores (5) va en el centro; Planificación (6) es P, Apoyo y Operación (7 y 8) son H, Evaluación (9) es V y Mejora (10) es A.",
-"referencia": "NTC-ISO 45001:2018, introducción 0.4 (Figura 1)",
-"dificultad": 2,
-"etiquetas": [
-"45001",
-"PHVA"
-]
-},
-{
-"id": "U4L4-03",
-"unidad": "U4",
-"leccion": 4,
-"tipo": "om",
-"enunciado": "¿Qué compromiso de la alta dirección en ISO 45001 se relaciona directamente con el COPASST?",
-"opciones": [
-"Apoyar el establecimiento y funcionamiento de comités de seguridad y salud",
-"Aprobar el presupuesto de ventas",
-"Contratar una certificadora",
-"Nombrar un representante de calidad"
-],
-"correcta": 0,
-"explicacion": "El liderazgo incluye apoyar los comités de seguridad y salud, proteger de represalias a quien reporta y asegurar procesos de consulta y participación.",
-"referencia": "NTC-ISO 45001:2018, 5.1 l) y m)",
-"dificultad": 2,
-"etiquetas": [
-"45001",
-"liderazgo",
-"SG-SST"
-]
-},
-{
-"id": "U4L4-04",
-"unidad": "U4",
-"leccion": 4,
-"tipo": "om",
-"enunciado": "Al identificar peligros, ¿qué factores sociales pide considerar ISO 45001?",
-"opciones": [
-"La carga de trabajo, las horas de trabajo y el acoso o la intimidación",
-"Solo el ruido y la iluminación",
-"Las ventas del mes",
-"La marca de los equipos"
-],
-"correcta": 0,
-"explicacion": "La identificación incluye cómo se organiza el trabajo, los factores sociales, el liderazgo y la cultura: es la puerta de entrada del riesgo psicosocial.",
-"referencia": "NTC-ISO 45001:2018, 6.1.2.1 a)",
-"dificultad": 2,
-"etiquetas": [
-"45001",
-"peligros",
-"psicosocial"
-]
-},
-{
-"id": "U4L4-05",
-"unidad": "U4",
-"leccion": 4,
-"tipo": "emparejar",
-"enunciado": "Empareje cada tema con lo que pide ISO 45001 a los trabajadores no directivos.",
-"opciones": [
-[
-"Identificar peligros y evaluar riesgos",
-"Participación"
-],
-[
-"Investigar incidentes",
-"Participación"
-],
-[
-"Establecer la política de SST",
-"Consulta"
-],
-[
-"Planificar los programas de auditoría",
-"Consulta"
-]
-],
-"correcta": null,
-"explicacion": "La norma separa los temas en los que se pide opinión (consulta) de aquellos en que el trabajador toma parte en la decisión (participación).",
-"referencia": "NTC-ISO 45001:2018, 5.4 d) y e)",
-"dificultad": 3,
-"etiquetas": [
-"45001",
-"participación"
-]
-},
-{
-"id": "U4L4-06",
-"unidad": "U4",
-"leccion": 4,
-"tipo": "vf",
-"enunciado": "Según ISO 45001, en un lugar de trabajo con varios empleadores la organización debe coordinar su sistema de SST con las otras organizaciones.",
-"opciones": [
-"Verdadero",
-"Falso"
-],
-"correcta": 0,
-"explicacion": "El control operacional incluye coordinar con los demás empleadores presentes y adaptar el trabajo a los trabajadores.",
-"referencia": "NTC-ISO 45001:2018, 8.1.1",
-"dificultad": 2,
-"etiquetas": [
-"45001",
-"operación"
-]
-},
-{
-"id": "U4L4-07",
-"unidad": "U4",
-"leccion": 4,
-"tipo": "om",
-"enunciado": "¿Qué dice la nota de ISO 45001 sobre el costo de los equipos de protección personal?",
-"opciones": [
-"Que el trabajador debe pagarlos",
-"Que en muchos países deben entregarse sin costo para el trabajador",
-"Que son opcionales",
-"Que los paga la ARL siempre"
-],
-"correcta": 1,
-"explicacion": "La nota recuerda que la ley de muchos países exige entregar el EPP gratis; en Colombia lo exige la normativa de SST.",
-"referencia": "NTC-ISO 45001:2018, 8.1.2 (nota)",
-"dificultad": 1,
-"etiquetas": [
-"45001",
-"EPP"
-]
-},
-{
-"id": "U4L4-08",
-"unidad": "U4",
-"leccion": 4,
-"tipo": "om",
-"enunciado": "Antes de implementar una acción correctiva que introduce un equipo nuevo, ¿qué exige ISO 45001?",
-"opciones": [
-"Nada: se implementa de inmediato",
-"Evaluar los riesgos de los peligros nuevos o modificados antes de actuar",
-"Esperar la próxima auditoría",
-"Pedir permiso a la ARL"
-],
-"correcta": 1,
-"explicacion": "La acción correctiva no puede crear riesgos sin evaluar; además debe seguir la jerarquía de controles y la gestión del cambio.",
-"referencia": "NTC-ISO 45001:2018, 10.2 d) y e)",
-"dificultad": 3,
-"etiquetas": [
-"45001",
-"incidentes"
-]
-},
-{
-"id": "U4L4-09",
-"unidad": "U4",
-"leccion": 4,
-"tipo": "completar",
-"enunciado": "Al planificar la comunicación, ISO 45001 pide tener en cuenta la ___ (género, idioma, cultura, alfabetización, discapacidad).",
-"opciones": [
-"diversidad",
-"productividad",
-"rentabilidad",
-"antigüedad"
-],
-"correcta": 0,
-"explicacion": "Un mensaje de seguridad que no se entiende no protege: la comunicación debe adaptarse a quien la recibe.",
-"referencia": "NTC-ISO 45001:2018, 7.4.1",
-"dificultad": 2,
-"etiquetas": [
-"45001",
-"comunicación"
-]
-},
-{
-"id": "U4L4-10",
-"unidad": "U4",
-"leccion": 4,
-"tipo": "vf",
-"enunciado": "Los hallazgos pertinentes de la auditoría interna de SST deben informarse también a los trabajadores y a sus representantes.",
-"opciones": [
-"Verdadero",
-"Falso"
-],
-"correcta": 0,
-"explicacion": "En 45001 los resultados de auditoría no se quedan en la dirección: llegan también a los trabajadores y a otras partes interesadas pertinentes.",
-"referencia": "NTC-ISO 45001:2018, 9.2.2 d)",
-"dificultad": 2,
-"etiquetas": [
-"45001",
-"auditoría"
 ]
 }
 ]

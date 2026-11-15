@@ -44,6 +44,7 @@ button:focus-visible,audio:focus-visible{outline:3px solid var(--gold);outline-o
 .btn:active{transform:translateY(2px);box-shadow:0 2px 0 color-mix(in srgb,var(--accent) 65%,#000)}
 .btn:disabled{background:var(--line);color:var(--muted);box-shadow:none;cursor:default}
 .unidad{background:var(--surface);border:1px solid var(--line);border-radius:1rem;padding:1rem;display:flex;flex-direction:column;gap:.75rem}
+.unidad.bloq{opacity:.6}
 .unidad header{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem}
 .barra{height:.5rem;border-radius:1rem;background:var(--line);overflow:hidden;flex:1}
 .barra i{display:block;height:100%;background:var(--accent);transition:width .3s}
@@ -52,6 +53,7 @@ audio{width:100%;height:2.5rem}
   background:var(--bg);border:1px solid var(--line);border-radius:.75rem;padding:.6rem .75rem}
 .leccion .n{flex:none;width:2rem;height:2rem;border-radius:50%;display:grid;place-items:center;font:700 .95rem var(--display);
   border:2px solid var(--accent);color:var(--accent)}
+.leccion:disabled{opacity:.5;cursor:default}
 .leccion.hecha .n{background:var(--accent);color:var(--accent-ink)}
 .leccion .t{flex:1;min-width:0}
 .leccion .p{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -101,7 +103,8 @@ const K='rutaSIG.v1', DIA=864e5, EXAMEN=new Date(2026,10,18);
 const INTERVALO=[0,0,1,2,4,7]; // días hasta el próximo repaso según la caja Leitner (1 a 5)
 const TIPOS={om:'Opción múltiple',vf:'Verdadero o falso',completar:'Complete la frase',ordenar:'Ordene',emparejar:'Empareje'};
 const app=document.getElementById('app');
-const VACIO=()=>({xp:0,racha:0,ultimo:0,t:0,cajas:{},lecc:{},examenes:[]});
+const VACIO=()=>({xp:0,racha:0,ultimo:0,t:0,cajas:{},lecc:{},oidos:{},examenes:[]});
+const APRUEBA=.8; // aciertos mínimos de una lección para abrir la siguiente
 const PESO=[0,0,.5,.75,1,1]; // dominio según caja Leitner: fallada 0, acertada una vez 50 %, consolidada 100 %
 const META=80;
 let B, S=VACIO(), Z, P, ref=null, sync='', escribiendo=false, pendiente=false, tSubir, confirmar=false;
@@ -113,6 +116,7 @@ function limpiar(d){
   o.xp=n(d.xp);o.racha=n(d.racha);o.ultimo=n(d.ultimo);o.t=n(d.t);
   for(const[k,v]of Object.entries(d.cajas||{}))if(v&&v.c>=1&&v.c<=5&&Number.isFinite(v.v))o.cajas[k]={c:Math.floor(v.c),v:Math.floor(v.v)};
   for(const[k,v]of Object.entries(d.lecc||{}))if(Number.isFinite(v))o.lecc[k]=n(v);
+  for(const k of Object.keys(d.oidos||{}))if(/^U\d+$/.test(k))o.oidos[k]=1;
   const s=d.sesion;
   if(s&&Array.isArray(s.ids)&&s.ids.every(x=>typeof x==='string')&&['leccion','repaso','examen'].includes(s.tipo))
     o.sesion={tipo:s.tipo,ids:s.ids.slice(0,60),i:n(s.i),ok:n(s.ok),xp:n(s.xp),clave:typeof s.clave==='string'?s.clave:undefined,
@@ -169,28 +173,45 @@ console.assert(leitner(undefined,true,10).v===11&&leitner({c:4},false,10).v===10
 
 const pendientes=()=>B.preguntas.filter(q=>S.cajas[q.id]&&S.cajas[q.id].v<=hoy()).sort((a,b)=>S.cajas[a.id].c-S.cajas[b.id].c).slice(0,15);
 const deLeccion=(u,l)=>B.preguntas.filter(q=>q.unidad===u&&q.leccion===l);
+const TANDA=10; // preguntas por intento, sorteadas del banco de la lección
+const tamano=(u,l)=>Math.min(TANDA,deLeccion(u,l).length);
+const aprobada=(u,l)=>(S.lecc[u+'L'+l]||0)>=Math.ceil(APRUEBA*tamano(u,l));
+// Sorteo: primero las nunca vistas, luego las demás al azar; la tanda va de fácil a difícil.
+function tanda(u,l){
+  const p=mezclar(deLeccion(u,l)).sort((a,b)=>!!S.cajas[a.id]-!!S.cajas[b.id]);
+  return p.slice(0,TANDA).sort((a,b)=>(a.dificultad||2)-(b.dificultad||2));
+}
+const moduloOk=u=>u.lecciones.every((_,i)=>aprobada(u.id,i+1));
 
 function inicio(){
   Z=P=null;
   const d=hoy(), faltan=Math.ceil((EXAMEN-Date.now())/DIA), rep=pendientes().length;
+  const abierto=B.unidades.findIndex(u=>!moduloOk(u)); // primer módulo sin aprobar; -1 = todos aprobados
   app.innerHTML=`<h1>Ruta SIG</h1>
   <div class="medidores">
     <div class="medidor"><b>${S.ultimo>=d-1?S.racha:0}</b><span>Racha (días)</span></div>
     <div class="medidor xp"><b>${S.xp}</b><span>XP</span></div>
     <div class="medidor"><b>${Math.max(0,faltan)}</b><span>Días al 18-nov</span></div>
   </div>
-  ${S.sesion?`<button class="btn" data-continuar>Continuar ${{leccion:'lección',repaso:'repaso',examen:'simulacro'}[S.sesion.tipo]} · pregunta ${Math.min(S.sesion.i+1,S.sesion.ids.length)} de ${S.sesion.ids.length}</button>`:''}
+  ${S.sesion?`<button class="btn" data-continuar>Continuar ${{leccion:'lección',repaso:'repaso',examen:'evaluación final'}[S.sesion.tipo]} · pregunta ${Math.min(S.sesion.i+1,S.sesion.ids.length)} de ${S.sesion.ids.length}</button>`:''}
   <button class="btn ${S.sesion?'sec':''}" data-repaso ${rep?'':'disabled'}>${rep?`Repaso del día · ${rep} ${rep===1?'pregunta':'preguntas'}`:'Sin repasos pendientes hoy'}</button>
-  <button class="btn sec" data-examen>Simulacro de examen · 40 preguntas</button>
   ${panel()}
-  ${B.unidades.map(u=>{
-    const dm=dominio(u.id);
-    return `<section class="unidad"><header><h2>${esc(u.titulo)}</h2><span class="muted">${dm} % dominio</span></header>
+  ${B.unidades.map((u,k)=>{
+    const dm=dominio(u.id), hecho=abierto<0||k<abierto, titulo=`<h2>Módulo ${k+1} · ${esc(u.titulo)}</h2>`;
+    if(!hecho&&k>abierto)return `<section class="unidad bloq"><header>${titulo}<span class="muted">Bloqueado</span></header>
+      <p class="muted">Se abre al aprobar el módulo ${k}.</p></section>`;
+    const oido=hecho||S.oidos[u.id];
+    return `<section class="unidad"><header>${titulo}<span class="muted">${hecho?'Aprobado · ':''}${dm} % dominio</span></header>
     <div class="barra"><i style="width:${dm}%"></i></div>
-    <div><p class="muted">Audio-clase de la unidad</p><audio controls preload="none" src="audio/${esc(u.audio)}"></audio></div>
-    ${u.lecciones.map((t,i)=>{const m=S.lecc[u.id+'L'+(i+1)], n=deLeccion(u.id,i+1).length;
-      return `<button class="leccion ${m!=null?'hecha':''}" data-u="${u.id}" data-l="${i+1}"><span class="n">${i+1}</span><span class="t">${esc(t)}</span><span class="p">${m!=null?m+'/'+n:'Nueva'}</span></button>`}).join('')}
+    <div><p class="muted">Paso 1 · Escuche la audio-clase</p><audio controls preload="none" data-audio="${u.id}" src="audio/${esc(u.audio)}"></audio>
+      ${oido?'<p class="muted">✓ Audio-clase escuchada</p>':`<button class="btn sec" data-oido="${u.id}">Ya la escuché · abrir la lección 1</button>`}</div>
+    ${u.lecciones.map((t,i)=>{const m=S.lecc[u.id+'L'+(i+1)], n=tamano(u.id,i+1), ap=aprobada(u.id,i+1), libre=i?aprobada(u.id,i):oido;
+      return `<button class="leccion ${ap?'hecha':''}" data-u="${u.id}" data-l="${i+1}" ${libre?'':'disabled'}><span class="n">${ap?'✓':i+1}</span><span class="t">${esc(t)}</span><span class="p">${m!=null?Math.min(m,n)+'/'+n:libre?'Nueva':'Bloqueada'}</span></button>`}).join('')}
+    <p class="muted">Apruebe cada lección con ${Math.round(APRUEBA*100)} % para abrir la siguiente.</p>
     </section>`}).join('')}
+  <section class="unidad ${abierto<0?'':'bloq'}"><header><h2>Evaluación final</h2><span class="muted">${abierto<0?'Abierta':'Bloqueada'}</span></header>
+    <p class="muted">${abierto<0?'40 preguntas de los 9 módulos. Sin correcciones hasta el final.':'Se abre al aprobar los 9 módulos.'}</p>
+    <button class="btn" data-examen ${abierto<0?'':'disabled'}>Presentar la evaluación final</button></section>
   <section class="unidad"><h2>Su progreso</h2>
     <p class="muted" id="sync">${esc(sync||'Guardado en este dispositivo.')}</p>
     <p class="muted" id="offline"></p>
@@ -256,7 +277,7 @@ function empezar(tipo,cola,clave){Z={tipo,cola,clave,i:0,ok:0,xp:0,fallas:[],t0:
 function nueva(){
   S.sesion={tipo:Z.tipo,ids:Z.cola.map(q=>q.id),i:Z.i,ok:Z.ok,xp:Z.xp,clave:Z.clave,fallas:Z.fallas,t0:Z.t0}; guardar();
   const q=Z.cola[Z.i], idx=[...q.opciones.keys()];
-  P={q,res:null,sel:null,sec:[],izq:null,mal:null,err:0,hechos:[],ord:q.tipo==='vf'?idx:mezclar(idx),ord2:mezclar(idx)};
+  P={q,res:null,sel:null,sec:[],izq:null,mal:null,err:0,hechos:[],hechosD:[],ord:q.tipo==='vf'?idx:mezclar(idx),ord2:mezclar(idx)};
   pregunta();
 }
 function pregunta(){
@@ -269,7 +290,7 @@ function pregunta(){
     <div class="ops">${P.ord.filter(i=>!P.sec.includes(i)).map(i=>`<button class="op" data-poner="${i}" ${off}>${esc(q.opciones[i])}</button>`).join('')}</div>`;
   }else if(q.tipo==='emparejar'){
     listo=false;
-    const col=(ord,lado,k)=>`<div class="ops">${ord.map(i=>{const h=P.hechos.includes(i);
+    const col=(ord,lado,k)=>`<div class="ops">${ord.map(i=>{const h=(lado==='izq'?P.hechos:P.hechosD).includes(i);
       return `<button class="op ${h?'hecho':lado==='izq'&&P.izq===i?'sel':lado==='der'&&P.mal===i?'mal':''}" data-${lado}="${i}" ${h||fin?'disabled':''}>${esc(q.opciones[i][k])}</button>`}).join('')}</div>`;
     cuerpo=`<p class="muted">Toque un elemento de la izquierda y luego su pareja.</p><div class="pares">${col(P.ord,'izq',0)}${col(P.ord2,'der',1)}</div>`;
   }else{
@@ -308,10 +329,13 @@ function resolver(ok){
 function terminar(){
   sumarRacha(S,hoy());
   if(Z.tipo==='examen'){delete S.sesion;resultadoExamen();guardar();window.scrollTo(0,0);return}
+  const u=Z.clave&&B.unidades.find(x=>Z.clave.startsWith(x.id+'L')), antes=u&&moduloOk(u);
   if(Z.clave)S.lecc[Z.clave]=Math.max(S.lecc[Z.clave]||0,Z.ok);
   delete S.sesion; guardar();
-  const f=Z.cola.length-Z.ok;
-  app.innerHTML=`<div class="fin"><h1>${Z.tipo==='leccion'?'Lección completada':'Repaso completado'}</h1>
+  const f=Z.cola.length-Z.ok, falta=Math.ceil(APRUEBA*Z.cola.length), ap=Z.ok>=falta;
+  const aviso=!Z.clave?'':!ap?`<p>Necesita ${falta} de ${Z.cola.length} para aprobarla y abrir la siguiente. Repítala cuando quiera.</p>`
+    :u&&!antes&&moduloOk(u)?`<p><b>Módulo aprobado.</b> ${B.unidades.indexOf(u)<B.unidades.length-1?'Se abrió el siguiente módulo.':'Se abrió la evaluación final.'}</p>`:'';
+  app.innerHTML=`<div class="fin"><h1>${Z.tipo==='leccion'?(ap?'Lección aprobada':'Lección no aprobada'):'Repaso completado'}</h1>${aviso}
   <div class="medidores">
     <div class="medidor"><b>${Z.ok}/${Z.cola.length}</b><span>Aciertos</span></div>
     <div class="medidor xp"><b>+${Z.xp}</b><span>XP</span></div>
@@ -341,7 +365,8 @@ app.onclick=e=>{
     document.querySelector('details').open=true;
     return mensaje(`Progreso restaurado: ${S.xp} XP y ${Object.keys(S.cajas).length} preguntas vistas.`);
   }
-  if(d.u)return empezar('leccion',deLeccion(d.u,+d.l),d.u+'L'+d.l);
+  if(d.oido){S.oidos[d.oido]=1;guardar();return inicio()}
+  if(d.u)return empezar('leccion',tanda(d.u,+d.l),d.u+'L'+d.l);
   if('seguir' in d)return ++Z.i<Z.cola.length?nueva():terminar();
   const q=P.q;
   if('comprobar' in d)return resolver(q.tipo==='ordenar'?P.sec.every((v,k)=>v===k):P.sel===q.correcta);
@@ -350,12 +375,16 @@ app.onclick=e=>{
   else if(d.quitar)P.sec=P.sec.filter(i=>i!==+d.quitar);
   else if(d.izq){P.izq=+d.izq;P.mal=null}
   else if(d.der&&P.izq!==null){
-    if(+d.der===P.izq){P.hechos.push(P.izq);P.mal=null}else{P.err++;P.mal=+d.der}
+    // Se compara el texto, no la posición: dos parejas pueden compartir el mismo texto a la derecha.
+    if(q.opciones[+d.der][1]===q.opciones[P.izq][1]){P.hechos.push(P.izq);P.hechosD.push(+d.der);P.mal=null}else{P.err++;P.mal=+d.der}
     P.izq=null;
     if(P.hechos.length===q.opciones.length)return resolver(P.err===0);
   }
   pregunta();
 };
+
+// Al terminar el audio se abre la lección 1 del módulo ('ended' no burbujea: se escucha en captura).
+app.addEventListener('ended',e=>{const u=e.target.dataset&&e.target.dataset.audio;if(u&&!S.oidos[u]){S.oidos[u]=1;guardar();inicio()}},true);
 
 fetch('banco_preguntas.json').then(r=>r.json()).then(b=>{B=b;inicio();nube()})
   .catch(()=>{app.innerHTML='<h1>Ruta SIG</h1><p>No se pudo cargar el banco de preguntas. Revise la conexión y vuelva a abrir la página.</p>'});
