@@ -93,6 +93,12 @@ summary:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outli
 .debiles{margin:0;padding-left:1.1rem;display:flex;flex-direction:column;gap:.35rem;font-size:.875rem}
 details summary{font-weight:400}
 textarea{width:100%;font:.8rem/1.4 ui-monospace,Consolas,monospace;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:.6rem;padding:.5rem;resize:vertical;overflow-wrap:anywhere}
+.chat{display:flex;flex-direction:column;gap:.5rem}
+.msg{white-space:pre-wrap;overflow-wrap:anywhere;padding:.6rem .8rem;border-radius:.9rem;background:var(--surface);border:1px solid var(--line);max-width:92%;align-self:flex-start}
+.msg.yo{align-self:flex-end;background:color-mix(in srgb,var(--accent) 12%,var(--surface))}
+#duda,#clave{width:100%;font:400 1rem/1.4 var(--body);background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:.6rem;padding:.6rem}
+#clave{min-height:3rem}
+#clave:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
@@ -195,6 +201,7 @@ function inicio(){
   </div>
   ${S.sesion?`<button class="btn" data-continuar>Continuar ${{leccion:'lección',repaso:'repaso',examen:'evaluación final'}[S.sesion.tipo]} · pregunta ${Math.min(S.sesion.i+1,S.sesion.ids.length)} de ${S.sesion.ids.length}</button>`:''}
   <button class="btn ${S.sesion?'sec':''}" data-repaso ${rep?'':'disabled'}>${rep?`Repaso del día · ${rep} ${rep===1?'pregunta':'preguntas'}`:'Sin repasos pendientes hoy'}</button>
+  <button class="btn sec" data-chat>Pregunte a Jarvis sobre las normas</button>
   ${panel()}
   ${B.unidades.map((u,k)=>{
     const dm=dominio(u.id), hecho=abierto<0||k<abierto, titulo=`<h2>Módulo ${k+1} · ${esc(u.titulo)}</h2>`;
@@ -349,9 +356,74 @@ function terminar(){
   <button class="btn" data-salir>Volver a la ruta</button></div>`;
 }
 
+// Chat: dentro del Artifact responde Claude (capacidad «sample», sin clave); en la PWA responde Gemini con la clave
+// que el Señor pega. La clave vive solo en este dispositivo, fuera del progreso que se sincroniza o se copia.
+// shortcut: se envía la base completa (~85 KB) en cada pregunta; si el costo o la latencia molestan, enviar solo las secciones afines.
+const KG='rutaSIG.gemini', GEMINI='https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent';
+const REGLAS=`Usted es Jarvis, tutor del Sistema Integrado de Gestión (ISO 9001, ISO 14001, ISO 45001, SG-SST de Colombia, ISO 19011, auditoría y marco legal colombiano). Trate al usuario de «Señor».
+Responda SOLO con la BASE DE CONOCIMIENTO de abajo. Si la respuesta no está en ella, dígalo con claridad («Eso no está en la base estudiada») y no invente.
+Cite la norma y la cláusula o la ley. No reproduzca texto literal de las normas: explique con palabras propias. Si la base marca algo como «(verificar)», adviértalo.
+Cuando aplique, responda en capas: qué exige, cómo se evidencia, cómo se audita (hallazgo típico) y un ejemplo.
+Escriba en español, en texto plano sin Markdown (sin asteriscos ni almohadillas), en menos de 200 palabras salvo que el Señor pida más detalle.`;
+let CH=[], KB, ocupado=false, muestra;
+const clave=()=>{try{return localStorage.getItem(KG)||''}catch(e){return ''}};
+async function preguntar(alTexto){
+  KB=KB||await fetch('conocimiento.md').then(r=>{if(!r.ok)throw{code:'base'};return r.text()});
+  const reglas=REGLAS+'\n\nBASE DE CONOCIMIENTO:\n'+KB, turnos=CH.slice(-9); // impar: empieza y termina en el Señor
+  if(muestra)return (await muestra([{role:'user',content:reglas},...turnos.map(m=>({role:m.de==='yo'?'user':'assistant',content:m.t}))],
+    {cache:false,onText:({text})=>alTexto(text)})).text;
+  const r=await fetch(GEMINI,{method:'POST',headers:{'content-type':'application/json','x-goog-api-key':clave()},
+    body:JSON.stringify({systemInstruction:{parts:[{text:reglas}]},contents:turnos.map(m=>({role:m.de==='yo'?'user':'model',parts:[{text:m.t}]}))})});
+  if(!r.ok)throw{code:r.status};
+  const c=(await r.json()).candidates, t=((c&&c[0]&&c[0].content&&c[0].content.parts)||[]).map(p=>p.text||'').join('').trim();
+  if(!t)throw{code:'vacio'};
+  return t;
+}
+function chat(){
+  Z=P=null;
+  const cab=`<div class="top"><button class="salir" data-salir>Volver</button><h2>Pregunte a Jarvis</h2></div>`;
+  if(window.claude&&muestra===undefined)return app.innerHTML=cab+'<p class="muted" id="hilo">Conectando con Claude…</p>';
+  if(!muestra&&!clave())return app.innerHTML=`${cab}
+    <p>Para conversar en esta versión se usa Gemini con una clave suya. Créela gratis en <b>aistudio.google.com/apikey</b> con su cuenta de Google y péguela aquí.</p>
+    <label for="clave" class="muted">Clave de la API de Gemini</label><input id="clave" type="password" autocomplete="off" spellcheck="false">
+    <button class="btn" data-clave>Guardar la clave</button>
+    <p class="muted" id="msg" role="status">La clave se guarda solo en este dispositivo y solo se envía a Google al preguntar.</p>`;
+  app.innerHTML=`${cab}
+  <p class="muted">Responde con la base de conocimiento SIG estudiada. Necesita conexión a internet.</p>
+  <div class="chat" id="hilo" aria-live="polite">${CH.map(m=>`<p class="msg ${m.de}">${esc(m.t)}</p>`).join('')||'<p class="muted">Ejemplo: ¿Qué evidencia pide el auditor para la competencia (7.2)?</p>'}
+    ${ocupado?'<p class="msg jarvis" id="vivo">Pensando…</p>':''}</div>
+  <label for="duda" class="muted">Su pregunta</label><textarea id="duda" rows="3" maxlength="1000"></textarea>
+  <button class="btn" data-enviar ${ocupado?'disabled':''}>Preguntar</button>
+  <p class="muted" id="msg" role="status"></p>
+  ${muestra?'':'<button class="salir" data-borrarclave>Quitar la clave de este dispositivo</button>'}`;
+}
+const FALLO={not_granted:'No se autorizó el uso de Claude en esta página.',rate_limited:'Se alcanzó el límite de uso. Intente más tarde.',429:'Se alcanzó el límite de uso de la clave. Intente más tarde.',
+  400:'Gemini rechazó la solicitud. Revise que la clave sea correcta.',401:'La clave no es válida.',403:'La clave no es válida o no tiene permiso.',base:'No se pudo cargar la base de conocimiento.',vacio:'No llegó respuesta. Reformule la pregunta.'};
+async function enviar(){
+  const t=document.getElementById('duda').value.trim(); if(!t||ocupado)return;
+  CH.push({de:'yo',t}); ocupado=true; chat(); document.getElementById('vivo').scrollIntoView({block:'nearest'});
+  let err='';
+  try{CH.push({de:'jarvis',t:await preguntar(x=>{const v=document.getElementById('vivo');if(v)v.textContent=x})})}
+  catch(e){CH.pop();err=FALLO[e&&e.code]||'No se pudo obtener respuesta. Revise la conexión e intente de nuevo.'}
+  ocupado=false;
+  if(!document.getElementById('hilo'))return; // el Señor salió del chat mientras llegaba la respuesta
+  chat();
+  if(err){document.getElementById('duda').value=t;mensaje(err)}
+  else document.getElementById('hilo').lastElementChild.scrollIntoView({block:'nearest'});
+}
+
 app.onclick=e=>{
   const b=e.target.closest('button'); if(!b||b.disabled)return; const d=b.dataset;
   if('salir' in d)return inicio();
+  if('chat' in d)return chat();
+  if('enviar' in d)return enviar();
+  if('clave' in d){
+    const v=document.getElementById('clave').value.trim();
+    if(v.length<20)return mensaje('Pegue la clave completa.');
+    try{localStorage.setItem(KG,v)}catch(e){return mensaje('Este navegador no permite guardar la clave.')}
+    return chat();
+  }
+  if('borrarclave' in d){try{localStorage.removeItem(KG)}catch(e){}return chat()}
   if('repaso' in d)return empezar('repaso',pendientes());
   if('continuar' in d)return reanudar();
   if('examen' in d)return empezar('examen',armarExamen());
@@ -390,6 +462,7 @@ app.onclick=e=>{
 // Al terminar el audio se abre la lección 1 del módulo ('ended' no burbujea: se escucha en captura).
 app.addEventListener('ended',e=>{const u=e.target.dataset&&e.target.dataset.audio;if(u&&!S.oidos[u]){S.oidos[u]=1;guardar();inicio()}},true);
 
+if(window.claude&&window.claude.use)window.claude.use('sample').then(s=>{muestra=s;if(document.getElementById('hilo'))chat()});
 fetch('banco_preguntas.json').then(r=>r.json()).then(b=>{B=b;inicio();nube()})
   .catch(()=>{app.innerHTML='<h1>Ruta SIG</h1><p>No se pudo cargar el banco de preguntas. Revise la conexión y vuelva a abrir la página.</p>'});
 </script>
