@@ -189,6 +189,9 @@ function tanda(u,l){
 }
 const moduloOk=u=>u.lecciones.every((_,i)=>aprobada(u.id,i+1));
 
+// Modo libre: abre todos los módulos y lecciones solo en este dispositivo (no viaja con el progreso).
+const KT='rutaSIG.libre'; let todo=false; try{todo=!!localStorage.getItem(KT)}catch(e){}
+
 function inicio(){
   Z=P=null;
   const d=hoy(), faltan=Math.ceil((EXAMEN-Date.now())/DIA), rep=pendientes().length;
@@ -205,7 +208,7 @@ function inicio(){
   ${panel()}
   ${B.unidades.map((u,k)=>{
     const dm=dominio(u.id), hecho=abierto<0||k<abierto, titulo=`<h2>Módulo ${k+1} · ${esc(u.titulo)}</h2>`;
-    if(!hecho&&k>abierto)return `<section class="unidad bloq"><header>${titulo}<span class="muted">Bloqueado</span></header>
+    if(!todo&&!hecho&&k>abierto)return `<section class="unidad bloq"><header>${titulo}<span class="muted">Bloqueado</span></header>
       <p class="muted">Se abre al aprobar el módulo ${k}.</p></section>`;
     const oido=hecho||S.oidos[u.id];
     return `<section class="unidad"><header>${titulo}<span class="muted">${hecho?'Aprobado · ':''}${dm} % dominio</span></header>
@@ -214,7 +217,7 @@ function inicio(){
       ${oido?'<p class="muted">✓ Audio-clase escuchada</p>':`<button class="btn sec" data-oido="${u.id}">Ya la escuché · abrir la lección 1</button>`}</div>
     ${u.lecciones.map((t,i)=>{const k=u.id+'L'+(i+1), m=S.lecc[k], n=tamano(u.id,i+1), ap=aprobada(u.id,i+1);
       // Lección con audio propio: se abre al aprobar la anterior y escuchar su audio.
-      const al=u.audios_leccion&&u.audios_leccion[i+1], oidoL=!al||hecho||ap||S.oidos[k], previa=i?aprobada(u.id,i):oido, libre=previa&&oidoL;
+      const al=u.audios_leccion&&u.audios_leccion[i+1], oidoL=!al||hecho||ap||S.oidos[k], previa=todo||(i?aprobada(u.id,i):oido), libre=todo||(previa&&oidoL);
       const pre=al&&previa?`<div><p class="muted">Antes de la lección ${i+1} · Escuche su audio-clase</p><audio controls preload="none" data-audio="${k}" src="audio/${esc(al)}"></audio>
         ${oidoL?'<p class="muted">✓ Audio-clase escuchada</p>':`<button class="btn sec" data-oido="${k}">Ya la escuché · abrir la lección ${i+1}</button>`}</div>`:'';
       return `${pre}<button class="leccion ${ap?'hecha':''}" data-u="${u.id}" data-l="${i+1}" ${libre?'':'disabled'}><span class="n">${ap?'✓':i+1}</span><span class="t">${esc(t)}</span><span class="p">${m!=null?Math.min(m,n)+'/'+n:libre?'Nueva':'Bloqueada'}</span></button>`}).join('')}
@@ -226,6 +229,7 @@ function inicio(){
   <section class="unidad"><h2>Su progreso</h2>
     <p class="muted" id="sync">${esc(sync||'Guardado en este dispositivo.')}</p>
     <p class="muted" id="offline"></p>
+    <button class="btn sec" data-todo>${todo?'Volver al orden paso a paso':'Abrir todos los módulos en este dispositivo'}</button>
     <details><summary>Copia de seguridad</summary><div class="copia">
       <p class="muted">Guarde este código en una nota o envíeselo a sí mismo. Con él recupera el progreso en otro celular o navegador.</p>
       <textarea id="codigo" rows="3" readonly aria-label="Código de su progreso">${codigo()}</textarea>
@@ -424,6 +428,7 @@ app.onclick=e=>{
     return chat();
   }
   if('borrarclave' in d){try{localStorage.removeItem(KG)}catch(e){}return chat()}
+  if('todo' in d){todo=!todo;try{todo?localStorage.setItem(KT,'1'):localStorage.removeItem(KT)}catch(e){}return inicio()}
   if('repaso' in d)return empezar('repaso',pendientes());
   if('continuar' in d)return reanudar();
   if('examen' in d)return empezar('examen',armarExamen());
